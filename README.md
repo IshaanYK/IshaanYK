@@ -10,6 +10,13 @@
 <!-- Profile views counter -->
 <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=58a6ff&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
 
+<br><br>
+
+<!-- Music Player Widget -->
+<a href="https://github.com/IshaanYK/IshaanYK/blob/main/song.mp4" target="_blank">
+  <img src="./music-player.svg" width="860" alt="Play Music" />
+</a>
+
 <br>
 
 <table>

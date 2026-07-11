@@ -41,8 +41,8 @@ fps = cap.get(cv2.CAP_PROP_FPS)
 print(f"Loaded video for color loop: {total_frames} frames, {fps} FPS")
 
 # Downsample to ~10 FPS (take every 3rd frame)
-# We will process 90 frames maximum to keep size small (~3 seconds)
-frame_indices = range(0, min(total_frames, 90), 3)
+# Process all frames to capture the full 30 seconds
+frame_indices = range(0, total_frames, 3)
 
 gif_frames = []
 
@@ -109,7 +109,9 @@ for f_idx in frame_indices:
     if (f_idx // 3) % 2 == 0:
         draw.rectangle([PAD + 234, status_y, PAD + 242, status_y + 14], fill=INK)
         
-    gif_frames.append(img)
+    # Resize to optimize file size while keeping visual clarity (scaled down by half)
+    img_small = img.resize((420, 438), Image.Resampling.LANCZOS)
+    gif_frames.append(img_small)
 
 cap.release()
 
