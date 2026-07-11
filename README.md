@@ -8,7 +8,7 @@
 # ⚡ Welcome to my Profile!
 
 <!-- Profile views counter -->
-![](https://komarev.com/ghpvc/?username=IshaanYK&color=58a6ff&style=flat-square&label=PROFILE+VIEWS)
+<img src="https://komarev.com/ghpvc/?username=IshaanYK&color=58a6ff&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
 
 <br>
 
@@ -29,16 +29,28 @@
 
 <br>
 
-<!-- Custom themed GitHub Stats & Top Languages -->
+### 🛠️ Tech Stack & Skills
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=py,js,ts,react,nextjs,nodejs,fastapi,pytorch,postgres,docker,aws,github,githubactions,html,css" alt="My Skills" />
+</a>
+
+<br><br>
+
+### 📊 GitHub Statistics
 <table>
 <tr>
-<td valign="top"><img src="https://github-readme-stats.vercel.app/api?username=IshaanYK&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=3fb950&border_color=30363d&hide_border=false" width="425" alt="GitHub Stats" /></td>
-<td valign="top"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=IshaanYK&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=3fb950&border_color=30363d&hide_border=false" width="425" alt="Top Languages" /></td>
+<td valign="top"><img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=IshaanYK&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=3fb950&border_color=30363d&hide_border=false" width="425" alt="GitHub Stats" /></td>
+<td valign="top"><img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=IshaanYK&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=3fb950&border_color=30363d&hide_border=false" width="425" alt="Top Languages" /></td>
+</tr>
+<tr>
+<td valign="top"><img src="https://streak-stats.demolab.com/?user=IshaanYK&background=0d1117&border=30363d&stroke=30363d&ring=3fb950&fire=ffa657&currStreakNum=ffa657&sideNums=c9d1d9&sideLabels=7d8590&dates=7d8590&currStreakLabel=58a6ff" width="425" alt="Streak Stats" /></td>
+<td valign="top"><img src="https://github-readme-activity-graph.vercel.app/graph?username=IshaanYK&bg_color=0d1117&color=58a6ff&line=3fb950&point=ffa657&area=true&hide_border=false" width="425" alt="Activity Graph" /></td>
 </tr>
 </table>
 
 <br>
 
+### 📅 Contribution Heatmap
 <!-- animated contribution graph, refreshed daily by the workflow -->
 <img src="./contrib-heatmap.svg" width="860" alt="GitHub contribution graph" />
 
