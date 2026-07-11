@@ -36,6 +36,24 @@
 
 <br><br>
 
+### 📂 Featured Projects
+<table>
+<tr>
+<td valign="top" width="50%">
+  <strong><a href="https://github.com/IshaanYK/call-agent">📞 call-agent</a></strong> <br>
+  <sub>An automated AI-powered agent configured to receive, parse, and respond to incoming voice calls.</sub> <br>
+  <code>JavaScript</code>
+</td>
+<td valign="top" width="50%">
+  <strong><a href="https://github.com/IshaanYK/STORAGE-WIDGET">💾 STORAGE-WIDGET</a></strong> <br>
+  <sub>An auto-refreshing storage management widget designed for monitoring disk quotas and metrics.</sub> <br>
+  <code>Python</code>
+</td>
+</tr>
+</table>
+
+<br>
+
 ### 📊 GitHub Statistics
 <table>
 <tr>
