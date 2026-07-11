@@ -26,7 +26,7 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
   
   <!-- Left Side: Terminal Style Play Command -->
   <text x="20" y="43" fill="{MUTED}" font-size="13">
-    ishaan@github:~$ <tspan fill="{ACCENT}">play_music.sh</tspan> --track <tspan fill="{ORANGE}">"WhatsApp Audio"</tspan>
+    ishaan@github:~$ <tspan fill="{ACCENT}">play_music.sh</tspan> --track <tspan fill="{ORANGE}">"Expresso"</tspan>
   </text>
   
   <!-- Right Side: Music Player Controls & Status -->

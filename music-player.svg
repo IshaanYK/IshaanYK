@@ -11,7 +11,7 @@
   
   <!-- Left Side: Terminal Style Play Command -->
   <text x="20" y="43" fill="#7d8590" font-size="13">
-    ishaan@github:~$ <tspan fill="#22d3ee">play_music.sh</tspan> --track <tspan fill="#ffa657">"WhatsApp Audio"</tspan>
+    ishaan@github:~$ <tspan fill="#22d3ee">play_music.sh</tspan> --track <tspan fill="#ffa657">"Expresso"</tspan>
   </text>
   
   <!-- Right Side: Music Player Controls & Status -->

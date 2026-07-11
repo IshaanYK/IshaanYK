@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-INP = os.path.join(HERE, "..", "WhatsApp Video 2026-07-12 at 00.30.41.mp4")
+INP = os.path.join(HERE, "..", "ME.mp4")
 OUT = os.path.join(HERE, "..", "color-loop.gif")
 
 COLS = 100
