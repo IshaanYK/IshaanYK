@@ -1,33 +1,34 @@
 <div align="center">
 
-<!-- Local Animated Header Banner -->
+<!-- Cyber Animated Header Banner -->
 <a href="https://github.com/IshaanYK">
-  <img src="./header-banner.svg?v=2" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
+  <img src="./header-banner.svg?v=3" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
 </a>
 
 <br><br>
 
-<!-- Badges & Counters -->
+<!-- Badges & Status Pills -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://img.shields.io/badge/Education-IIT_Madras-f2cc60?style=for-the-badge&logo=education" alt="IIT Madras" />
   <img src="https://img.shields.io/badge/Status-Open_for_Collabs-3fb950?style=for-the-badge&logo=github" alt="Status Badge" />
-  <img src="https://img.shields.io/badge/Focus-AI_Agents_%26_FullStack-22d3ee?style=for-the-badge&logo=python" alt="Focus Badge" />
+  <img src="https://img.shields.io/badge/Focus-AI_Agents_%26_FullStack-00f2fe?style=for-the-badge&logo=python" alt="Focus Badge" />
 </p>
 
 <br>
 
-<!-- Interactive Audio/Music Player -->
+<!-- Interactive Audio & Music Player -->
 <a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank">
-  <img src="./music-player.svg?v=2" width="860" alt="Play Music" />
+  <img src="./music-player.svg?v=3" width="860" alt="Play Music" />
 </a>
 
 <br><br>
 
-<!-- Portrait + Neofetch Info Card -->
+<!-- Portrait + Cyber Neofetch Info Card -->
 <table>
 <tr>
-<td valign="top" align="center"><img src="./color-loop.gif?v=2" width="370" alt="Ishaan Animated Portrait" /></td>
-<td valign="top"><img src="./info-card.svg?v=2" width="490" alt="Neofetch Info Card" /></td>
+<td valign="top" align="center"><img src="./color-loop.gif?v=3" width="370" alt="Ishaan Animated Portrait" /></td>
+<td valign="top"><img src="./info-card.svg?v=3" width="490" alt="Neofetch Info Card" /></td>
 </tr>
 </table>
 
@@ -35,20 +36,48 @@
 
 <!-- Social & Contact Badges -->
 <p align="center">
-  <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/Portfolio-ishaanyk.github.io-0d1117?style=for-the-badge&logo=vercel&logoColor=22d3ee" alt="Portfolio" /></a>
+  <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/Portfolio-ishaanyk.github.io-0d1117?style=for-the-badge&logo=vercel&logoColor=00f2fe" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/ishaan784/"><img src="https://img.shields.io/badge/LinkedIn-ishaan784-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:ishaansenres@gmail.com"><img src="https://img.shields.io/badge/Email-ishaansenres%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/IshaanYK"><img src="https://img.shields.io/badge/GitHub-IshaanYK-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
 
+<br>
+
+<!-- Expandable Bio & Quote Section -->
+<details>
+<summary><b>✨ Click to reveal Quick Bio & Tech Philosophy 💡</b></summary>
+<br>
+
+> *"The best way to predict the future is to invent it."* — Alan Kay
+
+- 🎓 **Education**: Pursuing degree at **Indian Institute of Technology Madras (IIT Madras)**.
+- 🤖 **Specialization**: Building autonomous multi-agent workflows, custom RAG pipelines, and intelligent tools.
+- ⚡ **Core Mindset**: Writing clean, high-performance, GPU-accelerated code and crafting silky 60fps+ UI/UX.
+- 🚀 **Currently Exploring**: Next-gen Agentic Coding frameworks, distributed vector indexing, and real-time voice AI.
+
+<br>
+</details>
+
 <br><br>
 
-<!-- Tech Stack & Skills -->
+<!-- Categorized Tech Ecosystem Grid -->
 ### 🛠️ Tech Stack & Ecosystem
 
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=py,js,ts,react,nextjs,nodejs,fastapi,pytorch,postgres,docker,aws,github,githubactions,html,css,tailwind,redis,git,vscode&perline=10" alt="My Tech Stack" />
-</a>
+<p align="center">
+  <b>🧠 AI, ML & Data Science</b><br>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,opencv,fastapi,postgres&perline=6" alt="AI & ML" /></a>
+</p>
+
+<p align="center">
+  <b>⚡ Frontend & UI Engineering</b><br>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,html,css,redux&perline=8" alt="Frontend" /></a>
+</p>
+
+<p align="center">
+  <b>⚙️ Backend, Cloud & DevOps</b><br>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,docker,aws,githubactions,redis,git,linux,vscode&perline=8" alt="Backend & Cloud" /></a>
+</p>
 
 <br><br>
 
@@ -60,7 +89,7 @@
 <td valign="top" width="50%">
   <a href="https://github.com/IshaanYK/call-agent"><strong>📞 call-agent</strong></a> <br><br>
   <sub>An automated AI-powered agent configured to receive, parse, and respond to incoming voice calls in real time.</sub> <br><br>
-  <code>JavaScript</code> &nbsp; <code>AI Agent</code> &nbsp; <code>Automation</code>
+  <code>JavaScript</code> &nbsp; <code>AI Agent</code> &nbsp; <code>Voice AI</code>
 </td>
 <td valign="top" width="50%">
   <a href="https://github.com/IshaanYK/STORAGE-WIDGET"><strong>💾 STORAGE-WIDGET</strong></a> <br><br>
@@ -90,6 +119,6 @@
 
 <!-- Animated Contribution Graph -->
 ### 📅 Animated Contribution Heatmap
-<img src="./contrib-heatmap.svg?v=2" width="860" alt="GitHub contribution graph" />
+<img src="./contrib-heatmap.svg?v=3" width="860" alt="GitHub contribution graph" />
 
 </div>

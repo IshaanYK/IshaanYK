@@ -2,9 +2,6 @@
 Build a neofetch-style info card SVG (Andrew6rant style) to sit to the RIGHT of
 the ASCII portrait: colored key/value rows for work experience, tech stack, and
 highlights.
-
-Lines fade/slide in on a short stagger so it feels like the panel is printing.
-STATIC=1 emits the frozen state for Quick Look previews.
 """
 import html
 import os
@@ -24,31 +21,33 @@ BG = "#0d1117"
 BG2 = "#161b22"
 FRAME = "#30363d"
 MUTED = "#8b949e"
-INK = "#c9d1d9"
+INK = "#e6edf3"
 KEY = "#ffa657"      # orange keys
-SECTION = "#58a6ff"  # blue section headers
+SECTION = "#4facfe"  # blue section headers
 GREEN = "#3fb950"
-CYAN = "#22d3ee"
-PURPLE = "#bc8cff"
+CYAN = "#00f2fe"
+PURPLE = "#a371f7"
+GOLD = "#f2cc60"
 
 HOST = "ISHAANYK"
 
 ROWS = [
     ("host",),
     ("kv", "Role", "AI Engineer & Full-Stack Developer"),
-    ("kv", "Focus", "Agentic Systems, LLMs & Scalable Web Apps"),
-    ("kv", "Status", "🟢 Available for Projects & AI Innovations"),
+    ("kv", "Edu", "Indian Institute of Technology Madras"),
+    ("kv", "Focus", "Autonomous AI Agents & RAG Pipelines"),
+    ("kv", "Status", "🟢 Available for AI/ML & Web Projects"),
     ("kv", "Portfolio", "ishaanyk.github.io/portfolio-me/"),
     ("gap",),
-    ("sec", "Core Tech Stack"),
-    ("kv", "AI / ML", "Python, PyTorch, OpenAI API, LangChain, RAG"),
-    ("kv", "Frontend", "React, Next.js, TypeScript, Tailwind CSS"),
-    ("kv", "Backend", "Node.js, FastAPI, PostgreSQL, Docker, Redis"),
-    ("kv", "DevOps", "AWS, Vercel, GitHub Actions, CI/CD"),
+    ("sec", "Tech Ecosystem"),
+    ("kv", "Languages", "Python, TypeScript, JavaScript, SQL"),
+    ("kv", "AI / ML", "PyTorch, OpenAI API, LangChain, RAG"),
+    ("kv", "FullStack", "React, Next.js, Node.js, FastAPI, Tailwind"),
+    ("kv", "Infra", "Docker, PostgreSQL, Redis, AWS, GitHub Actions"),
     ("gap",),
-    ("sec", "Highlights & Interests"),
-    ("bul", "Building autonomous multi-agent systems & custom tools"),
-    ("bul", "Creating ultra-smooth, responsive UI/UX experiences"),
+    ("sec", "Highlights & Hobbies"),
+    ("bul", "Building custom multi-agent autonomous tools"),
+    ("bul", "Crafting ultra-smooth interactive UI/UX experiences"),
 ]
 
 
@@ -60,7 +59,7 @@ def rise(inner, i):
     """fade + slight upward slide, staggered by row index; freezes visible."""
     if STATIC:
         return f"<g>{inner}</g>"
-    delay = 0.12 + i * 0.05
+    delay = 0.10 + i * 0.04
     return (f'<g opacity="0" transform="translate(0,6)">{inner}'
             f'<animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.4s" fill="freeze"/>'
             f'<animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" '
@@ -72,19 +71,19 @@ parts = [
     f'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
     '<defs>',
     f'<linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">',
-    f'<stop offset="0%" stop-color="{BG2}"/><stop offset="100%" stop-color="{BG}"/></linearGradient>',
+    f'<stop offset="0%" stop-color="#0a0e17"/><stop offset="100%" stop-color="{BG}"/></linearGradient>',
     f'<linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">',
-    f'<stop offset="0%" stop-color="{SECTION}"/>',
-    f'<stop offset="50%" stop-color="{CYAN}"/>',
-    f'<stop offset="100%" stop-color="{GREEN}"/>',
+    f'<stop offset="0%" stop-color="{CYAN}"/>',
+    f'<stop offset="50%" stop-color="{SECTION}"/>',
+    f'<stop offset="100%" stop-color="{PURPLE}"/>',
     f'</linearGradient>',
     '<style>',
     '@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }',
-    '.cursor { animation: blink 1s infinite; fill: #22d3ee; }',
+    '.cursor { animation: blink 0.9s infinite; fill: #00f2fe; }',
     '</style>',
     '</defs>',
     f'<rect width="{W}" height="{H}" rx="12" fill="url(#ibg)"/>',
-    f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="url(#cardGlow)" stroke-width="1.2" stroke-opacity="0.6"/>',
+    f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="url(#cardGlow)" stroke-width="1.5" stroke-opacity="0.8"/>',
     f'<line x1="0" y1="{TITLEBAR_H}" x2="{W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
 ]
 
@@ -116,7 +115,7 @@ for i, row in enumerate(ROWS):
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "kv":
         key, val = esc(row[1]), esc(row[2])
-        val_color = GREEN if "🟢" in val else INK
+        val_color = GREEN if "🟢" in val else (GOLD if "IIT" in val else INK)
         inner = (f'<text x="{KEY_X}" y="{y:.1f}" fill="{KEY}" font-size="12" font-weight="700">{key}</text>'
                  f'<text x="{VAL_X}" y="{y:.1f}" fill="{val_color}" font-size="12">{val}</text>')
     elif kind == "bul":
@@ -132,4 +131,4 @@ parts.append("</svg>")
 svg = "".join(parts)
 with open(OUT, "w", encoding="utf-8") as f:
     f.write(svg)
-print("wrote", OUT, len(svg), "bytes;")
+print("wrote", OUT)
