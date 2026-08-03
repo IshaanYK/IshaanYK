@@ -2,7 +2,7 @@
 
 <!-- Local Animated Header Banner -->
 <a href="https://github.com/IshaanYK">
-  <img src="./header-banner.svg?v=1" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
+  <img src="./header-banner.svg?v=2" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
 </a>
 
 <br><br>
@@ -18,7 +18,7 @@
 
 <!-- Interactive Audio/Music Player -->
 <a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank">
-  <img src="./music-player.svg?v=1" width="860" alt="Play Music" />
+  <img src="./music-player.svg?v=2" width="860" alt="Play Music" />
 </a>
 
 <br><br>
@@ -26,8 +26,8 @@
 <!-- Portrait + Neofetch Info Card -->
 <table>
 <tr>
-<td valign="top" align="center"><img src="./color-loop.gif?v=1" width="370" alt="Ishaan Animated Portrait" /></td>
-<td valign="top"><img src="./info-card.svg?v=1" width="490" alt="Neofetch Info Card" /></td>
+<td valign="top" align="center"><img src="./color-loop.gif?v=2" width="370" alt="Ishaan Animated Portrait" /></td>
+<td valign="top"><img src="./info-card.svg?v=2" width="490" alt="Neofetch Info Card" /></td>
 </tr>
 </table>
 
@@ -40,13 +40,6 @@
   <a href="mailto:ishaansenres@gmail.com"><img src="https://img.shields.io/badge/Email-ishaansenres%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/IshaanYK"><img src="https://img.shields.io/badge/GitHub-IshaanYK-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
-
-<br>
-
-<!-- GitHub Trophies Banner -->
-<a href="https://github.com/IshaanYK">
-  <img src="https://github-profile-trophy.vercel.app/?username=IshaanYK&theme=onedark&column=6&margin-w=15&margin-h=15&no-bg=true&no-frame=true" width="860" alt="GitHub Trophies" />
-</a>
 
 <br><br>
 
@@ -97,6 +90,6 @@
 
 <!-- Animated Contribution Graph -->
 ### 📅 Animated Contribution Heatmap
-<img src="./contrib-heatmap.svg?v=1" width="860" alt="GitHub contribution graph" />
+<img src="./contrib-heatmap.svg?v=2" width="860" alt="GitHub contribution graph" />
 
 </div>
