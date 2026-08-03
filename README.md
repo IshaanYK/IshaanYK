@@ -121,4 +121,12 @@
 ### 📅 Animated Contribution Heatmap
 <img src="./contrib-heatmap.svg?v=3" width="860" alt="GitHub contribution graph" />
 
+<br><hr><br>
+
+<!-- Fork & Customization Footer -->
+<h3>🚀 Want to create your own animated profile?</h3>
+<p>
+  Check out the step-by-step <b><a href="./CUSTOMIZE.md">Customization Guide (CUSTOMIZE.md)</a></b> to fork this repository and set it up for your own GitHub profile in under 3 minutes!
+</p>
+
 </div>
