@@ -1,11 +1,11 @@
 <div align="center">
 
-<!-- Animated Header Typing Banner -->
+<!-- Local Animated Header Banner -->
 <a href="https://github.com/IshaanYK">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=58A6FF&center=true&vCenter=true&width=860&height=60&lines=Hi+there!+I'm+Ishaan+Sen+👋;AI+Engineer+%26+Full-Stack+Developer+🚀;Building+Autonomous+Agents+%26+RAG+Architectures+🤖;Crafting+High-Performance+Modern+Apps+⚡" alt="Typing Header" />
+  <img src="./header-banner.svg?v=1" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
 </a>
 
-<br>
+<br><br>
 
 <!-- Badges & Counters -->
 <p align="center">
@@ -18,7 +18,7 @@
 
 <!-- Interactive Audio/Music Player -->
 <a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank">
-  <img src="./music-player.svg" width="860" alt="Play Music" />
+  <img src="./music-player.svg?v=1" width="860" alt="Play Music" />
 </a>
 
 <br><br>
@@ -26,8 +26,8 @@
 <!-- Portrait + Neofetch Info Card -->
 <table>
 <tr>
-<td valign="top" align="center"><img src="./color-loop.gif" width="370" alt="Ishaan Animated Portrait" /></td>
-<td valign="top"><img src="./info-card.svg" width="490" alt="Neofetch Info Card" /></td>
+<td valign="top" align="center"><img src="./color-loop.gif?v=1" width="370" alt="Ishaan Animated Portrait" /></td>
+<td valign="top"><img src="./info-card.svg?v=1" width="490" alt="Neofetch Info Card" /></td>
 </tr>
 </table>
 
@@ -97,6 +97,6 @@
 
 <!-- Animated Contribution Graph -->
 ### 📅 Animated Contribution Heatmap
-<img src="./contrib-heatmap.svg" width="860" alt="GitHub contribution graph" />
+<img src="./contrib-heatmap.svg?v=1" width="860" alt="GitHub contribution graph" />
 
 </div>
