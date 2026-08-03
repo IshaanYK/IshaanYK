@@ -1,67 +1,87 @@
-<!--
-  This is your PROFILE README. It goes in a repo named exactly after your
-  username (e.g. github.com/IshaanYK/IshaanYK) so GitHub shows it on your profile.
-  Widths 370/490 keep the portrait and info card the same height.
--->
 <div align="center">
 
-# ⚡ Welcome to my Profile!
+<!-- Animated Header Typing Banner -->
+<a href="https://github.com/IshaanYK">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=58A6FF&center=true&vCenter=true&width=860&height=60&lines=Hi+there!+I'm+Ishaan+Sen+👋;AI+Engineer+%26+Full-Stack+Developer+🚀;Building+Autonomous+Agents+%26+RAG+Architectures+🤖;Crafting+High-Performance+Modern+Apps+⚡" alt="Typing Header" />
+</a>
 
-<!-- Profile views counter -->
-<img src="https://komarev.com/ghpvc/?username=IshaanYK&color=58a6ff&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+<br>
 
-<br><br>
+<!-- Badges & Counters -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://img.shields.io/badge/Status-Open_for_Collabs-3fb950?style=for-the-badge&logo=github" alt="Status Badge" />
+  <img src="https://img.shields.io/badge/Focus-AI_Agents_%26_FullStack-22d3ee?style=for-the-badge&logo=python" alt="Focus Badge" />
+</p>
 
-<!-- Music Player Widget -->
+<br>
+
+<!-- Interactive Audio/Music Player -->
 <a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank">
   <img src="./music-player.svg" width="860" alt="Play Music" />
 </a>
 
-<br>
+<br><br>
 
+<!-- Portrait + Neofetch Info Card -->
 <table>
 <tr>
-<td valign="top"><img src="./color-loop.gif" width="370" alt="Profile video" /></td>
-<td valign="top"><img src="./info-card.svg" width="490" alt="Experience, stack, highlights" /></td>
+<td valign="top" align="center"><img src="./color-loop.gif" width="370" alt="Ishaan Animated Portrait" /></td>
+<td valign="top"><img src="./info-card.svg" width="490" alt="Neofetch Info Card" /></td>
 </tr>
 </table>
 
-## ISHAAN
-**AI Engineer · Developer**
+<br>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-ishaanyk.github.io-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://ishaanyk.github.io/portfolio-me/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ishaan784-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ishaan784/)
-[![Email](https://img.shields.io/badge/Email-ishaansenres%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ishaansenres@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-IshaanYK-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IshaanYK)
+<!-- Social & Contact Badges -->
+<p align="center">
+  <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/Portfolio-ishaanyk.github.io-0d1117?style=for-the-badge&logo=vercel&logoColor=22d3ee" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/ishaan784/"><img src="https://img.shields.io/badge/LinkedIn-ishaan784-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:ishaansenres@gmail.com"><img src="https://img.shields.io/badge/Email-ishaansenres%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/IshaanYK"><img src="https://img.shields.io/badge/GitHub-IshaanYK-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
 
 <br>
 
-### 🛠️ Tech Stack & Skills
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=py,js,ts,react,nextjs,nodejs,fastapi,pytorch,postgres,docker,aws,github,githubactions,html,css" alt="My Skills" />
+<!-- GitHub Trophies Banner -->
+<a href="https://github.com/IshaanYK">
+  <img src="https://github-profile-trophy.vercel.app/?username=IshaanYK&theme=onedark&column=6&margin-w=15&margin-h=15&no-bg=true&no-frame=true" width="860" alt="GitHub Trophies" />
 </a>
 
 <br><br>
 
-### 📂 Featured Projects
+<!-- Tech Stack & Skills -->
+### 🛠️ Tech Stack & Ecosystem
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=py,js,ts,react,nextjs,nodejs,fastapi,pytorch,postgres,docker,aws,github,githubactions,html,css,tailwind,redis,git,vscode&perline=10" alt="My Tech Stack" />
+</a>
+
+<br><br>
+
+<!-- Featured Projects -->
+### 📂 Featured Open Source Projects
+
 <table>
 <tr>
 <td valign="top" width="50%">
-  <strong><a href="https://github.com/IshaanYK/call-agent">📞 call-agent</a></strong> <br>
-  <sub>An automated AI-powered agent configured to receive, parse, and respond to incoming voice calls.</sub> <br>
-  <code>JavaScript</code>
+  <a href="https://github.com/IshaanYK/call-agent"><strong>📞 call-agent</strong></a> <br><br>
+  <sub>An automated AI-powered agent configured to receive, parse, and respond to incoming voice calls in real time.</sub> <br><br>
+  <code>JavaScript</code> &nbsp; <code>AI Agent</code> &nbsp; <code>Automation</code>
 </td>
 <td valign="top" width="50%">
-  <strong><a href="https://github.com/IshaanYK/STORAGE-WIDGET">💾 STORAGE-WIDGET</a></strong> <br>
-  <sub>An auto-refreshing storage management widget designed for monitoring disk quotas and metrics.</sub> <br>
-  <code>Python</code>
+  <a href="https://github.com/IshaanYK/STORAGE-WIDGET"><strong>💾 STORAGE-WIDGET</strong></a> <br><br>
+  <sub>An auto-refreshing storage management widget designed for monitoring disk quotas, system performance, and metrics.</sub> <br><br>
+  <code>Python</code> &nbsp; <code>System Widget</code> &nbsp; <code>Analytics</code>
 </td>
 </tr>
 </table>
 
-<br>
+<br><br>
 
-### 📊 GitHub Statistics
+<!-- Interactive GitHub Analytics Section -->
+### 📊 GitHub Analytics & Activity
+
 <table>
 <tr>
 <td valign="top"><img src="https://github-stats-extended.vercel.app/api?username=IshaanYK&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=3fb950&border_color=30363d&hide_border=false" width="425" alt="GitHub Stats" /></td>
@@ -73,10 +93,10 @@
 </tr>
 </table>
 
-<br>
+<br><br>
 
-### 📅 Contribution Heatmap
-<!-- animated contribution graph, refreshed daily by the workflow -->
+<!-- Animated Contribution Graph -->
+### 📅 Animated Contribution Heatmap
 <img src="./contrib-heatmap.svg" width="860" alt="GitHub contribution graph" />
 
 </div>
