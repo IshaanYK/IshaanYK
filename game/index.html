@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>🎮 NEURAL DEFENDER — Ishaan's Cyber Arcade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Outfit:wght@600;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    body {
+      background-color: #05070d;
+      color: #f7f8f8;
+      font-family: 'JetBrains Mono', monospace;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      width: 100vw;
+    }
+
+    #game-container {
+      position: relative;
+      width: 860px;
+      max-width: 98vw;
+      height: 600px;
+      max-height: 90vh;
+      background: radial-gradient(circle at center, #0a0f1d 0%, #04060a 100%);
+      border: 2px solid #1f2d4a;
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(0, 242, 254, 0.15), 0 0 80px rgba(94, 106, 210, 0.1);
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Scanline effect */
+    .scanlines {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+      background-size: 100% 4px, 6px 100%;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    /* UI Overlay */
+    .ui-layer {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 18px 24px;
+    }
+
+    .top-hud {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hud-card {
+      background: rgba(13, 17, 23, 0.85);
+      border: 1px solid rgba(48, 54, 61, 0.8);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      backdrop-filter: blur(8px);
+    }
+
+    .score-val { color: #00f2fe; text-shadow: 0 0 10px rgba(0, 242, 254, 0.5); }
+    .streak-val { color: #39d353; text-shadow: 0 0 10px rgba(57, 211, 83, 0.5); }
+    .multiplier-val { color: #f2cc60; }
+    .hp-val { color: #ff0055; }
+
+    /* Start / Game Over Screen */
+    .modal-screen {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(4, 6, 10, 0.92);
+      backdrop-filter: blur(12px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      z-index: 10;
+      pointer-events: auto;
+    }
+
+    .game-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 44px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #00f2fe 0%, #5e6ad2 50%, #ff007f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .game-desc {
+      color: #8b949e;
+      font-size: 13.5px;
+      max-width: 540px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .btn-play {
+      background: linear-gradient(135deg, #00f2fe 0%, #5e6ad2 100%);
+      color: #04060a;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 800;
+      padding: 12px 36px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+      transition: all 0.2s ease;
+      letter-spacing: 1px;
+    }
+
+    .btn-play:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 242, 254, 0.7);
+    }
+
+    .controls-hint {
+      margin-top: 24px;
+      color: #7d8590;
+      font-size: 12px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .key-badge {
+      background: #161b22;
+      border: 1px solid #30363d;
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: #e6edf3;
+      font-weight: 700;
+    }
+
+    /* Mobile virtual touch buttons */
+    .mobile-controls {
+      display: none;
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      justify-content: space-between;
+      pointer-events: auto;
+    }
+
+    .touch-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background: rgba(22, 27, 34, 0.75);
+      border: 1px solid #30363d;
+      color: #00f2fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      touch-action: manipulation;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-controls { display: flex; }
+      .game-title { font-size: 32px; }
+      .controls-hint { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="game-container">
+  <canvas id="gameCanvas"></canvas>
+  <div class="scanlines"></div>
+
+  <!-- In-game UI HUD -->
+  <div class="ui-layer">
+    <div class="top-hud">
+      <div class="hud-card">❤️ HP: <span class="hp-val" id="hp-display">100</span></div>
+      <div class="hud-card">🏆 SCORE: <span class="score-val" id="score-display">0</span></div>
+      <div class="hud-card">⚡ COMBO: <span class="streak-val" id="combo-display">x1</span></div>
+      <div class="hud-card">🔥 HIGH: <span class="multiplier-val" id="high-display">0</span></div>
+    </div>
+  </div>
+
+  <!-- Start Screen -->
+  <div id="start-modal" class="modal-screen">
+    <div class="game-title">⚡ NEURAL DEFENDER</div>
+    <div class="game-desc">
+      Defend Ishaan's AI neural core! Destroy bugs, memory leaks &amp; syntax errors. Collect neural weights &amp; powerup capsules to supercharge your agent!
+    </div>
+    <button class="btn-play" id="start-btn">INSERT COIN / PLAY 🚀</button>
+    <div class="controls-hint">
+      <div><span class="key-badge">A</span> <span class="key-badge">D</span> / <span class="key-badge">←</span> <span class="key-badge">→</span> Move</div>
+      <div><span class="key-badge">SPACE</span> Fire Neural Laser</div>
+      <div><span class="key-badge">W</span> / <span class="key-badge">S</span> Thrust</div>
+    </div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="gameover-modal" class="modal-screen" style="display: none;">
+    <div class="game-title" style="background: linear-gradient(135deg, #ff0055 0%, #ffa657 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      💀 SYSTEM COMPROMISED
+    </div>
+    <div class="game-desc">
+      Final Score: <span class="score-val" id="final-score" style="font-size: 18px;">0</span><br>
+      High Score: <span class="multiplier-val" id="final-high" style="font-size: 18px;">0</span>
+    </div>
+    <button class="btn-play" id="restart-btn">REBOOT SYSTEM 🔄</button>
+  </div>
+
+  <!-- Mobile Controls -->
+  <div class="mobile-controls">
+    <div style="display: flex; gap: 12px;">
+      <div class="touch-btn" id="btn-left">◀</div>
+      <div class="touch-btn" id="btn-right">▶</div>
+    </div>
+    <div class="touch-btn" id="btn-fire" style="background: rgba(0, 242, 254, 0.2); border-color: #00f2fe;">🔥</div>
+  </div>
+</div>
+
+<script>
+  const canvas = document.getElementById('gameCanvas');
+  const ctx = canvas.getContext('2d');
+
+  function resize() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  // Audio Synthesizer (Zero asset dependencies)
+  const AudioCtx = window.AudioContext || window.webkitAudioContext;
+  let actx = null;
+  function playSound(type) {
+    if (!actx) {
+      try { actx = new AudioCtx(); } catch (e) {}
+    }
+    if (!actx) return;
+    try {
+      const osc = actx.createOscillator();
+      const gain = actx.createGain();
+      osc.connect(gain);
+      gain.connect(actx.destination);
+      const t = actx.currentTime;
+
+      if (type === 'laser') {
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(800, t);
+        osc.frequency.exponentialRampToValueAtTime(100, t + 0.12);
+        gain.gain.setValueAtTime(0.2, t);
+        gain.gain.linearRampToValueAtTime(0, t + 0.12);
+        osc.start(t);
+        osc.stop(t + 0.12);
+      } else if (type === 'hit') {
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(160, t);
+        osc.frequency.exponentialRampToValueAtTime(40, t + 0.18);
+        gain.gain.setValueAtTime(0.3, t);
+        gain.gain.linearRampToValueAtTime(0, t + 0.18);
+        osc.start(t);
+        osc.stop(t + 0.18);
+      } else if (type === 'powerup') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(300, t);
+        osc.frequency.exponentialRampToValueAtTime(1200, t + 0.25);
+        gain.gain.setValueAtTime(0.25, t);
+        gain.gain.linearRampToValueAtTime(0, t + 0.25);
+        osc.start(t);
+        osc.stop(t + 0.25);
+      }
+    } catch (e) {}
+  }
+
+  // Game State
+  let isPlaying = false;
+  let score = 0;
+  let highScore = parseInt(localStorage.getItem('ishaan_neural_hiscore') || '0', 10);
+  let hp = 100;
+  let combo = 1;
+  let comboTimer = 0;
+
+  document.getElementById('high-display').textContent = highScore;
+
+  // Starfield
+  const stars = [];
+  for (let i = 0; i < 80; i++) {
+    stars.push({
+      x: Math.random() * 1000,
+      y: Math.random() * 800,
+      z: Math.random() * 2 + 0.5,
+      color: Math.random() > 0.3 ? '#5e6ad2' : '#00f2fe'
+    });
+  }
+
+  // Entities
+  const player = {
+    x: 400,
+    y: 500,
+    w: 38,
+    h: 38,
+    vx: 0,
+    vy: 0,
+    speed: 7,
+    fireCooldown: 0,
+    shield: 0
+  };
+
+  let lasers = [];
+  let enemies = [];
+  let particles = [];
+  let powerups = [];
+
+  // Input Handling
+  const keys = {};
+  window.addEventListener('keydown', e => {
+    keys[e.code] = true;
+    if (e.code === 'Space') e.preventDefault();
+  });
+  window.addEventListener('keyup', e => { keys[e.code] = false; });
+
+  // Touch buttons
+  const bLeft = document.getElementById('btn-left');
+  const bRight = document.getElementById('btn-right');
+  const bFire = document.getElementById('btn-fire');
+
+  bLeft.addEventListener('touchstart', e => { e.preventDefault(); keys['ArrowLeft'] = true; });
+  bLeft.addEventListener('touchend', e => { e.preventDefault(); keys['ArrowLeft'] = false; });
+  bRight.addEventListener('touchstart', e => { e.preventDefault(); keys['ArrowRight'] = true; });
+  bRight.addEventListener('touchend', e => { e.preventDefault(); keys['ArrowRight'] = false; });
+  bFire.addEventListener('touchstart', e => { e.preventDefault(); keys['Space'] = true; });
+  bFire.addEventListener('touchend', e => { e.preventDefault(); keys['Space'] = false; });
+
+  // Enemy Types
+  const enemyTypes = [
+    { name: 'SyntaxError', color: '#ff0055', hp: 1, score: 100, radius: 14, speed: 2.2 },
+    { name: 'MemoryLeak', color: '#ff9500', hp: 3, score: 250, radius: 20, speed: 1.5 },
+    { name: 'NullPointer', color: '#a371f7', hp: 2, score: 180, radius: 16, speed: 2.8 },
+    { name: 'BossBug', color: '#00f2fe', hp: 8, score: 1000, radius: 30, speed: 0.9 }
+  ];
+
+  function spawnEnemy() {
+    if (!isPlaying) return;
+    const type = enemyTypes[Math.floor(Math.random() * (score > 1500 ? 4 : 3))];
+    enemies.push({
+      x: Math.random() * (canvas.width - 60) + 30,
+      y: -40,
+      type: type.name,
+      color: type.color,
+      hp: type.hp,
+      maxHp: type.hp,
+      score: type.score,
+      radius: type.radius,
+      vy: type.speed + Math.random() * 0.5,
+      vx: (Math.random() - 0.5) * 1.5,
+      rot: 0
+    });
+  }
+
+  function createExplosion(x, y, color, count = 16) {
+    for (let i = 0; i < count; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const speed = Math.random() * 5 + 1;
+      particles.push({
+        x, y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        life: 1,
+        decay: Math.random() * 0.03 + 0.02,
+        color,
+        size: Math.random() * 3.5 + 1.5
+      });
+    }
+  }
+
+  let spawnTimer = 0;
+
+  function update() {
+    if (!isPlaying) return;
+
+    // Player Movement
+    if (keys['KeyA'] || keys['ArrowLeft']) player.vx = -player.speed;
+    else if (keys['KeyD'] || keys['ArrowRight']) player.vx = player.speed;
+    else player.vx *= 0.8;
+
+    if (keys['KeyW'] || keys['ArrowUp']) player.vy = -player.speed * 0.7;
+    else if (keys['KeyS'] || keys['ArrowDown']) player.vy = player.speed * 0.7;
+    else player.vy *= 0.8;
+
+    player.x += player.vx;
+    player.y += player.vy;
+
+    // Boundaries
+    player.x = Math.max(30, Math.min(canvas.width - 30, player.x));
+    player.y = Math.max(80, Math.min(canvas.height - 40, player.y));
+
+    // Shooting
+    if (player.fireCooldown > 0) player.fireCooldown--;
+    if ((keys['Space'] || keys['KeyZ']) && player.fireCooldown <= 0) {
+      lasers.push({ x: player.x - 10, y: player.y - 18, vy: -12, color: '#00f2fe' });
+      lasers.push({ x: player.x + 10, y: player.y - 18, vy: -12, color: '#00f2fe' });
+      playSound('laser');
+      player.fireCooldown = 9;
+    }
+
+    // Lasers Update
+    lasers.forEach((l, li) => {
+      l.y += l.vy;
+      if (l.y < -20) lasers.splice(li, 1);
+    });
+
+    // Spawn Enemies
+    spawnTimer++;
+    if (spawnTimer > Math.max(25, 60 - Math.floor(score / 500))) {
+      spawnEnemy();
+      spawnTimer = 0;
+    }
+
+    // Enemies Update & Collision
+    enemies.forEach((e, ei) => {
+      e.y += e.vy;
+      e.x += e.vx;
+      e.rot += 0.03;
+
+      if (e.x < e.radius || e.x > canvas.width - e.radius) e.vx *= -1;
+
+      // Check collision with lasers
+      lasers.forEach((l, li) => {
+        const dist = Math.hypot(e.x - l.x, e.y - l.y);
+        if (dist < e.radius + 6) {
+          e.hp--;
+          lasers.splice(li, 1);
+          createExplosion(l.x, l.y, '#00f2fe', 6);
+          playSound('hit');
+
+          if (e.hp <= 0) {
+            createExplosion(e.x, e.y, e.color, 24);
+            score += e.score * combo;
+            comboTimer = 180;
+            combo = Math.min(10, combo + 1);
+
+            // Chance to drop powerup
+            if (Math.random() < 0.2) {
+              powerups.push({ x: e.x, y: e.y, vy: 2, type: Math.random() > 0.5 ? 'hp' : 'buff' });
+            }
+
+            enemies.splice(ei, 1);
+          }
+        }
+      });
+
+      // Check collision with player
+      const pDist = Math.hypot(e.x - player.x, e.y - player.y);
+      if (pDist < e.radius + 18) {
+        hp -= 20;
+        createExplosion(player.x, player.y, '#ff0055', 20);
+        playSound('hit');
+        enemies.splice(ei, 1);
+        combo = 1;
+
+        if (hp <= 0) {
+          gameOver();
+        }
+      }
+
+      if (e.y > canvas.height + 40) {
+        enemies.splice(ei, 1);
+        combo = 1;
+      }
+    });
+
+    // Powerups
+    powerups.forEach((p, pi) => {
+      p.y += p.vy;
+      const dist = Math.hypot(p.x - player.x, p.y - player.y);
+      if (dist < 30) {
+        if (p.type === 'hp') {
+          hp = Math.min(100, hp + 25);
+        } else {
+          score += 500;
+        }
+        playSound('powerup');
+        createExplosion(p.x, p.y, '#39d353', 14);
+        powerups.splice(pi, 1);
+      }
+      if (p.y > canvas.height + 20) powerups.splice(pi, 1);
+    });
+
+    // Particles
+    particles.forEach((p, pi) => {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.life -= p.decay;
+      if (p.life <= 0) particles.splice(pi, 1);
+    });
+
+    // Combo decay
+    if (comboTimer > 0) {
+      comboTimer--;
+      if (comboTimer <= 0) combo = 1;
+    }
+
+    // UI Updates
+    document.getElementById('score-display').textContent = score;
+    document.getElementById('hp-display').textContent = Math.max(0, hp);
+    document.getElementById('combo-display').textContent = 'x' + combo;
+    if (score > highScore) {
+      highScore = score;
+      document.getElementById('high-display').textContent = highScore;
+      localStorage.setItem('ishaan_neural_hiscore', highScore.toString());
+    }
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw Starfield
+    stars.forEach(s => {
+      s.y += s.z * (isPlaying ? 1.5 : 0.4);
+      if (s.y > canvas.height) {
+        s.y = 0;
+        s.x = Math.random() * canvas.width;
+      }
+      ctx.fillStyle = s.color;
+      ctx.fillRect(s.x, s.y, s.z, s.z * 2);
+    });
+
+    // Draw Particles
+    particles.forEach(p => {
+      ctx.save();
+      ctx.globalAlpha = p.life;
+      ctx.fillStyle = p.color;
+      ctx.shadowBlur = 8;
+      ctx.shadowColor = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    });
+
+    // Draw Powerups
+    powerups.forEach(p => {
+      ctx.save();
+      ctx.fillStyle = p.type === 'hp' ? '#39d353' : '#f2cc60';
+      ctx.shadowBlur = 12;
+      ctx.shadowColor = ctx.fillStyle;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    });
+
+    // Draw Lasers
+    lasers.forEach(l => {
+      ctx.save();
+      ctx.fillStyle = l.color;
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = l.color;
+      ctx.fillRect(l.x - 2, l.y, 4, 16);
+      ctx.restore();
+    });
+
+    // Draw Enemies
+    enemies.forEach(e => {
+      ctx.save();
+      ctx.translate(e.x, e.y);
+      ctx.rotate(e.rot);
+      ctx.fillStyle = e.color;
+      ctx.shadowBlur = 14;
+      ctx.shadowColor = e.color;
+
+      // Hexagon Bug Geometry
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) {
+        const ang = (i * Math.PI) / 3;
+        const hx = Math.cos(ang) * e.radius;
+        const hy = Math.sin(ang) * e.radius;
+        if (i === 0) ctx.moveTo(hx, hy);
+        else ctx.lineTo(hx, hy);
+      }
+      ctx.closePath();
+      ctx.fill();
+
+      // Enemy core icon
+      ctx.fillStyle = '#0d1117';
+      ctx.beginPath();
+      ctx.arc(0, 0, e.radius * 0.5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    });
+
+    // Draw Player Ship (Cyber Falcon)
+    if (isPlaying) {
+      ctx.save();
+      ctx.translate(player.x, player.y);
+
+      // Ship thruster glow
+      ctx.fillStyle = '#00f2fe';
+      ctx.shadowBlur = 16;
+      ctx.shadowColor = '#00f2fe';
+      ctx.beginPath();
+      ctx.moveTo(-8, 16);
+      ctx.lineTo(8, 16);
+      ctx.lineTo(0, 24 + Math.random() * 8);
+      ctx.closePath();
+      ctx.fill();
+
+      // Main Chassis
+      ctx.fillStyle = '#e6edf3';
+      ctx.beginPath();
+      ctx.moveTo(0, -20);
+      ctx.lineTo(18, 14);
+      ctx.lineTo(8, 10);
+      ctx.lineTo(0, 14);
+      ctx.lineTo(-8, 10);
+      ctx.lineTo(-18, 14);
+      ctx.closePath();
+      ctx.fill();
+
+      // Cockpit Neural Orb
+      ctx.fillStyle = '#5e6ad2';
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = '#5e6ad2';
+      ctx.beginPath();
+      ctx.arc(0, -2, 5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    requestAnimationFrame(() => {
+      update();
+      draw();
+    });
+  }
+
+  function startGame() {
+    score = 0;
+    hp = 100;
+    combo = 1;
+    lasers = [];
+    enemies = [];
+    particles = [];
+    powerups = [];
+    player.x = canvas.width / 2;
+    player.y = canvas.height - 80;
+    isPlaying = true;
+    document.getElementById('start-modal').style.display = 'none';
+    document.getElementById('gameover-modal').style.display = 'none';
+    playSound('powerup');
+  }
+
+  function gameOver() {
+    isPlaying = false;
+    document.getElementById('final-score').textContent = score;
+    document.getElementById('final-high').textContent = highScore;
+    document.getElementById('gameover-modal').style.display = 'flex';
+    playSound('hit');
+  }
+
+  document.getElementById('start-btn').addEventListener('click', startGame);
+  document.getElementById('restart-btn').addEventListener('click', startGame);
+
+  // Initialize loop
+  requestAnimationFrame(() => {
+    update();
+    draw();
+  });
+</script>
+</body>
+</html>

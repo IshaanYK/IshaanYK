@@ -1,0 +1,88 @@
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(HERE, "..", "arcade-game-banner.svg")
+
+W, H = 860, 136
+
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <defs>
+    <linearGradient id="arcCabinetBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0717"/>
+      <stop offset="50%" stop-color="#0e1322"/>
+      <stop offset="100%" stop-color="#060912"/>
+    </linearGradient>
+
+    <linearGradient id="arcNeonBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#ff007f;#5e6ad2;#39d353;#00f2fe" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f;#5e6ad2;#39d353;#00f2fe;#ff007f" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#39d353">
+        <animate attributeName="stop-color" values="#39d353;#00f2fe;#ff007f;#5e6ad2;#39d353" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="playBtnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#5e6ad2"/>
+    </linearGradient>
+
+    <style>
+      @keyframes blinkPlay {{
+        0%, 100% {{ opacity: 1; filter: drop-shadow(0 0 8px #00f2fe); }}
+        50% {{ opacity: 0.3; filter: drop-shadow(0 0 1px #00f2fe); }}
+      }}
+      @keyframes coinPulse {{
+        0%, 100% {{ transform: scale(1); fill: #f2cc60; }}
+        50% {{ transform: scale(1.08); fill: #ffffff; }}
+      }}
+      @keyframes pixelShipMove {{
+        0% {{ transform: translateY(0); }}
+        50% {{ transform: translateY(-4px); }}
+        100% {{ transform: translateY(0); }}
+      }}
+      .play-btn {{ animation: blinkPlay 1.6s ease-in-out infinite; }}
+      .coin-slot {{ animation: coinPulse 1.2s infinite; transform-origin: center; }}
+      .pixel-ship {{ animation: pixelShipMove 2s ease-in-out infinite; }}
+    </style>
+  </defs>
+
+  <rect width="{W}" height="{H}" rx="14" fill="url(#arcCabinetBg)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="url(#arcNeonBorder)" stroke-width="1.8"/>
+
+  <g transform="translate(32, 68)" class="pixel-ship">
+    <circle cx="0" cy="0" r="22" fill="#5e6ad2" opacity="0.25"/>
+    <polygon points="0,-18 16,12 6,8 0,12 -6,8 -16,12" fill="#00f2fe"/>
+    <circle cx="0" cy="-2" r="4" fill="#ffffff"/>
+  </g>
+
+  <g transform="translate(76, 38)">
+    <text x="0" y="0" fill="#00f2fe" font-size="14" font-weight="900" letter-spacing="1.5px">🕹️ PLAYABLE PROFILE GAME: NEURAL DEFENDER</text>
+    <text x="0" y="24" fill="#8b949e" font-size="11.5">
+      Defend Ishaan's AI Core against syntax errors &amp; memory bugs in silky 60fps HTML5 arcade action!
+    </text>
+  </g>
+
+  <g transform="translate(76, 78)">
+    <rect x="0" y="0" width="310" height="38" rx="19" fill="url(#playBtnGrad)" class="play-btn"/>
+    <polygon points="20,13 32,19 20,25" fill="#04060a"/>
+    <text x="42" y="24" fill="#04060a" font-size="12.5" font-weight="900" letter-spacing="0.5px">
+      ► LAUNCH GAME IN BROWSER
+    </text>
+  </g>
+
+  <g transform="translate(420, 84)">
+    <rect x="0" y="0" width="410" height="32" rx="6" fill="#141824" stroke="#30363d" stroke-width="0.8"/>
+    <text x="16" y="20" fill="#39d353" font-size="11" font-weight="700">● 60 FPS CANVAS</text>
+    <text x="145" y="20" fill="#f2cc60" font-size="11" font-weight="700" class="coin-slot">🪙 FREE PLAY</text>
+    <text x="250" y="20" fill="#ff007f" font-size="11" font-weight="700">⚡ AUDIO SYNTH SFX</text>
+  </g>
+</svg>
+"""
+
+with open(OUT, "w", encoding="utf-8") as f:
+    f.write(svg)
+print("wrote", OUT)

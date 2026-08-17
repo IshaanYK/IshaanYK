@@ -2,7 +2,7 @@
 
 <!-- Cyber Animated Header Banner -->
 <a href="https://github.com/IshaanYK">
-  <img src="./header-banner.svg?v=4" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
+  <img src="./header-banner.svg?v=5" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
 </a>
 
 <br><br>
@@ -18,16 +18,23 @@
 
 <br>
 
+<!-- 🕹️ Playable Arcade Game Banner Link -->
+<a href="https://ishaanyk.github.io/IshaanYK/game/" target="_blank" title="Click to Play Neural Defender in Browser!">
+  <img src="./arcade-game-banner.svg?v=5" width="860" alt="Play Neural Defender Browser Game" />
+</a>
+
+<br><br>
+
 <!-- Interactive Audio & Music Player -->
 <a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank" title="Click to listen to Expresso Ambient Beats">
-  <img src="./music-player.svg?v=4" width="860" alt="Play Ambient Audio Track" />
+  <img src="./music-player.svg?v=5" width="860" alt="Play Ambient Audio Track" />
 </a>
 
 <br><br>
 
 <!-- 🎮 RPG Character Stats & Vital HUD -->
 <a href="https://github.com/IshaanYK">
-  <img src="./gaming-hud.svg?v=4" width="860" alt="RPG Gaming Status HUD" />
+  <img src="./gaming-hud.svg?v=5" width="860" alt="RPG Gaming Status HUD" />
 </a>
 
 <br><br>
@@ -35,8 +42,8 @@
 <!-- Portrait + Cyber Neofetch Info Card Bento -->
 <table>
 <tr>
-<td valign="top" align="center" width="370"><img src="./color-loop.gif?v=4" width="370" alt="Ishaan Animated Portrait" /></td>
-<td valign="top" align="center" width="490"><img src="./info-card.svg?v=4" width="490" alt="Neofetch Info Card" /></td>
+<td valign="top" align="center" width="370"><img src="./color-loop.gif?v=5" width="370" alt="Ishaan Animated Portrait" /></td>
+<td valign="top" align="center" width="490"><img src="./info-card.svg?v=5" width="490" alt="Neofetch Info Card" /></td>
 </tr>
 </table>
 
@@ -61,7 +68,7 @@
 
 - 🎓 **Academic Academy**: Student at **Indian Institute of Technology Madras (IIT Madras)**.
 - 🤖 **Main Quest**: Designing autonomous multi-agent pipelines, real-time voice AI, and self-improving neural frameworks.
-- 🎮 **Side Quests**: Immersive 3D graphics (Three.js / WebGL / Shaders), low-latency networking, and gaming tech.
+- 🎮 **Side Quests**: Immersive 3D graphics (Three.js / WebGL / Shaders), HTML5 arcade games, and low-latency systems.
 - ⚡ **Combat Gear**: Python, Next.js, PyTorch, TypeScript, Docker, and ultra-responsive 60fps+ UIs.
 
 <br>
@@ -140,14 +147,14 @@
 </tr>
 <tr>
 <td valign="top" width="50%">
+  <a href="https://github.com/IshaanYK/IshaanYK/tree/main/game"><strong>🎮 NEURAL DEFENDER (Arcade Game)</strong></a> <br><br>
+  <sub>A 60fps fast-paced HTML5 Canvas cyberpunk space shooter built with custom particle physics and Web Audio synth SFX.</sub> <br><br>
+  <code>HTML5 Canvas</code> &nbsp; <code>JavaScript</code> &nbsp; <code>Web Audio</code> &nbsp; <a href="https://ishaanyk.github.io/IshaanYK/game/"><strong>Play Live 🚀</strong></a>
+</td>
+<td valign="top" width="50%">
   <a href="https://github.com/IshaanYK/portfolio-me"><strong>🌐 portfolio-me</strong></a> <br><br>
   <sub>A high-performance, responsive personal website and showcase crafted with modern web standards and smooth interactions.</sub> <br><br>
   <code>HTML5</code> &nbsp; <code>CSS3</code> &nbsp; <code>JavaScript</code> &nbsp; <code>Live Showcase</code>
-</td>
-<td valign="top" width="50%">
-  <a href="https://github.com/IshaanYK"><strong>🤖 AI Multi-Agent Workflows</strong></a> <br><br>
-  <sub>Custom autonomous agent pipelines leveraging LLM tool calling, memory management, and structured execution loops.</sub> <br><br>
-  <code>Python</code> &nbsp; <code>LangChain</code> &nbsp; <code>RAG</code> &nbsp; <code>Vector DB</code>
 </td>
 </tr>
 </table>
@@ -171,13 +178,13 @@
 <br><br>
 
 <!-- 🕹️ Retro Arcade Snake Game -->
-<img src="./retro-snake.svg?v=4" width="860" alt="Retro Arcade Contribution Snake Game" />
+<img src="./retro-snake.svg?v=5" width="860" alt="Retro Arcade Contribution Snake Game" />
 
 <br><br>
 
 <!-- Animated Contribution Graph -->
 ### 📅 Animated Contribution Heatmap
-<img src="./contrib-heatmap.svg?v=4" width="860" alt="GitHub contribution graph" />
+<img src="./contrib-heatmap.svg?v=5" width="860" alt="GitHub contribution graph" />
 
 <br><hr><br>
 
