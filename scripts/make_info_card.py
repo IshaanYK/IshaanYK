@@ -1,8 +1,3 @@
-"""
-Build a neofetch-style info card SVG (Andrew6rant style) to sit to the RIGHT of
-the ASCII portrait: colored key/value rows for work experience, tech stack, and
-highlights.
-"""
 import html
 import os
 
@@ -18,12 +13,12 @@ VAL_X = PAD + 95
 LINE_H = 21
 
 BG = "#0d1117"
-BG2 = "#161b22"
+BG2 = "#0a0e17"
 FRAME = "#30363d"
 MUTED = "#8b949e"
 INK = "#e6edf3"
-KEY = "#ffa657"      # orange keys
-SECTION = "#4facfe"  # blue section headers
+KEY = "#ffa657"
+SECTION = "#4facfe"
 GREEN = "#3fb950"
 CYAN = "#00f2fe"
 PURPLE = "#a371f7"
@@ -35,19 +30,19 @@ ROWS = [
     ("host",),
     ("kv", "Role", "AI Engineer & Full-Stack Developer"),
     ("kv", "Edu", "Indian Institute of Technology Madras"),
-    ("kv", "Focus", "Autonomous AI Agents & RAG Pipelines"),
-    ("kv", "Status", "🟢 Available for AI/ML & Web Projects"),
+    ("kv", "Focus", "Autonomous Multi-Agent AI & RAG Systems"),
+    ("kv", "Status", "🟢 Available for High-Impact Projects"),
     ("kv", "Portfolio", "ishaanyk.github.io/portfolio-me/"),
     ("gap",),
-    ("sec", "Tech Ecosystem"),
-    ("kv", "Languages", "Python, TypeScript, JavaScript, SQL"),
-    ("kv", "AI / ML", "PyTorch, OpenAI API, LangChain, RAG"),
-    ("kv", "FullStack", "React, Next.js, Node.js, FastAPI, Tailwind"),
-    ("kv", "Infra", "Docker, PostgreSQL, Redis, AWS, GitHub Actions"),
+    ("sec", "Core Tech Ecosystem"),
+    ("kv", "Languages", "Python, TypeScript, JavaScript, SQL, C++"),
+    ("kv", "AI / ML", "PyTorch, LangChain, CrewAI, RAG, Voice AI"),
+    ("kv", "Full-Stack", "Next.js 15, React 19, FastAPI, Node.js, Tailwind"),
+    ("kv", "Database", "PostgreSQL, Redis, Pinecone, ChromaDB, SQLite"),
     ("gap",),
-    ("sec", "Highlights & Hobbies"),
-    ("bul", "Building custom multi-agent autonomous tools"),
-    ("bul", "Crafting ultra-smooth interactive UI/UX experiences"),
+    ("sec", "Highlights & Passions"),
+    ("bul", "Architecting autonomous voice agents & multi-agent loops"),
+    ("bul", "Designing luxury, silky 60fps+ dark-mode interfaces"),
 ]
 
 
@@ -56,7 +51,6 @@ def esc(s):
 
 
 def rise(inner, i):
-    """fade + slight upward slide, staggered by row index; freezes visible."""
     if STATIC:
         return f"<g>{inner}</g>"
     delay = 0.10 + i * 0.04
@@ -68,13 +62,13 @@ def rise(inner, i):
 
 parts = [
     f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-    f'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
+    f'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, \'Liberation Mono\', monospace">',
     '<defs>',
     f'<linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">',
-    f'<stop offset="0%" stop-color="#0a0e17"/><stop offset="100%" stop-color="{BG}"/></linearGradient>',
+    f'<stop offset="0%" stop-color="{BG2}"/><stop offset="100%" stop-color="{BG}"/></linearGradient>',
     f'<linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">',
-    f'<stop offset="0%" stop-color="{CYAN}"/>',
-    f'<stop offset="50%" stop-color="{SECTION}"/>',
+    f'<stop offset="0%" stop-color="{PURPLE}"/>',
+    f'<stop offset="50%" stop-color="{CYAN}"/>',
     f'<stop offset="100%" stop-color="{PURPLE}"/>',
     f'</linearGradient>',
     '<style>',
@@ -83,7 +77,7 @@ parts = [
     '</style>',
     '</defs>',
     f'<rect width="{W}" height="{H}" rx="12" fill="url(#ibg)"/>',
-    f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="url(#cardGlow)" stroke-width="1.5" stroke-opacity="0.8"/>',
+    f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="url(#cardGlow)" stroke-width="1.5" stroke-opacity="0.85"/>',
     f'<line x1="0" y1="{TITLEBAR_H}" x2="{W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
 ]
 
@@ -115,7 +109,7 @@ for i, row in enumerate(ROWS):
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "kv":
         key, val = esc(row[1]), esc(row[2])
-        val_color = GREEN if "🟢" in val else (GOLD if "IIT" in val else INK)
+        val_color = GREEN if "🟢" in val else (GOLD if "IIT" in val else (CYAN if "portfolio" in key.lower() else INK))
         inner = (f'<text x="{KEY_X}" y="{y:.1f}" fill="{KEY}" font-size="12" font-weight="700">{key}</text>'
                  f'<text x="{VAL_X}" y="{y:.1f}" fill="{val_color}" font-size="12">{val}</text>')
     elif kind == "bul":

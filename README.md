@@ -2,7 +2,7 @@
 
 <!-- Cyber Animated Header Banner -->
 <a href="https://github.com/IshaanYK">
-  <img src="./header-banner.svg?v=3" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
+  <img src="./header-banner.svg?v=4" width="860" alt="Ishaan Sen - AI Engineer & Full Stack Developer" />
 </a>
 
 <br><br>
@@ -10,25 +10,25 @@
 <!-- Badges & Status Pills -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
-  <img src="https://img.shields.io/badge/Education-IIT_Madras-f2cc60?style=for-the-badge&logo=education" alt="IIT Madras" />
-  <img src="https://img.shields.io/badge/Status-Open_for_Collabs-3fb950?style=for-the-badge&logo=github" alt="Status Badge" />
-  <img src="https://img.shields.io/badge/Focus-AI_Agents_%26_FullStack-00f2fe?style=for-the-badge&logo=python" alt="Focus Badge" />
+  <a href="https://www.iitm.ac.in/"><img src="https://img.shields.io/badge/Education-IIT_Madras-f2cc60?style=for-the-badge&logo=education&logoColor=0d1117" alt="IIT Madras" /></a>
+  <img src="https://img.shields.io/badge/Status-Open_for_Collabs-3fb950?style=for-the-badge&logo=github&logoColor=white" alt="Status Badge" />
+  <img src="https://img.shields.io/badge/Focus-AI_Agents_%26_FullStack-00f2fe?style=for-the-badge&logo=python&logoColor=0d1117" alt="Focus Badge" />
 </p>
 
 <br>
 
 <!-- Interactive Audio & Music Player -->
-<a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank">
-  <img src="./music-player.svg?v=3" width="860" alt="Play Music" />
+<a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank" title="Click to listen to Expresso Ambient Beats">
+  <img src="./music-player.svg?v=4" width="860" alt="Play Ambient Audio Track" />
 </a>
 
 <br><br>
 
-<!-- Portrait + Cyber Neofetch Info Card -->
+<!-- Portrait + Cyber Neofetch Info Card Bento -->
 <table>
 <tr>
-<td valign="top" align="center"><img src="./color-loop.gif?v=3" width="370" alt="Ishaan Animated Portrait" /></td>
-<td valign="top"><img src="./info-card.svg?v=3" width="490" alt="Neofetch Info Card" /></td>
+<td valign="top" align="center" width="370"><img src="./color-loop.gif?v=4" width="370" alt="Ishaan Animated Portrait" /></td>
+<td valign="top" align="center" width="490"><img src="./info-card.svg?v=4" width="490" alt="Neofetch Info Card" /></td>
 </tr>
 </table>
 
@@ -44,57 +44,69 @@
 
 <br>
 
-<!-- Expandable Bio & Quote Section -->
+<!-- Expandable Bio & Tech Philosophy -->
 <details>
-<summary><b>✨ Click to reveal Quick Bio & Tech Philosophy 💡</b></summary>
+<summary><b>✨ Click to reveal Bio, Tech Stack Philosophy &amp; Vision 💡</b></summary>
 <br>
 
 > *"The best way to predict the future is to invent it."* — Alan Kay
 
-- 🎓 **Education**: Pursuing degree at **Indian Institute of Technology Madras (IIT Madras)**.
-- 🤖 **Specialization**: Building autonomous multi-agent workflows, custom RAG pipelines, and intelligent tools.
-- ⚡ **Core Mindset**: Writing clean, high-performance, GPU-accelerated code and crafting silky 60fps+ UI/UX.
-- 🚀 **Currently Exploring**: Next-gen Agentic Coding frameworks, distributed vector indexing, and real-time voice AI.
+- 🎓 **Academic Background**: Student at **Indian Institute of Technology Madras (IIT Madras)**.
+- 🤖 **Core Focus**: Designing autonomous agentic workflows, production-ready RAG architectures, and real-time voice intelligence.
+- ⚡ **Engineering Principles**: Building clean, scalable, GPU-accelerated backends with silky 60fps+ interactive frontends.
+- 🚀 **Currently Exploring**: Next-gen Agent Frameworks, distributed vector index optimizations, and multi-agent coordination systems.
 
 <br>
 </details>
 
 <br><br>
 
-<!-- Categorized Tech Ecosystem Grid -->
+<!-- Categorized Tech Stack Ecosystem Grid -->
 ### 🛠️ Tech Stack & Ecosystem
 
 <p align="center">
-  <b>🧠 AI, ML & Data Science</b><br>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,opencv,fastapi,postgres&perline=6" alt="AI & ML" /></a>
+  <b>🧠 AI, Machine Learning & Intelligent Agents</b><br>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,fastapi,postgres,opencv&perline=6" alt="AI & ML" /></a>
 </p>
 
 <p align="center">
-  <b>⚡ Frontend & UI Engineering</b><br>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,html,css,redux&perline=8" alt="Frontend" /></a>
+  <b>⚡ Frontend & UI/UX Engineering</b><br>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,redux,html,css,vite,threejs&perline=10" alt="Frontend" /></a>
 </p>
 
 <p align="center">
-  <b>⚙️ Backend, Cloud & DevOps</b><br>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,docker,aws,githubactions,redis,git,linux,vscode&perline=8" alt="Backend & Cloud" /></a>
+  <b>⚙️ Backend, Cloud & DevOps Infrastructure</b><br>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,fastapi,docker,aws,gcp,githubactions,redis,git,linux,vscode&perline=10" alt="Backend & Cloud" /></a>
 </p>
 
 <br><br>
 
-<!-- Featured Projects -->
-### 📂 Featured Open Source Projects
+<!-- Featured Projects Showcase -->
+### 📂 Featured Open-Source Projects
 
 <table>
 <tr>
 <td valign="top" width="50%">
   <a href="https://github.com/IshaanYK/call-agent"><strong>📞 call-agent</strong></a> <br><br>
-  <sub>An automated AI-powered agent configured to receive, parse, and respond to incoming voice calls in real time.</sub> <br><br>
-  <code>JavaScript</code> &nbsp; <code>AI Agent</code> &nbsp; <code>Voice AI</code>
+  <sub>An automated AI-powered agent configured to receive, parse, and respond to incoming voice calls in real time with high speech-to-text accuracy.</sub> <br><br>
+  <code>JavaScript</code> &nbsp; <code>Voice AI</code> &nbsp; <code>Speech API</code> &nbsp; <code>Autonomous Agent</code>
 </td>
 <td valign="top" width="50%">
   <a href="https://github.com/IshaanYK/STORAGE-WIDGET"><strong>💾 STORAGE-WIDGET</strong></a> <br><br>
-  <sub>An auto-refreshing storage management widget designed for monitoring disk quotas, system performance, and metrics.</sub> <br><br>
-  <code>Python</code> &nbsp; <code>System Widget</code> &nbsp; <code>Analytics</code>
+  <sub>An auto-refreshing, lightweight storage management widget designed for monitoring disk quotas, system performance, and live I/O metrics.</sub> <br><br>
+  <code>Python</code> &nbsp; <code>System Widget</code> &nbsp; <code>Analytics</code> &nbsp; <code>Performance</code>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+  <a href="https://github.com/IshaanYK/portfolio-me"><strong>🌐 portfolio-me</strong></a> <br><br>
+  <sub>A high-performance, responsive personal website and showcase crafted with modern web standards and smooth interactions.</sub> <br><br>
+  <code>HTML5</code> &nbsp; <code>CSS3</code> &nbsp; <code>JavaScript</code> &nbsp; <code>Live Showcase</code>
+</td>
+<td valign="top" width="50%">
+  <a href="https://github.com/IshaanYK"><strong>🤖 AI Multi-Agent Workflows</strong></a> <br><br>
+  <sub>Custom autonomous agent pipelines leveraging LLM tool calling, memory management, and structured execution loops.</sub> <br><br>
+  <code>Python</code> &nbsp; <code>LangChain</code> &nbsp; <code>RAG</code> &nbsp; <code>Vector DB</code>
 </td>
 </tr>
 </table>
@@ -119,14 +131,14 @@
 
 <!-- Animated Contribution Graph -->
 ### 📅 Animated Contribution Heatmap
-<img src="./contrib-heatmap.svg?v=3" width="860" alt="GitHub contribution graph" />
+<img src="./contrib-heatmap.svg?v=4" width="860" alt="GitHub contribution graph" />
 
 <br><hr><br>
 
 <!-- Fork & Customization Footer -->
-<h3>🚀 Want to create your own animated profile?</h3>
+<h3>🚀 Want to build your own animated profile?</h3>
 <p>
-  Check out the step-by-step <b><a href="./CUSTOMIZE.md">Customization Guide (CUSTOMIZE.md)</a></b> to fork this repository and set it up for your own GitHub profile in under 3 minutes!
+  Check out the step-by-step <b><a href="./CUSTOMIZE.md">Customization Guide (CUSTOMIZE.md)</a></b> to fork this repository and customize it for your GitHub profile in minutes!
 </p>
 
 </div>
