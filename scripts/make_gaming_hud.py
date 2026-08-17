@@ -1,0 +1,144 @@
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(HERE, "..", "gaming-hud.svg")
+
+W, H = 860, 240
+
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <defs>
+    <linearGradient id="hudbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="50%" stop-color="#0c101a"/>
+      <stop offset="100%" stop-color="#040609"/>
+    </linearGradient>
+
+    <linearGradient id="hudBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0055">
+        <animate attributeName="stop-color" values="#ff0055;#00f2fe;#a371f7;#39d353;#ff0055" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#a371f7;#ff0055;#00f2fe" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#a371f7">
+        <animate attributeName="stop-color" values="#a371f7;#39d353;#ff0055;#a371f7" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="hpGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff2d55"/>
+      <stop offset="100%" stop-color="#ff9500"/>
+    </linearGradient>
+
+    <linearGradient id="mpGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#007aff"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+
+    <linearGradient id="xpGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a371f7"/>
+      <stop offset="100%" stop-color="#39d353"/>
+    </linearGradient>
+
+    <pattern id="hexGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 24 6.9 L 24 20.8 L 12 27.7 L 0 20.8 L 0 6.9 Z" fill="none" stroke="#1f2d4a" stroke-width="0.6" opacity="0.25"/>
+    </pattern>
+
+    <style>
+      @keyframes pulseText {{
+        0%, 100% {{ opacity: 0.9; filter: drop-shadow(0 0 2px #00f2fe); }}
+        50% {{ opacity: 1; filter: drop-shadow(0 0 8px #a371f7); }}
+      }}
+      .glow-hud {{ animation: pulseText 3s infinite; }}
+    </style>
+  </defs>
+
+  <rect width="{W}" height="{H}" rx="14" fill="url(#hudbg)"/>
+  <rect width="{W}" height="{H}" rx="14" fill="url(#hexGrid)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="url(#hudBorder)" stroke-width="1.8"/>
+
+  <rect x="18" y="14" width="824" height="28" rx="6" fill="#141926" stroke="#242e42" stroke-width="1"/>
+  <circle cx="34" cy="28" r="5" fill="#ff0055"/>
+  <circle cx="48" cy="28" r="5" fill="#ffbd2e"/>
+  <circle cx="62" cy="28" r="5" fill="#00f2fe"/>
+  
+  <text x="80" y="32" fill="#00f2fe" font-size="12" font-weight="800" letter-spacing="1.5px">🎮 RPG STATUS HUD</text>
+  <text x="240" y="32" fill="#8b949e" font-size="11">[PLAYER: <tspan fill="#e6edf3" font-weight="700">ISHAAN SEN</tspan> | CLASS: <tspan fill="#a371f7" font-weight="700">AI ARCHMAGE</tspan> | GUILD: <tspan fill="#f2cc60" font-weight="700">IIT MADRAS</tspan>]</text>
+  <text x="760" y="32" fill="#39d353" font-size="11" font-weight="700">● ONLINE</text>
+
+  <g transform="translate(24, 60)">
+    <rect x="0" y="0" width="100" height="32" rx="6" fill="#1f2338" stroke="#a371f7" stroke-width="1.2"/>
+    <text x="50" y="21" fill="#00f2fe" font-size="13" font-weight="900" text-anchor="middle" class="glow-hud">LVL 99</text>
+
+    <text x="115" y="16" fill="#e6edf3" font-size="13" font-weight="800">Neural Overlord &amp; Full-Stack Knight</text>
+    <text x="115" y="32" fill="#8b949e" font-size="11">Specialty: <tspan fill="#39d353">Autonomous Multi-Agent Loops &amp; 60fps UIs</tspan></text>
+
+    <g transform="translate(0, 48)">
+      <text x="0" y="12" fill="#ff2d55" font-size="11" font-weight="700">HP (FOCUS)</text>
+      <rect x="90" y="2" width="270" height="12" rx="4" fill="#141824" stroke="#30363d" stroke-width="0.8"/>
+      <rect x="91" y="3" width="268" height="10" rx="3" fill="url(#hpGrad)"/>
+      <text x="368" y="12" fill="#e6edf3" font-size="10.5" font-weight="700">100% / MAX</text>
+    </g>
+
+    <g transform="translate(0, 72)">
+      <text x="0" y="12" fill="#00f2fe" font-size="11" font-weight="700">MP (COFFEE)</text>
+      <rect x="90" y="2" width="270" height="12" rx="4" fill="#141824" stroke="#30363d" stroke-width="0.8"/>
+      <rect x="91" y="3" width="250" height="10" rx="3" fill="url(#mpGrad)"/>
+      <text x="368" y="12" fill="#00f2fe" font-size="10.5" font-weight="700">95% OVERCHARGED</text>
+    </g>
+
+    <g transform="translate(0, 96)">
+      <text x="0" y="12" fill="#a371f7" font-size="11" font-weight="700">XP (AGI SINGULARITY)</text>
+      <rect x="90" y="2" width="270" height="12" rx="4" fill="#141824" stroke="#30363d" stroke-width="0.8"/>
+      <rect x="91" y="3" width="242" height="10" rx="3" fill="url(#xpGrad)"/>
+      <text x="368" y="12" fill="#39d353" font-size="10.5" font-weight="700">92,450 / 100K (92%)</text>
+    </g>
+
+    <g transform="translate(0, 132)">
+      <rect x="0" y="0" width="130" height="24" rx="5" fill="#16231c" stroke="#39d353" stroke-width="0.8"/>
+      <text x="10" y="16" fill="#39d353" font-size="10.5" font-weight="700">⚡ Hyperfocus Aura</text>
+
+      <rect x="140" y="0" width="135" height="24" rx="5" fill="#24192b" stroke="#a371f7" stroke-width="0.8"/>
+      <text x="150" y="16" fill="#a371f7" font-size="10.5" font-weight="700">🛡️ 0 Runtime Errors</text>
+
+      <rect x="285" y="0" width="140" height="24" rx="5" fill="#2b1a1a" stroke="#ff9500" stroke-width="0.8"/>
+      <text x="295" y="16" fill="#ff9500" font-size="10.5" font-weight="700">🔥 Overclocked CPU</text>
+    </g>
+  </g>
+
+  <line x1="475" y1="55" x2="475" y2="225" stroke="#242e42" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+  <g transform="translate(500, 60)">
+    <text x="0" y="12" fill="#00f2fe" font-size="12" font-weight="800">&#8212; CORE ATTRIBUTES</text>
+
+    <g transform="translate(0, 24)">
+      <rect x="0" y="0" width="160" height="26" rx="4" fill="#141824" stroke="#242e42" stroke-width="0.8"/>
+      <text x="10" y="17" fill="#8b949e" font-size="11">🧠 INT:</text>
+      <text x="60" y="17" fill="#00f2fe" font-size="11" font-weight="800">99 [AI &amp; RAG]</text>
+
+      <rect x="175" y="0" width="160" height="26" rx="4" fill="#141824" stroke="#242e42" stroke-width="0.8"/>
+      <text x="185" y="17" fill="#8b949e" font-size="11">⚡ DEX:</text>
+      <text x="235" y="17" fill="#39d353" font-size="11" font-weight="800">96 [Speed Dev]</text>
+
+      <rect x="0" y="32" width="160" height="26" rx="4" fill="#141824" stroke="#242e42" stroke-width="0.8"/>
+      <text x="10" y="49" fill="#8b949e" font-size="11">⚔️ ATK:</text>
+      <text x="60" y="49" fill="#ff0055" font-size="11" font-weight="800">98 [Full-Stack]</text>
+
+      <rect x="175" y="32" width="160" height="26" rx="4" fill="#141824" stroke="#242e42" stroke-width="0.8"/>
+      <text x="185" y="49" fill="#8b949e" font-size="11">🛡️ DEF:</text>
+      <text x="235" y="49" fill="#f2cc60" font-size="11" font-weight="800">94 [Security]</text>
+    </g>
+
+    <text x="0" y="102" fill="#a371f7" font-size="12" font-weight="800">&#8212; EQUIPPED LEGENDARY GEAR</text>
+    <g transform="translate(0, 114)">
+      <text x="0" y="14" fill="#e6edf3" font-size="11">⚔️ <tspan fill="#f2cc60" font-weight="700">Terminal Excalibur</tspan> (+50 Concurrency)</text>
+      <text x="0" y="32" fill="#e6edf3" font-size="11">🔮 <tspan fill="#a371f7" font-weight="700">PyTorch Grimoire</tspan> (+100 Agentic Flow)</text>
+      <text x="0" y="50" fill="#e6edf3" font-size="11">🛡️ <tspan fill="#00f2fe" font-weight="700">Next.js Aegis Shield</tspan> (+60fps Silkiness)</text>
+    </g>
+  </g>
+</svg>
+"""
+
+with open(OUT, "w", encoding="utf-8") as f:
+    f.write(svg)
+print("wrote", OUT)

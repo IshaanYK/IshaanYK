@@ -16,6 +16,8 @@ scripts = [
     "make_header_banner.py",
     "make_music_player.py",
     "make_info_card.py",
+    "make_gaming_hud.py",
+    "make_retro_snake.py",
     "fetch_contributions.py",
     "render_heatmap_svg.py",
 ]

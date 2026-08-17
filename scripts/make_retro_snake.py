@@ -1,0 +1,117 @@
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(HERE, "..", "retro-snake.svg")
+
+W, H = 860, 120
+
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <defs>
+    <linearGradient id="arcbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0817"/>
+      <stop offset="50%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#140821"/>
+    </linearGradient>
+
+    <linearGradient id="arcBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39d353">
+        <animate attributeName="stop-color" values="#39d353;#ff0055;#00f2fe;#f2cc60;#39d353" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#39d353;#ff0055;#00f2fe" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#ff0055">
+        <animate attributeName="stop-color" values="#ff0055;#00f2fe;#39d353;#ff0055" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <style>
+      @keyframes snakeMove {{
+        0% {{ transform: translateX(0px); }}
+        50% {{ transform: translateX(540px); }}
+        100% {{ transform: translateX(0px); }}
+      }}
+      @keyframes foodPulse {{
+        0%, 100% {{ transform: scale(1); opacity: 0.9; }}
+        50% {{ transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 6px #ff0055); }}
+      }}
+      @keyframes ghostFloat {{
+        0%, 100% {{ transform: translateY(0); }}
+        50% {{ transform: translateY(-4px); }}
+      }}
+      @keyframes coinSpin {{
+        0%, 100% {{ fill: #f2cc60; }}
+        50% {{ fill: #ffffff; }}
+      }}
+      .snake-body {{ animation: snakeMove 16s ease-in-out infinite; }}
+      .pulse-food {{ animation: foodPulse 1.5s infinite; transform-origin: center; }}
+      .ghost {{ animation: ghostFloat 2s ease-in-out infinite; }}
+      .coin {{ animation: coinSpin 1s infinite; }}
+    </style>
+  </defs>
+
+  <rect width="{W}" height="{H}" rx="12" fill="url(#arcbg)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="url(#arcBorder)" stroke-width="1.5"/>
+
+  <g transform="translate(20, 24)">
+    <text x="0" y="0" fill="#39d353" font-size="12" font-weight="900" letter-spacing="1px">🕹️ RETRO ARCADE: CONTRIBUTION HUNTER</text>
+    <text x="360" y="0" fill="#f2cc60" font-size="11" font-weight="700" class="coin">🪙 COINS: 99</text>
+    <text x="470" y="0" fill="#00f2fe" font-size="11" font-weight="700">SCORE: 133,700</text>
+    <text x="610" y="0" fill="#ff0055" font-size="11" font-weight="700">COMBO: x64 FIRE 🔥</text>
+    <text x="760" y="0" fill="#e6edf3" font-size="11" font-weight="700">STAGE 07</text>
+  </g>
+
+  <g transform="translate(20, 42)" opacity="0.35">
+    <line x1="0" y1="0" x2="820" y2="0" stroke="#30363d" stroke-width="1"/>
+    <line x1="0" y1="60" x2="820" y2="60" stroke="#30363d" stroke-width="1"/>
+    <rect x="30" y="24" width="10" height="10" rx="2" fill="#161b22"/>
+    <rect x="60" y="24" width="10" height="10" rx="2" fill="#0e4429"/>
+    <rect x="90" y="24" width="10" height="10" rx="2" fill="#006d32"/>
+    <rect x="140" y="24" width="10" height="10" rx="2" fill="#26a641"/>
+    <rect x="220" y="24" width="10" height="10" rx="2" fill="#39d353"/>
+    <rect x="310" y="24" width="10" height="10" rx="2" fill="#161b22"/>
+    <rect x="420" y="24" width="10" height="10" rx="2" fill="#006d32"/>
+    <rect x="520" y="24" width="10" height="10" rx="2" fill="#39d353"/>
+    <rect x="640" y="24" width="10" height="10" rx="2" fill="#26a641"/>
+    <rect x="730" y="24" width="10" height="10" rx="2" fill="#0e4429"/>
+    <rect x="780" y="24" width="10" height="10" rx="2" fill="#39d353"/>
+  </g>
+
+  <g transform="translate(180, 66)" class="pulse-food">
+    <circle cx="0" cy="0" r="7" fill="#ff0055"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+  <g transform="translate(450, 66)" class="pulse-food">
+    <polygon points="0,-7 6,4 -6,4" fill="#f2cc60"/>
+  </g>
+  <g transform="translate(710, 66)" class="pulse-food">
+    <circle cx="0" cy="0" r="6" fill="#00f2fe"/>
+  </g>
+
+  <g class="snake-body" transform="translate(40, 66)">
+    <rect x="0" y="-7" width="14" height="14" rx="3" fill="#69f0a0" stroke="#0d1117" stroke-width="1.5"/>
+    <circle cx="9" cy="-2" r="2" fill="#0d1117"/>
+    <rect x="-16" y="-7" width="14" height="14" rx="3" fill="#39d353" stroke="#0d1117" stroke-width="1.5"/>
+    <rect x="-32" y="-7" width="14" height="14" rx="3" fill="#26a641" stroke="#0d1117" stroke-width="1.5"/>
+    <rect x="-48" y="-7" width="14" height="14" rx="3" fill="#006d32" stroke="#0d1117" stroke-width="1.5"/>
+    <rect x="-64" y="-7" width="14" height="14" rx="3" fill="#0e4429" stroke="#0d1117" stroke-width="1.5"/>
+    <rect x="-80" y="-7" width="14" height="14" rx="3" fill="#00f2fe" stroke="#0d1117" stroke-width="1.5"/>
+  </g>
+
+  <g class="ghost" transform="translate(770, 66)">
+    <path d="M -8 -8 C -8 -14 8 -14 8 -8 L 8 6 L 4 3 L 0 6 L -4 3 L -8 6 Z" fill="#ff007f"/>
+    <circle cx="-3" cy="-6" r="2" fill="#ffffff"/>
+    <circle cx="3" cy="-6" r="2" fill="#ffffff"/>
+    <circle cx="-2" cy="-6" r="1" fill="#000000"/>
+    <circle cx="4" cy="-6" r="1" fill="#000000"/>
+  </g>
+
+  <text x="430" y="108" fill="#8b949e" font-size="10.5" text-anchor="middle">
+    👾 <tspan fill="#39d353">Daily Mission:</tspan> Push commits to maintain the streak &amp; power up the neural engine! 🚀
+  </text>
+</svg>
+"""
+
+with open(OUT, "w", encoding="utf-8") as f:
+    f.write(svg)
+print("wrote", OUT)

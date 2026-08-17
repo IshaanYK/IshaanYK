@@ -10,9 +10,10 @@
 <!-- Badges & Status Pills -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
-  <a href="https://www.iitm.ac.in/"><img src="https://img.shields.io/badge/Education-IIT_Madras-f2cc60?style=for-the-badge&logo=education&logoColor=0d1117" alt="IIT Madras" /></a>
-  <img src="https://img.shields.io/badge/Status-Open_for_Collabs-3fb950?style=for-the-badge&logo=github&logoColor=white" alt="Status Badge" />
-  <img src="https://img.shields.io/badge/Focus-AI_Agents_%26_FullStack-00f2fe?style=for-the-badge&logo=python&logoColor=0d1117" alt="Focus Badge" />
+  <a href="https://www.iitm.ac.in/"><img src="https://img.shields.io/badge/Guild-IIT_Madras-f2cc60?style=for-the-badge&logo=education&logoColor=0d1117" alt="IIT Madras" /></a>
+  <img src="https://img.shields.io/badge/Gamer_Class-AI_Archmage-a371f7?style=for-the-badge&logo=gamepad&logoColor=white" alt="Class Badge" />
+  <img src="https://img.shields.io/badge/Status-Lvl_99_Online-3fb950?style=for-the-badge&logo=discord&logoColor=white" alt="Status Badge" />
+  <img src="https://img.shields.io/badge/Focus-AI_Agents_%26_Game_Dev-00f2fe?style=for-the-badge&logo=python&logoColor=0d1117" alt="Focus Badge" />
 </p>
 
 <br>
@@ -20,6 +21,13 @@
 <!-- Interactive Audio & Music Player -->
 <a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank" title="Click to listen to Expresso Ambient Beats">
   <img src="./music-player.svg?v=4" width="860" alt="Play Ambient Audio Track" />
+</a>
+
+<br><br>
+
+<!-- 🎮 RPG Character Stats & Vital HUD -->
+<a href="https://github.com/IshaanYK">
+  <img src="./gaming-hud.svg?v=4" width="860" alt="RPG Gaming Status HUD" />
 </a>
 
 <br><br>
@@ -46,15 +54,15 @@
 
 <!-- Expandable Bio & Tech Philosophy -->
 <details>
-<summary><b>✨ Click to reveal Bio, Tech Stack Philosophy &amp; Vision 💡</b></summary>
+<summary><b>✨ Click to reveal Quest Lore, Tech Philosophy &amp; Vision 💡</b></summary>
 <br>
 
 > *"The best way to predict the future is to invent it."* — Alan Kay
 
-- 🎓 **Academic Background**: Student at **Indian Institute of Technology Madras (IIT Madras)**.
-- 🤖 **Core Focus**: Designing autonomous agentic workflows, production-ready RAG architectures, and real-time voice intelligence.
-- ⚡ **Engineering Principles**: Building clean, scalable, GPU-accelerated backends with silky 60fps+ interactive frontends.
-- 🚀 **Currently Exploring**: Next-gen Agent Frameworks, distributed vector index optimizations, and multi-agent coordination systems.
+- 🎓 **Academic Academy**: Student at **Indian Institute of Technology Madras (IIT Madras)**.
+- 🤖 **Main Quest**: Designing autonomous multi-agent pipelines, real-time voice AI, and self-improving neural frameworks.
+- 🎮 **Side Quests**: Immersive 3D graphics (Three.js / WebGL / Shaders), low-latency networking, and gaming tech.
+- ⚡ **Combat Gear**: Python, Next.js, PyTorch, TypeScript, Docker, and ultra-responsive 60fps+ UIs.
 
 <br>
 </details>
@@ -62,10 +70,10 @@
 <br><br>
 
 <!-- Categorized Tech Stack Ecosystem Grid -->
-### 🛠️ Tech Stack & Ecosystem
+### 🛠️ Tech Stack & Arsenal
 
 <p align="center">
-  <b>🧠 AI, Machine Learning & Intelligent Agents</b><br>
+  <b>🧠 AI, Machine Learning & Autonomous Agents</b><br>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,fastapi,postgres,opencv&perline=6" alt="AI & ML" /></a>
 </p>
 
@@ -75,9 +83,42 @@
 </p>
 
 <p align="center">
+  <b>🎮 Game Dev, 3D Graphics & Systems</b><br>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cpp,c,rust,threejs,blender,godot,unity,unreal,discord&perline=9" alt="Game Dev & 3D" /></a>
+</p>
+
+<p align="center">
   <b>⚙️ Backend, Cloud & DevOps Infrastructure</b><br>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,fastapi,docker,aws,gcp,githubactions,redis,git,linux,vscode&perline=10" alt="Backend & Cloud" /></a>
 </p>
+
+<br><br>
+
+<!-- 🏆 Gamer Trophy Hall & Quest Achievements -->
+### 🏆 Steam & Console Style Achievements
+
+<table>
+<tr>
+<td width="50%">
+  <b>🥇 [PLATINUM] Agentic Alchemist</b><br>
+  <sub>Shipped autonomous multi-agent systems that solve complex reasoning tasks and execute live tool-calls without crashing.</sub>
+</td>
+<td width="50%">
+  <b>🥇 [GOLD] IITM Vanguard</b><br>
+  <sub>Mastering cutting-edge deep learning, algorithms, and mathematics at India's premier engineering institute.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%">
+  <b>🥇 [GOLD] 60fps Speedrunner</b><br>
+  <sub>Engineered silky-smooth, zero-lag web experiences and real-time audio players.</sub>
+</td>
+<td width="50%">
+  <b>🥇 [SPECIAL] Night Owl Grinder</b><br>
+  <sub>Overclocked caffeine and committed production code past 3:00 AM on 50+ consecutive quests.</sub>
+</td>
+</tr>
+</table>
 
 <br><br>
 
@@ -126,6 +167,11 @@
 <td valign="top"><img src="https://github-readme-activity-graph.vercel.app/graph?username=IshaanYK&bg_color=0d1117&color=58a6ff&line=3fb950&point=ffa657&area=true&hide_border=false" width="425" alt="Activity Graph" /></td>
 </tr>
 </table>
+
+<br><br>
+
+<!-- 🕹️ Retro Arcade Snake Game -->
+<img src="./retro-snake.svg?v=4" width="860" alt="Retro Arcade Contribution Snake Game" />
 
 <br><br>
 
