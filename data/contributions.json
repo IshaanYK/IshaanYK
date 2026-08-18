@@ -1,27 +1,86 @@
 {
-  "username": "IshaanYK",
-  "generated_at": "2026-08-17T19:16:15.705Z",
+  "username": "ISHAANYK",
+  "generated_at": "2026-08-18T01:14:14Z",
   "range": {
-    "start": "2025-08-18",
+    "start": "2025-08-17",
     "end": "2026-08-18"
   },
-  "total_contributions": 185,
-  "active_days": 29,
+  "total_contributions": 105,
+  "active_days": 26,
+  "avg_per_active_day": 4.0,
   "current_streak": {
-    "length": 4,
-    "start": "2026-08-15",
+    "length": 1,
+    "start": "2026-08-18",
     "end": "2026-08-18"
   },
   "longest_streak": {
-    "length": 5,
-    "start": "2026-08-15",
-    "end": "2026-08-18"
+    "length": 2,
+    "start": "2026-03-22",
+    "end": "2026-03-23"
   },
   "best_day": {
     "date": "2026-08-12",
     "count": 19
   },
+  "monthly": [
+    {
+      "month": "2025-08",
+      "total": 1
+    },
+    {
+      "month": "2025-09",
+      "total": 0
+    },
+    {
+      "month": "2025-10",
+      "total": 0
+    },
+    {
+      "month": "2025-11",
+      "total": 1
+    },
+    {
+      "month": "2025-12",
+      "total": 6
+    },
+    {
+      "month": "2026-01",
+      "total": 0
+    },
+    {
+      "month": "2026-02",
+      "total": 4
+    },
+    {
+      "month": "2026-03",
+      "total": 16
+    },
+    {
+      "month": "2026-04",
+      "total": 17
+    },
+    {
+      "month": "2026-05",
+      "total": 8
+    },
+    {
+      "month": "2026-06",
+      "total": 6
+    },
+    {
+      "month": "2026-07",
+      "total": 19
+    },
+    {
+      "month": "2026-08",
+      "total": 27
+    }
+  ],
   "days": [
+    {
+      "date": "2025-08-17",
+      "count": 0
+    },
     {
       "date": "2025-08-18",
       "count": 0
@@ -1472,19 +1531,19 @@
     },
     {
       "date": "2026-08-15",
-      "count": 4
+      "count": 0
     },
     {
       "date": "2026-08-16",
-      "count": 6
+      "count": 0
     },
     {
       "date": "2026-08-17",
-      "count": 8
+      "count": 0
     },
     {
       "date": "2026-08-18",
-      "count": 12
+      "count": 2
     }
   ]
 }
