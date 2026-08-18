@@ -43,11 +43,9 @@
     </style>
   </defs>
 
-  <!-- Frame -->
   <rect width="860" height="120" rx="12" fill="url(#arcbg)"/>
   <rect x="0.5" y="0.5" width="859" height="119" rx="12" fill="none" stroke="url(#arcBorder)" stroke-width="1.5"/>
 
-  <!-- Header Bar -->
   <g transform="translate(20, 24)">
     <text x="0" y="0" fill="#39d353" font-size="12" font-weight="900" letter-spacing="1px">🕹️ RETRO ARCADE: CONTRIBUTION HUNTER</text>
     <text x="360" y="0" fill="#f2cc60" font-size="11" font-weight="700" class="coin">🪙 COINS: 99</text>
@@ -56,11 +54,9 @@
     <text x="760" y="0" fill="#e6edf3" font-size="11" font-weight="700">STAGE 07</text>
   </g>
 
-  <!-- Arcade Arena Grid Dots Background -->
   <g transform="translate(20, 42)" opacity="0.35">
     <line x1="0" y1="0" x2="820" y2="0" stroke="#30363d" stroke-width="1"/>
     <line x1="0" y1="60" x2="820" y2="60" stroke="#30363d" stroke-width="1"/>
-    <!-- Static commit dots scattered -->
     <rect x="30" y="24" width="10" height="10" rx="2" fill="#161b22"/>
     <rect x="60" y="24" width="10" height="10" rx="2" fill="#0e4429"/>
     <rect x="90" y="24" width="10" height="10" rx="2" fill="#006d32"/>
@@ -74,7 +70,6 @@
     <rect x="780" y="24" width="10" height="10" rx="2" fill="#39d353"/>
   </g>
 
-  <!-- Powerup Foods -->
   <g transform="translate(180, 66)" class="pulse-food">
     <circle cx="0" cy="0" r="7" fill="#ff0055"/>
     <circle cx="0" cy="0" r="3" fill="#ffffff"/>
@@ -86,9 +81,7 @@
     <circle cx="0" cy="0" r="6" fill="#00f2fe"/>
   </g>
 
-  <!-- Animated Pacman & Snake Creature -->
   <g class="snake-body" transform="translate(40, 66)">
-    <!-- Snake segments / Git commit chain -->
     <rect x="0" y="-7" width="14" height="14" rx="3" fill="#69f0a0" stroke="#0d1117" stroke-width="1.5"/>
     <circle cx="9" cy="-2" r="2" fill="#0d1117"/>
     <rect x="-16" y="-7" width="14" height="14" rx="3" fill="#39d353" stroke="#0d1117" stroke-width="1.5"/>
@@ -98,7 +91,6 @@
     <rect x="-80" y="-7" width="14" height="14" rx="3" fill="#00f2fe" stroke="#0d1117" stroke-width="1.5"/>
   </g>
 
-  <!-- Chasing Cyber Ghost -->
   <g class="ghost" transform="translate(770, 66)">
     <path d="M -8 -8 C -8 -14 8 -14 8 -8 L 8 6 L 4 3 L 0 6 L -4 3 L -8 6 Z" fill="#ff007f"/>
     <circle cx="-3" cy="-6" r="2" fill="#ffffff"/>
@@ -107,7 +99,6 @@
     <circle cx="4" cy="-6" r="1" fill="#000000"/>
   </g>
 
-  <!-- Bottom Tip -->
   <text x="430" y="108" fill="#8b949e" font-size="10.5" text-anchor="middle">
     👾 <tspan fill="#39d353">Daily Mission:</tspan> Push commits to maintain the streak &amp; power up the neural engine! 🚀
   </text>

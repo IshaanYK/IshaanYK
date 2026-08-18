@@ -42,24 +42,14 @@
         0%, 100% { opacity: 0.9; filter: drop-shadow(0 0 2px #00f2fe); }
         50% { opacity: 1; filter: drop-shadow(0 0 8px #a371f7); }
       }
-      @keyframes scanline {
-        0% { transform: translateY(-240px); }
-        100% { transform: translateY(240px); }
-      }
-      @keyframes barAnimate {
-        0% { width: 0; }
-        100% { width: 100%; }
-      }
       .glow-hud { animation: pulseText 3s infinite; }
     </style>
   </defs>
 
-  <!-- Frame Background & Grid -->
   <rect width="860" height="240" rx="14" fill="url(#hudbg)"/>
   <rect width="860" height="240" rx="14" fill="url(#hexGrid)"/>
   <rect x="0.5" y="0.5" width="859" height="239" rx="14" fill="none" stroke="url(#hudBorder)" stroke-width="1.8"/>
 
-  <!-- Top Title Bar -->
   <rect x="18" y="14" width="824" height="28" rx="6" fill="#141926" stroke="#242e42" stroke-width="1"/>
   <circle cx="34" cy="28" r="5" fill="#ff0055"/>
   <circle cx="48" cy="28" r="5" fill="#ffbd2e"/>
@@ -69,17 +59,13 @@
   <text x="240" y="32" fill="#8b949e" font-size="11">[PLAYER: <tspan fill="#e6edf3" font-weight="700">ISHAAN SEN</tspan> | CLASS: <tspan fill="#a371f7" font-weight="700">AI ARCHMAGE</tspan> | GUILD: <tspan fill="#f2cc60" font-weight="700">IIT MADRAS</tspan>]</text>
   <text x="760" y="32" fill="#39d353" font-size="11" font-weight="700">● ONLINE</text>
 
-  <!-- Left Column: Player Stats & Vital Bars -->
   <g transform="translate(24, 60)">
-    <!-- Level Badge -->
     <rect x="0" y="0" width="100" height="32" rx="6" fill="#1f2338" stroke="#a371f7" stroke-width="1.2"/>
     <text x="50" y="21" fill="#00f2fe" font-size="13" font-weight="900" text-anchor="middle" class="glow-hud">LVL 99</text>
 
-    <!-- Player Title -->
     <text x="115" y="16" fill="#e6edf3" font-size="13" font-weight="800">Neural Overlord &amp; Full-Stack Knight</text>
     <text x="115" y="32" fill="#8b949e" font-size="11">Specialty: <tspan fill="#39d353">Autonomous Multi-Agent Loops &amp; 60fps UIs</tspan></text>
 
-    <!-- HP Bar -->
     <g transform="translate(0, 48)">
       <text x="0" y="12" fill="#ff2d55" font-size="11" font-weight="700">HP (FOCUS)</text>
       <rect x="90" y="2" width="270" height="12" rx="4" fill="#141824" stroke="#30363d" stroke-width="0.8"/>
@@ -87,7 +73,6 @@
       <text x="368" y="12" fill="#e6edf3" font-size="10.5" font-weight="700">100% / MAX</text>
     </g>
 
-    <!-- MP Bar -->
     <g transform="translate(0, 72)">
       <text x="0" y="12" fill="#00f2fe" font-size="11" font-weight="700">MP (COFFEE)</text>
       <rect x="90" y="2" width="270" height="12" rx="4" fill="#141824" stroke="#30363d" stroke-width="0.8"/>
@@ -95,7 +80,6 @@
       <text x="368" y="12" fill="#00f2fe" font-size="10.5" font-weight="700">95% OVERCHARGED</text>
     </g>
 
-    <!-- XP Bar -->
     <g transform="translate(0, 96)">
       <text x="0" y="12" fill="#a371f7" font-size="11" font-weight="700">XP (AGI SINGULARITY)</text>
       <rect x="90" y="2" width="270" height="12" rx="4" fill="#141824" stroke="#30363d" stroke-width="0.8"/>
@@ -103,7 +87,6 @@
       <text x="368" y="12" fill="#39d353" font-size="10.5" font-weight="700">92,450 / 100K (92%)</text>
     </g>
 
-    <!-- Active Buffs -->
     <g transform="translate(0, 132)">
       <rect x="0" y="0" width="130" height="24" rx="5" fill="#16231c" stroke="#39d353" stroke-width="0.8"/>
       <text x="10" y="16" fill="#39d353" font-size="10.5" font-weight="700">⚡ Hyperfocus Aura</text>
@@ -116,14 +99,11 @@
     </g>
   </g>
 
-  <!-- Divider Line -->
   <line x1="475" y1="55" x2="475" y2="225" stroke="#242e42" stroke-width="1.2" stroke-dasharray="4 3"/>
 
-  <!-- Right Column: Attributes & Equipped Legendary Gear -->
   <g transform="translate(500, 60)">
     <text x="0" y="12" fill="#00f2fe" font-size="12" font-weight="800">&#8212; CORE ATTRIBUTES</text>
 
-    <!-- Attributes Matrix -->
     <g transform="translate(0, 24)">
       <rect x="0" y="0" width="160" height="26" rx="4" fill="#141824" stroke="#242e42" stroke-width="0.8"/>
       <text x="10" y="17" fill="#8b949e" font-size="11">🧠 INT:</text>
@@ -142,7 +122,6 @@
       <text x="235" y="49" fill="#f2cc60" font-size="11" font-weight="800">94 [Security]</text>
     </g>
 
-    <!-- Equipped Relics -->
     <text x="0" y="102" fill="#a371f7" font-size="12" font-weight="800">&#8212; EQUIPPED LEGENDARY GEAR</text>
     <g transform="translate(0, 114)">
       <text x="0" y="14" fill="#e6edf3" font-size="11">⚔️ <tspan fill="#f2cc60" font-weight="700">Terminal Excalibur</tspan> (+50 Concurrency)</text>

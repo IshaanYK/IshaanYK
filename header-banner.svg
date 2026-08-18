@@ -70,17 +70,14 @@
     </style>
   </defs>
 
-  <!-- Card Background & Hairline Border -->
   <rect width="860" height="144" rx="14" fill="url(#hbg)"/>
   <rect width="860" height="144" rx="14" fill="url(#grid)"/>
   <rect x="0.5" y="0.5" width="859" height="143" rx="14" fill="none" stroke="url(#borderGlow)" stroke-width="1.8"/>
 
-  <!-- macOS Top Bar Buttons -->
   <circle cx="24" cy="22" r="5" fill="#ff5f56"/>
   <circle cx="40" cy="22" r="5" fill="#ffbd2e"/>
   <circle cx="56" cy="22" r="5" fill="#27c93f"/>
 
-  <!-- Status pill on top right -->
   <g transform="translate(615, 12)">
     <rect width="220" height="22" rx="11" fill="#141824" stroke="#30363d" stroke-width="1"/>
     <circle cx="14" cy="11" r="4" fill="#3fb950">
@@ -89,7 +86,6 @@
     <text x="26" y="15" fill="#e6edf3" font-size="10.5" font-weight="600">Open for AI &amp; Full-Stack Collabs</text>
   </g>
 
-  <!-- Title Section -->
   <g transform="translate(24, 68)">
     <text font-size="28" font-weight="800" fill="url(#textGrad)" class="glow-title" letter-spacing="-0.5px">
       ⚡ Hi, I'm Ishaan Sen 👋
@@ -98,7 +94,6 @@
     <text x="375" y="-3" fill="#f2cc60" font-size="11.5" font-weight="700">🎓 IIT Madras</text>
   </g>
 
-  <!-- Dynamic Typing Lines -->
   <g transform="translate(24, 108)">
     <text class="l1" font-size="14" fill="#e6edf3" font-weight="600">
       🚀 <tspan fill="#00f2fe">AI Engineer &amp; Full-Stack Developer</tspan> — Crafting Intelligent Systems <tspan class="cursor">█</tspan>
