@@ -77,8 +77,15 @@
       "quest": "tune low-latency audio stream buffer for conversational agent",
       "scope": "feat(voice)",
       "source": "IshaanYK Autonomous Engine"
+    },
+    {
+      "timestamp": "2026-08-21T16:17:56Z",
+      "date": "2026-08-21",
+      "quest": "add adaptive context window compaction for long-running workflows",
+      "scope": "feat(engine)",
+      "source": "IshaanYK Autonomous Engine"
     }
   ],
-  "last_updated": "2026-08-21T16:12:55Z",
+  "last_updated": "2026-08-21T16:17:56Z",
   "total_active_days": 1
 }
