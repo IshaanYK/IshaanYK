@@ -2,3 +2,9 @@
 ME.mp4
 first_frame.png
 avi-ascii.gif
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+streak_test.svg
