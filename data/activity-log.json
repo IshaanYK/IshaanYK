@@ -118,5 +118,13 @@
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260821163349-2",
+    "timestamp": "2026-08-21T16:33:49Z",
+    "date": "2026-08-21",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
   }
 ]
