@@ -3,101 +3,84 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "music-player.svg")
 
-W, H = 860, 92
+W, H = 860, 68
 
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
   <defs>
-    <!-- Dark glass surface -->
-    <linearGradient id="playerBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0a0c12"/>
-      <stop offset="50%" stop-color="#0e111a"/>
-      <stop offset="100%" stop-color="#05070a"/>
-    </linearGradient>
-    
-    <!-- Linear Hairline Glass Bevel -->
-    <linearGradient id="playerBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5e6ad2" stop-opacity="0.7"/>
-      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#27a644" stop-opacity="0.6"/>
+    <!-- Frosted Glass Gradient -->
+    <linearGradient id="audioBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#191a1e"/>
+      <stop offset="6%" stop-color="#111215"/>
+      <stop offset="100%" stop-color="#08080a"/>
     </linearGradient>
 
-    <linearGradient id="eqGradient" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%" stop-color="#5e6ad2"/>
-      <stop offset="50%" stop-color="#00f2fe"/>
-      <stop offset="100%" stop-color="#27a644"/>
+    <!-- Top Specular Sheen -->
+    <linearGradient id="audioSpecular" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Titanium Glass Border -->
+    <linearGradient id="audioBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
     </linearGradient>
 
     <style>
-      .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif; }}
-      .font-mono {{ font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, monospace; }}
+      .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; }}
+      .font-mono {{ font-family: "SF Mono", Menlo, Consolas, monospace; }}
 
-      @keyframes eq1 {{ 0%, 100% {{ height: 6px; y: 54px; }} 50% {{ height: 30px; y: 30px; }} }}
-      @keyframes eq2 {{ 0%, 100% {{ height: 26px; y: 34px; }} 50% {{ height: 10px; y: 50px; }} }}
-      @keyframes eq3 {{ 0%, 100% {{ height: 14px; y: 46px; }} 50% {{ height: 34px; y: 26px; }} }}
-      @keyframes eq4 {{ 0%, 100% {{ height: 32px; y: 28px; }} 50% {{ height: 8px; y: 52px; }} }}
-      @keyframes eq5 {{ 0%, 100% {{ height: 10px; y: 50px; }} 50% {{ height: 24px; y: 36px; }} }}
-      @keyframes eq6 {{ 0%, 100% {{ height: 20px; y: 40px; }} 50% {{ height: 32px; y: 28px; }} }}
+      @keyframes wave1 {{ 0%, 100% {{ height: 5px; y: 39px; }} 50% {{ height: 22px; y: 22px; }} }}
+      @keyframes wave2 {{ 0%, 100% {{ height: 18px; y: 26px; }} 50% {{ height: 7px; y: 37px; }} }}
+      @keyframes wave3 {{ 0%, 100% {{ height: 10px; y: 34px; }} 50% {{ height: 24px; y: 20px; }} }}
+      @keyframes wave4 {{ 0%, 100% {{ height: 22px; y: 22px; }} 50% {{ height: 6px; y: 38px; }} }}
 
-      @keyframes pulseGlow {{
-        0%, 100% {{ opacity: 0.6; filter: drop-shadow(0 0 2px #00f2fe); }}
-        50% {{ opacity: 1; filter: drop-shadow(0 0 8px #5e6ad2); }}
-      }}
-
-      .b1 {{ animation: eq1 1.2s ease-in-out infinite; }}
-      .b2 {{ animation: eq2 0.85s ease-in-out infinite; }}
-      .b3 {{ animation: eq3 1.4s ease-in-out infinite; }}
-      .b4 {{ animation: eq4 1.05s ease-in-out infinite; }}
-      .b5 {{ animation: eq5 1.3s ease-in-out infinite; }}
-      .b6 {{ animation: eq6 0.95s ease-in-out infinite; }}
-      .pulse-btn {{ animation: pulseGlow 2.5s infinite; }}
+      .w1 {{ animation: wave1 1.2s ease-in-out infinite; fill: #2997ff; }}
+      .w2 {{ animation: wave2 0.9s ease-in-out infinite; fill: #ffffff; fill-opacity: 0.85; }}
+      .w3 {{ animation: wave3 1.4s ease-in-out infinite; fill: #2997ff; }}
+      .w4 {{ animation: wave4 1.1s ease-in-out infinite; fill: #ffffff; fill-opacity: 0.85; }}
     </style>
   </defs>
   
-  <rect width="{W}" height="{H}" rx="14" fill="url(#playerBg)"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="url(#playerBorder)" stroke-width="1.2"/>
+  <rect width="{W}" height="{H}" rx="12" fill="url(#audioBg)"/>
+  <rect width="{W}" height="{H/2}" rx="12" fill="url(#audioSpecular)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="url(#audioBorder)" stroke-width="1"/>
   
-  <!-- 12-Band Audio Frequency Equalizer -->
-  <g transform="translate(24, 0)">
-    <rect class="b1" x="0" y="48" width="4" height="12" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b2" x="7" y="38" width="4" height="22" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b3" x="14" y="44" width="4" height="16" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b4" x="21" y="30" width="4" height="30" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b5" x="28" y="50" width="4" height="10" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b6" x="35" y="36" width="4" height="24" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b2" x="42" y="40" width="4" height="20" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b4" x="49" y="32" width="4" height="28" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b1" x="56" y="46" width="4" height="14" rx="2" fill="url(#eqGradient)"/>
-    <rect class="b3" x="63" y="34" width="4" height="26" rx="2" fill="url(#eqGradient)"/>
+  <!-- Waveform Indicator -->
+  <g transform="translate(20, 0)">
+    <rect class="w1" x="0" y="34" width="3.5" height="10" rx="1.75"/>
+    <rect class="w2" x="6" y="26" width="3.5" height="18" rx="1.75"/>
+    <rect class="w3" x="12" y="30" width="3.5" height="14" rx="1.75"/>
+    <rect class="w4" x="18" y="22" width="3.5" height="22" rx="1.75"/>
+    <rect class="w1" x="24" y="36" width="3.5" height="8" rx="1.75"/>
+    <rect class="w2" x="30" y="28" width="3.5" height="16" rx="1.75"/>
   </g>
 
-  <!-- Track Meta & Terminal Command -->
-  <g transform="translate(108, 0)">
-    <text x="0" y="38" fill="#8a8f98" class="font-mono" font-size="11.5">
-      audio_service:~$ <tspan fill="#00f2fe" font-weight="600">stream_track</tspan> --title <tspan fill="#828fff">"Expresso Ambient Beats"</tspan>
+  <!-- Track Title -->
+  <g transform="translate(70, 0)">
+    <text x="0" y="30" fill="#86868b" class="font-mono" font-size="11">
+      Now Playing: <tspan fill="#f5f5f7" font-weight="600">Expresso Ambient Beats</tspan>
     </text>
-    <text x="0" y="62" fill="#f7f8f8" class="font-sans" font-size="12.5" font-weight="600">
-      🎧 Now Playing: <tspan fill="#00f2fe">Expresso Synthwave</tspan> <tspan fill="#8a8f98" font-size="11">[Hi-Fi Stereo • Hyperfocus Session]</tspan>
+    <text x="0" y="48" fill="#a1a1a6" class="font-sans" font-size="11.5">
+      Focus Audio Stream • Hi-Fi Stereo
     </text>
   </g>
 
-  <!-- Progress Scrub Bar -->
-  <g transform="translate(500, 40)">
-    <rect x="0" y="0" width="180" height="8" rx="4" fill="#141722" stroke="#23252a" stroke-width="1"/>
-    <rect x="1" y="1" width="0" height="6" rx="3" fill="url(#eqGradient)">
-      <animate attributeName="width" from="0" to="178" dur="18s" repeatCount="indefinite" />
+  <!-- Progress Bar -->
+  <g transform="translate(480, 28)">
+    <rect x="0" y="5" width="200" height="4" rx="2" fill="#ffffff" fill-opacity="0.1"/>
+    <rect x="0" y="5" width="0" height="4" rx="2" fill="#2997ff">
+      <animate attributeName="width" from="0" to="200" dur="18s" repeatCount="indefinite" />
     </rect>
-    <circle cx="1" cy="4" r="5" fill="#ffffff" class="pulse-btn">
-      <animate attributeName="cx" from="1" to="178" dur="18s" repeatCount="indefinite" />
-    </circle>
-    <text x="194" y="8" fill="#27a644" class="font-mono" font-size="10.5" font-weight="700">● LIVE</text>
+    <text x="212" y="9.5" fill="#86868b" class="font-mono" font-size="10">LIVE</text>
   </g>
   
-  <!-- Interactive Launch Button -->
-  <g transform="translate(742, 46)">
-    <rect x="-6" y="-18" width="112" height="36" rx="18" fill="#141724" stroke="#5e6ad2" stroke-width="1.2" class="pulse-btn"/>
-    <circle cx="10" cy="0" r="10" fill="#5e6ad2"/>
-    <polygon points="8,-4 15,0 8,4" fill="#ffffff"/>
-    <text x="26" y="4" fill="#f7f8f8" class="font-sans" font-size="11.5" font-weight="600">Play Audio</text>
+  <!-- Apple-Style Play Pill -->
+  <g transform="translate(745, 34)">
+    <rect x="-6" y="-15" width="105" height="30" rx="15" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.8"/>
+    <polygon points="10,-4 17,0 10,4" fill="#f5f5f7"/>
+    <text x="26" y="3.5" fill="#f5f5f7" class="font-sans" font-size="11" font-weight="500">Play Audio</text>
   </g>
 </svg>
 """

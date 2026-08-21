@@ -3,146 +3,88 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "gaming-hud.svg")
 
-W, H = 860, 248
+W, H = 860, 160
 
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
   <defs>
-    <!-- Deep Canvas Background -->
-    <linearGradient id="hudBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080a0f"/>
-      <stop offset="50%" stop-color="#0c0e16"/>
-      <stop offset="100%" stop-color="#040508"/>
+    <!-- Frosted Glass Gradient -->
+    <linearGradient id="hudGlassBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#191a1e"/>
+      <stop offset="5%" stop-color="#111215"/>
+      <stop offset="100%" stop-color="#08080a"/>
     </linearGradient>
 
-    <!-- Linear Lavender & Cyan Hairline Glow -->
-    <linearGradient id="hudBorderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5e6ad2" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#828fff" stop-opacity="0.8"/>
+    <!-- Specular Sheen -->
+    <linearGradient id="hudSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Gauge Gradients -->
-    <linearGradient id="focusGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5e6ad2"/>
-      <stop offset="100%" stop-color="#00f2fe"/>
+    <!-- Titanium Border -->
+    <linearGradient id="hudGlassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
     </linearGradient>
-
-    <linearGradient id="coffeeGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00f2fe"/>
-      <stop offset="100%" stop-color="#27a644"/>
-    </linearGradient>
-
-    <linearGradient id="agiGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#828fff"/>
-      <stop offset="100%" stop-color="#f2cc60"/>
-    </linearGradient>
-
-    <pattern id="hudHexGrid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 14 0 L 28 8 L 28 24 L 14 32 L 0 24 L 0 8 Z" fill="none" stroke="#181c28" stroke-width="0.5" opacity="0.3"/>
-    </pattern>
 
     <style>
-      .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif; }}
-      .font-mono {{ font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, monospace; }}
-
-      @keyframes glowPulse {{
-        0%, 100% {{ filter: drop-shadow(0 0 2px #00f2fe); opacity: 0.9; }}
-        50% {{ filter: drop-shadow(0 0 8px #5e6ad2); opacity: 1; }}
-      }}
-      .hud-glow {{ animation: glowPulse 3s infinite; }}
+      .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif; }}
+      .font-mono {{ font-family: "SF Mono", Menlo, Consolas, monospace; }}
     </style>
   </defs>
 
-  <rect width="{W}" height="{H}" rx="16" fill="url(#hudBg)"/>
-  <rect width="{W}" height="{H}" rx="16" fill="url(#hudHexGrid)"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="16" fill="none" stroke="url(#hudBorderGlow)" stroke-width="1.2"/>
+  <rect width="{W}" height="{H}" rx="14" fill="url(#hudGlassBg)"/>
+  <rect width="{W}" height="{H/2}" rx="14" fill="url(#hudSheen)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="url(#hudGlassBorder)" stroke-width="1"/>
 
-  <!-- Top Status Banner -->
-  <rect x="20" y="16" width="820" height="30" rx="8" fill="#0f121a" stroke="#23252a" stroke-width="1"/>
-  <circle cx="36" cy="31" r="4.5" fill="#5e6ad2"/>
-  <circle cx="50" cy="31" r="4.5" fill="#00f2fe"/>
-  <circle cx="64" cy="31" r="4.5" fill="#27a644"/>
-  
-  <text x="84" y="35" fill="#00f2fe" class="font-mono" font-size="11.5" font-weight="700" letter-spacing="1px">⚡ AGENTIC VITAL HUD</text>
-  <text x="260" y="35" fill="#8a8f98" class="font-sans" font-size="11.5">[OPERATOR: <tspan fill="#f7f8f8" font-weight="600">ISHAAN SEN</tspan> | CLASS: <tspan fill="#828fff" font-weight="600">AI ARCHMAGE</tspan> | GUILD: <tspan fill="#f2cc60" font-weight="600">IIT MADRAS</tspan>]</text>
-  <text x="760" y="35" fill="#27a644" class="font-mono" font-size="11" font-weight="700">● ONLINE</text>
-
-  <!-- Left Column: Character Level & Vital Bars -->
-  <g transform="translate(26, 66)">
-    <!-- Level Badge -->
-    <rect x="0" y="0" width="104" height="32" rx="8" fill="#141724" stroke="#5e6ad2" stroke-width="1.2"/>
-    <text x="52" y="21" fill="#00f2fe" class="font-mono" font-size="13.5" font-weight="800" text-anchor="middle" class="hud-glow">LVL 99</text>
-
-    <text x="120" y="16" fill="#f7f8f8" class="font-sans" font-size="13.5" font-weight="700">Autonomous Neural Architect</text>
-    <text x="120" y="32" fill="#8a8f98" class="font-sans" font-size="11">Specialty: <tspan fill="#00f2fe">Multi-Agent Orchestration &amp; 60fps UIs</tspan></text>
-
-    <!-- Gauge 1: Focus -->
-    <g transform="translate(0, 50)">
-      <text x="0" y="12" fill="#828fff" class="font-mono" font-size="11" font-weight="700">FOCUS / HP</text>
-      <rect x="94" y="2" width="265" height="12" rx="4" fill="#0f1118" stroke="#23252a" stroke-width="0.8"/>
-      <rect x="95" y="3" width="263" height="10" rx="3" fill="url(#focusGrad)"/>
-      <text x="366" y="12" fill="#f7f8f8" class="font-mono" font-size="10.5" font-weight="600">100% / MAX</text>
-    </g>
-
-    <!-- Gauge 2: Mana / Caffeine -->
-    <g transform="translate(0, 75)">
-      <text x="0" y="12" fill="#00f2fe" class="font-mono" font-size="11" font-weight="700">COGNITION</text>
-      <rect x="94" y="2" width="265" height="12" rx="4" fill="#0f1118" stroke="#23252a" stroke-width="0.8"/>
-      <rect x="95" y="3" width="248" height="10" rx="3" fill="url(#coffeeGrad)"/>
-      <text x="366" y="12" fill="#00f2fe" class="font-mono" font-size="10.5" font-weight="600">96% OVERCLOCK</text>
-    </g>
-
-    <!-- Gauge 3: AGI Singularity -->
-    <g transform="translate(0, 100)">
-      <text x="0" y="12" fill="#f2cc60" class="font-mono" font-size="11" font-weight="700">AGI QUEST</text>
-      <rect x="94" y="2" width="265" height="12" rx="4" fill="#0f1118" stroke="#23252a" stroke-width="0.8"/>
-      <rect x="95" y="3" width="238" height="10" rx="3" fill="url(#agiGrad)"/>
-      <text x="366" y="12" fill="#f2cc60" class="font-mono" font-size="10.5" font-weight="600">94,200 / 100K</text>
-    </g>
-
-    <!-- Buff Badges -->
-    <g transform="translate(0, 136)">
-      <rect x="0" y="0" width="134" height="26" rx="6" fill="#0d1812" stroke="#27a644" stroke-width="0.8"/>
-      <text x="12" y="17" fill="#27a644" class="font-sans" font-size="11" font-weight="600">⚡ Hyperfocus Aura</text>
-
-      <rect x="144" y="0" width="138" height="26" rx="6" fill="#141424" stroke="#5e6ad2" stroke-width="0.8"/>
-      <text x="154" y="17" fill="#828fff" class="font-sans" font-size="11" font-weight="600">🛡️ 0 Runtime Errors</text>
-
-      <rect x="292" y="0" width="136" height="26" rx="6" fill="#1a140d" stroke="#f2cc60" stroke-width="0.8"/>
-      <text x="302" y="17" fill="#f2cc60" class="font-sans" font-size="11" font-weight="600">🔥 60fps Silkiness</text>
-    </g>
+  <!-- Top Title Row -->
+  <g transform="translate(24, 28)">
+    <text x="0" y="0" fill="#f5f5f7" class="font-sans" font-size="14" font-weight="600" letter-spacing="-0.2px">System Performance &amp; Engineering Metrics</text>
+    <text x="590" y="0" fill="#86868b" class="font-mono" font-size="11">Architecture: <tspan fill="#2997ff">Autonomous Agentic Core</tspan></text>
   </g>
 
-  <!-- Divider Rule -->
-  <line x1="475" y1="62" x2="475" y2="232" stroke="#23252a" stroke-width="1.2"/>
+  <!-- Left Stats: Progress Gauges -->
+  <g transform="translate(24, 52)">
+    <!-- Focus -->
+    <text x="0" y="14" fill="#86868b" class="font-mono" font-size="11">Focus &amp; Delivery</text>
+    <rect x="125" y="6" width="260" height="8" rx="4" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="125" y="6" width="255" height="8" rx="4" fill="#2997ff"/>
+    <text x="395" y="14" fill="#f5f5f7" class="font-mono" font-size="10.5">100%</text>
 
-  <!-- Right Column: Attributes & Gear -->
-  <g transform="translate(500, 66)">
-    <text x="0" y="12" fill="#00f2fe" class="font-mono" font-size="11.5" font-weight="700" letter-spacing="0.5px">&#8212; CORE SYSTEM ATTRIBUTES</text>
+    <!-- Code Quality -->
+    <text x="0" y="38" fill="#86868b" class="font-mono" font-size="11">Code Reliability</text>
+    <rect x="125" y="30" width="260" height="8" rx="4" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="125" y="30" width="250" height="8" rx="4" fill="#30d158"/>
+    <text x="395" y="38" fill="#f5f5f7" class="font-mono" font-size="10.5">98%</text>
+
+    <!-- Execution Speed -->
+    <text x="0" y="62" fill="#86868b" class="font-mono" font-size="11">Frame Budget</text>
+    <rect x="125" y="54" width="260" height="8" rx="4" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="125" y="54" width="260" height="8" rx="4" fill="#f5f5f7"/>
+    <text x="395" y="62" fill="#f5f5f7" class="font-mono" font-size="10.5">60 FPS</text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="470" y1="46" x2="470" y2="135" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Right Side Attributes -->
+  <g transform="translate(500, 52)">
+    <text x="0" y="14" fill="#86868b" class="font-sans" font-size="11" font-weight="600">&#8212; CORE CAPABILITIES</text>
 
     <g transform="translate(0, 24)">
-      <rect x="0" y="0" width="160" height="28" rx="6" fill="#0e111a" stroke="#23252a" stroke-width="0.8"/>
-      <text x="12" y="18" fill="#8a8f98" class="font-mono" font-size="11">🧠 INT:</text>
-      <text x="62" y="18" fill="#00f2fe" class="font-mono" font-size="11" font-weight="700">99 [AI &amp; RAG]</text>
+      <rect x="0" y="0" width="155" height="24" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08" stroke-width="0.8"/>
+      <text x="10" y="16" fill="#f5f5f7" class="font-sans" font-size="11">🧠 AI Systems: <tspan fill="#2997ff" font-weight="600">Expert</tspan></text>
 
-      <rect x="172" y="0" width="160" height="28" rx="6" fill="#0e111a" stroke="#23252a" stroke-width="0.8"/>
-      <text x="184" y="18" fill="#8a8f98" class="font-mono" font-size="11">⚡ DEX:</text>
-      <text x="234" y="18" fill="#27a644" class="font-mono" font-size="11" font-weight="700">98 [Speed Dev]</text>
-
-      <rect x="0" y="36" width="160" height="28" rx="6" fill="#0e111a" stroke="#23252a" stroke-width="0.8"/>
-      <text x="12" y="54" fill="#8a8f98" class="font-mono" font-size="11">⚔️ ATK:</text>
-      <text x="62" y="54" fill="#828fff" class="font-mono" font-size="11" font-weight="700">97 [Full-Stack]</text>
-
-      <rect x="172" y="36" width="160" height="28" rx="6" fill="#0e111a" stroke="#23252a" stroke-width="0.8"/>
-      <text x="184" y="54" fill="#8a8f98" class="font-mono" font-size="11">🛡️ DEF:</text>
-      <text x="234" y="54" fill="#f2cc60" class="font-mono" font-size="11" font-weight="700">95 [Security]</text>
+      <rect x="165" y="0" width="165" height="24" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08" stroke-width="0.8"/>
+      <text x="10" y="16" fill="#f5f5f7" class="font-sans" font-size="11">⚡ Full-Stack: <tspan fill="#30d158" font-weight="600">High Speed</tspan></text>
     </g>
 
-    <text x="0" y="108" fill="#828fff" class="font-mono" font-size="11.5" font-weight="700" letter-spacing="0.5px">&#8212; EQUIPPED WEAPONRY &amp; FRAMEWORKS</text>
-    <g transform="translate(0, 122)">
-      <text x="0" y="14" fill="#f7f8f8" class="font-sans" font-size="11.5">⚔️ <tspan fill="#f2cc60" font-weight="600">Terminal Excalibur</tspan> (+50 Concurrency, Multi-Threaded)</text>
-      <text x="0" y="32" fill="#f7f8f8" class="font-sans" font-size="11.5">🔮 <tspan fill="#828fff" font-weight="600">PyTorch Grimoire</tspan> (+100 Autonomous Agentic Flow)</text>
-      <text x="0" y="50" fill="#f7f8f8" class="font-sans" font-size="11.5">🛡️ <tspan fill="#00f2fe" font-weight="600">Next.js 15 Aegis Shield</tspan> (+60fps Silkiness, Zero-Lag)</text>
+    <g transform="translate(0, 54)">
+      <rect x="0" y="0" width="155" height="24" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08" stroke-width="0.8"/>
+      <text x="10" y="16" fill="#f5f5f7" class="font-sans" font-size="11">🛡️ Architecture: <tspan fill="#f5f5f7" font-weight="600">Scalable</tspan></text>
+
+      <rect x="165" y="0" width="165" height="24" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08" stroke-width="0.8"/>
+      <text x="10" y="16" fill="#f5f5f7" class="font-sans" font-size="11">🎮 3D &amp; Canvas: <tspan fill="#2997ff" font-weight="600">Silky 60fps</tspan></text>
     </g>
   </g>
 </svg>

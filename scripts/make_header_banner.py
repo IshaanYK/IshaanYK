@@ -3,151 +3,127 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "header-banner.svg")
 
-W, H = 860, 160
+W, H = 860, 128
 
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
   <defs>
-    <!-- Linear.app deep canvas gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#07080b"/>
-      <stop offset="50%" stop-color="#0c0e14"/>
-      <stop offset="100%" stop-color="#030406"/>
+    <!-- Obsidian Glossy Glass Gradient -->
+    <linearGradient id="glossyBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1d22"/>
+      <stop offset="4%" stop-color="#121316"/>
+      <stop offset="100%" stop-color="#08080a"/>
     </linearGradient>
 
-    <!-- Linear Lavender to Electric Cyan Accent -->
-    <linearGradient id="brandAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5e6ad2"/>
-      <stop offset="50%" stop-color="#828fff"/>
-      <stop offset="100%" stop-color="#00f2fe"/>
+    <!-- Apple Specular Top-Light Glass Reflection -->
+    <linearGradient id="glassReflection" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Glass Hairline Bevel -->
-    <linearGradient id="hairlineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5e6ad2" stop-opacity="0.8"/>
-      <stop offset="35%" stop-color="#23252a" stop-opacity="0.6"/>
-      <stop offset="70%" stop-color="#00f2fe" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#23252a" stop-opacity="0.3"/>
+    <!-- Hairline Titanium Border -->
+    <linearGradient id="titaniumBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
     </linearGradient>
-
-    <!-- Background Blueprint Grid -->
-    <pattern id="matrixGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1f2330" stroke-width="0.6" opacity="0.35"/>
-      <circle cx="24" cy="24" r="0.8" fill="#5e6ad2" opacity="0.4"/>
-    </pattern>
-
-    <radialGradient id="ambientGlow" cx="20%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#5e6ad2" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
 
     <style>
-      @keyframes pulseAura {{
-        0%, 100% {{ opacity: 0.7; filter: drop-shadow(0 0 4px #5e6ad2); }}
-        50% {{ opacity: 1; filter: drop-shadow(0 0 12px #00f2fe); }}
-      }}
+      .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif; }}
+      .font-mono {{ font-family: "SF Mono", Menlo, Consolas, Monaco, monospace; }}
 
-      @keyframes typingCursor {{
-        0%, 100% {{ opacity: 1; }}
-        50% {{ opacity: 0; }}
-      }}
+      @keyframes cursorBlink {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0; }} }}
+      @keyframes pulseDot {{ 0%, 100% {{ opacity: 1; transform: scale(1); }} 50% {{ opacity: 0.4; transform: scale(0.9); }} }}
 
-      @keyframes statusBlink {{
-        0%, 100% {{ opacity: 1; }}
-        50% {{ opacity: 0.35; }}
-      }}
-
-      @keyframes cycleQuote {{
+      @keyframes slideCycle1 {{
         0%, 22% {{ opacity: 1; transform: translateY(0); }}
-        25%, 97% {{ opacity: 0; transform: translateY(-6px); }}
+        25%, 97% {{ opacity: 0; transform: translateY(-4px); }}
         100% {{ opacity: 1; transform: translateY(0); }}
       }}
-      @keyframes cycleQuote2 {{
-        0%, 23% {{ opacity: 0; transform: translateY(6px); }}
+      @keyframes slideCycle2 {{
+        0%, 23% {{ opacity: 0; transform: translateY(4px); }}
         27%, 47% {{ opacity: 1; transform: translateY(0); }}
-        50%, 100% {{ opacity: 0; transform: translateY(-6px); }}
+        50%, 100% {{ opacity: 0; transform: translateY(-4px); }}
       }}
-      @keyframes cycleQuote3 {{
-        0%, 48% {{ opacity: 0; transform: translateY(6px); }}
+      @keyframes slideCycle3 {{
+        0%, 48% {{ opacity: 0; transform: translateY(4px); }}
         52%, 72% {{ opacity: 1; transform: translateY(0); }}
-        75%, 100% {{ opacity: 0; transform: translateY(-6px); }}
+        75%, 100% {{ opacity: 0; transform: translateY(-4px); }}
       }}
-      @keyframes cycleQuote4 {{
-        0%, 73% {{ opacity: 0; transform: translateY(6px); }}
+      @keyframes slideCycle4 {{
+        0%, 73% {{ opacity: 0; transform: translateY(4px); }}
         77%, 96% {{ opacity: 1; transform: translateY(0); }}
-        98%, 100% {{ opacity: 0; transform: translateY(6px); }}
+        98%, 100% {{ opacity: 0; transform: translateY(4px); }}
       }}
 
-      .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif; }}
-      .font-mono {{ font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, monospace; }}
-      .cursor-blink {{ animation: typingCursor 0.9s infinite; fill: #00f2fe; }}
-      .pulse-indicator {{ animation: statusBlink 2.2s infinite ease-in-out; }}
-      .q1 {{ animation: cycleQuote 16s infinite; }}
-      .q2 {{ animation: cycleQuote2 16s infinite; }}
-      .q3 {{ animation: cycleQuote3 16s infinite; }}
-      .q4 {{ animation: cycleQuote4 16s infinite; }}
+      .c-blink {{ animation: cursorBlink 0.9s infinite; fill: #2997ff; }}
+      .dot-live {{ animation: pulseDot 2s infinite ease-in-out; transform-origin: center; }}
+      .t1 {{ animation: slideCycle1 16s infinite; }}
+      .t2 {{ animation: slideCycle2 16s infinite; }}
+      .t3 {{ animation: slideCycle3 16s infinite; }}
+      .t4 {{ animation: slideCycle4 16s infinite; }}
     </style>
   </defs>
 
-  <!-- Container Surface & Subtle Glass Bevel -->
-  <rect width="{W}" height="{H}" rx="16" fill="url(#bgGrad)"/>
-  <rect width="{W}" height="{H}" rx="16" fill="url(#matrixGrid)"/>
-  <rect width="{W}" height="{H}" rx="16" fill="url(#ambientGlow)"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="16" fill="none" stroke="url(#hairlineGrad)" stroke-width="1.2"/>
+  <!-- Glass Card Body -->
+  <rect width="{W}" height="{H}" rx="14" fill="url(#glossyBg)"/>
+  <!-- Top Half Specular Sheen -->
+  <rect width="{W}" height="{H/2}" rx="14" fill="url(#glassReflection)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="url(#titaniumBorder)" stroke-width="1"/>
 
-  <!-- macOS / Terminal Window Controls -->
-  <g transform="translate(24, 22)">
-    <circle cx="0" cy="0" r="5" fill="#ff5f56" stroke="#e0443e" stroke-width="0.5"/>
-    <circle cx="16" cy="0" r="5" fill="#ffbd2e" stroke="#dea123" stroke-width="0.5"/>
-    <circle cx="32" cy="0" r="5" fill="#27c93f" stroke="#1aab29" stroke-width="0.5"/>
+  <!-- Window Dots -->
+  <g transform="translate(22, 18)">
+    <circle cx="0" cy="0" r="4.5" fill="#ffffff" fill-opacity="0.2"/>
+    <circle cx="14" cy="0" r="4.5" fill="#ffffff" fill-opacity="0.2"/>
+    <circle cx="28" cy="0" r="4.5" fill="#ffffff" fill-opacity="0.2"/>
   </g>
 
-  <!-- Status Chip: Available for Collabs -->
-  <g transform="translate(615, 14)">
-    <rect width="220" height="26" rx="13" fill="#0f1118" stroke="#23252a" stroke-width="1"/>
-    <circle cx="16" cy="13" r="4.5" fill="#27a644" class="pulse-indicator"/>
-    <text x="28" y="17" fill="#d0d6e0" class="font-sans" font-size="11" font-weight="600" letter-spacing="0.1px">Open for AI &amp; Full-Stack Collabs</text>
+  <!-- Status Pill -->
+  <g transform="translate(635, 12)">
+    <rect width="200" height="24" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1" stroke-width="0.8"/>
+    <circle cx="14" cy="12" r="3.5" fill="#30d158" class="dot-live"/>
+    <text x="24" y="15.5" fill="#a1a1a6" class="font-sans" font-size="11" font-weight="500">Available for Opportunities</text>
   </g>
 
-  <!-- Main Hero Title & Institution Badge -->
-  <g transform="translate(28, 72)">
-    <text class="font-sans" font-size="30" font-weight="700" fill="#f7f8f8" letter-spacing="-0.8px">
-      Hi, I'm <tspan fill="url(#brandAccent)">Ishaan Sen</tspan>
+  <!-- Main Identity Header -->
+  <g transform="translate(24, 62)">
+    <text class="font-sans" font-size="28" font-weight="600" fill="#f5f5f7" letter-spacing="-0.5px">
+      Ishaan Sen
     </text>
     
-    <!-- IIT Madras Pill Badge -->
-    <g transform="translate(325, -22)">
-      <rect width="138" height="24" rx="12" fill="#141724" stroke="#5e6ad2" stroke-width="0.9" opacity="0.95"/>
-      <circle cx="14" cy="12" r="3.5" fill="#f2cc60"/>
-      <text x="24" y="16" fill="#f7f8f8" class="font-sans" font-size="11.5" font-weight="600">🎓 IIT Madras</text>
+    <!-- IIT Madras Badge -->
+    <g transform="translate(170, -20)">
+      <rect width="125" height="22" rx="11" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.12" stroke-width="0.8"/>
+      <text x="12" y="15" fill="#e5e5e7" class="font-sans" font-size="11" font-weight="500">🎓 IIT Madras</text>
     </g>
 
-    <!-- Class Badge -->
-    <g transform="translate(472, -22)">
-      <rect width="145" height="24" rx="12" fill="#121720" stroke="#00f2fe" stroke-width="0.9" opacity="0.9"/>
-      <text x="14" y="16" fill="#00f2fe" class="font-sans" font-size="11.5" font-weight="600">⚡ AI Systems Arch</text>
+    <!-- AI Systems Badge -->
+    <g transform="translate(302, -20)">
+      <rect width="150" height="22" rx="11" fill="#2997ff" fill-opacity="0.12" stroke="#2997ff" stroke-opacity="0.3" stroke-width="0.8"/>
+      <text x="12" y="15" fill="#2997ff" class="font-sans" font-size="11" font-weight="500">⚡ AI Systems Engineer</text>
     </g>
   </g>
 
-  <!-- Animated Dynamic Taglines -->
-  <g transform="translate(28, 122)" class="font-mono">
-    <g class="q1">
-      <text font-size="13.5" fill="#d0d6e0" font-weight="500">
-        <tspan fill="#5e6ad2">&gt;</tspan> Building <tspan fill="#00f2fe" font-weight="600">autonomous multi-agent loops</tspan>, real-time voice AI, and scalable systems <tspan class="cursor-blink">█</tspan>
+  <!-- Clean Subtitle Loop -->
+  <g transform="translate(24, 100)" class="font-mono">
+    <g class="t1">
+      <text font-size="12.5" fill="#a1a1a6">
+        <tspan fill="#f5f5f7">&gt;</tspan> Architecting autonomous multi-agent pipelines &amp; real-time voice intelligence <tspan class="c-blink">█</tspan>
       </text>
     </g>
-    <g class="q2">
-      <text font-size="13.5" fill="#d0d6e0" font-weight="500">
-        <tspan fill="#5e6ad2">&gt;</tspan> Engineering silky <tspan fill="#828fff" font-weight="600">60fps+ WebGL/Canvas experiences</tspan> and modern Next.js 15 apps <tspan class="cursor-blink">█</tspan>
+    <g class="t2">
+      <text font-size="12.5" fill="#a1a1a6">
+        <tspan fill="#f5f5f7">&gt;</tspan> Crafting ultra-responsive 60fps web apps, Next.js systems &amp; modern interfaces <tspan class="c-blink">█</tspan>
       </text>
     </g>
-    <g class="q3">
-      <text font-size="13.5" fill="#d0d6e0" font-weight="500">
-        <tspan fill="#5e6ad2">&gt;</tspan> Crafting <tspan fill="#27a644" font-weight="600">production RAG pipelines</tspan>, low-latency embeddings, and agent tooling <tspan class="cursor-blink">█</tspan>
+    <g class="t3">
+      <text font-size="12.5" fill="#a1a1a6">
+        <tspan fill="#f5f5f7">&gt;</tspan> Engineering production RAG architectures, embeddings &amp; low-latency tools <tspan class="c-blink">█</tspan>
       </text>
     </g>
-    <g class="q4">
-      <text font-size="13.5" fill="#d0d6e0" font-weight="500">
-        <tspan fill="#5e6ad2">&gt;</tspan> Innovating in <tspan fill="#f2cc60" font-weight="600">open-source AI developer tools</tspan> and self-improving agents <tspan class="cursor-blink">█</tspan>
+    <g class="t4">
+      <text font-size="12.5" fill="#a1a1a6">
+        <tspan fill="#f5f5f7">&gt;</tspan> Building next-gen open-source software, agentic workflows &amp; developer tools <tspan class="c-blink">█</tspan>
       </text>
     </g>
   </g>

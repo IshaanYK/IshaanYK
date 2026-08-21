@@ -3,78 +3,59 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "arcade-game-banner.svg")
 
-W, H = 860, 140
+W, H = 860, 84
 
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
   <defs>
-    <linearGradient id="gameBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080712"/>
-      <stop offset="50%" stop-color="#0c0e18"/>
-      <stop offset="100%" stop-color="#04050a"/>
+    <!-- Frosted Glass Gradient -->
+    <linearGradient id="gameGlassBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#191a1e"/>
+      <stop offset="6%" stop-color="#111215"/>
+      <stop offset="100%" stop-color="#08080a"/>
     </linearGradient>
 
-    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5e6ad2" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#27a644" stop-opacity="0.8"/>
+    <!-- Top Specular Sheen -->
+    <linearGradient id="gameSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5e6ad2"/>
-      <stop offset="100%" stop-color="#00f2fe"/>
+    <!-- Titanium Border -->
+    <linearGradient id="gameBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
     </linearGradient>
 
     <style>
-      .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif; }}
-      .font-mono {{ font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, monospace; }}
-
-      @keyframes shipHover {{
-        0%, 100% {{ transform: translateY(0); }}
-        50% {{ transform: translateY(-4px); }}
-      }}
-      @keyframes playPulse {{
-        0%, 100% {{ filter: drop-shadow(0 0 4px #5e6ad2); opacity: 0.95; }}
-        50% {{ filter: drop-shadow(0 0 12px #00f2fe); opacity: 1; }}
-      }}
-
-      .ship-anim {{ animation: shipHover 2.2s ease-in-out infinite; }}
-      .pulse-launch {{ animation: playPulse 2s infinite ease-in-out; }}
+      .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; }}
+      .font-mono {{ font-family: "SF Mono", Menlo, Consolas, monospace; }}
     </style>
   </defs>
 
-  <rect width="{W}" height="{H}" rx="16" fill="url(#gameBg)"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="16" fill="none" stroke="url(#neonGlow)" stroke-width="1.2"/>
+  <rect width="{W}" height="{H}" rx="14" fill="url(#gameGlassBg)"/>
+  <rect width="{W}" height="{H/2}" rx="14" fill="url(#gameSheen)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="url(#gameBorder)" stroke-width="1"/>
 
-  <!-- Cyber Defender Ship Icon -->
-  <g transform="translate(36, 70)" class="ship-anim">
-    <circle cx="0" cy="0" r="24" fill="#5e6ad2" opacity="0.2"/>
-    <polygon points="0,-18 16,12 6,8 0,12 -6,8 -16,12" fill="#00f2fe"/>
-    <circle cx="0" cy="-2" r="4" fill="#ffffff"/>
+  <!-- Ship Icon -->
+  <g transform="translate(36, 42)">
+    <circle cx="0" cy="0" r="18" fill="#ffffff" fill-opacity="0.06"/>
+    <polygon points="0,-12 10,8 4,5 0,8 -4,5 -10,8" fill="#2997ff"/>
   </g>
 
-  <!-- Title & Description -->
-  <g transform="translate(80, 42)">
-    <text x="0" y="0" fill="#00f2fe" class="font-mono" font-size="13" font-weight="700" letter-spacing="1px">🕹️ PLAYABLE PROFILE ARCADE: NEURAL DEFENDER</text>
-    <text x="0" y="24" fill="#8a8f98" class="font-sans" font-size="12">
-      Defend Ishaan's AI Core against memory bugs &amp; corrupted packets in silky 60fps HTML5 Canvas arcade action!
+  <!-- Title & Subtitle -->
+  <g transform="translate(74, 32)">
+    <text x="0" y="0" fill="#f5f5f7" class="font-sans" font-size="13.5" font-weight="600" letter-spacing="-0.2px">Neural Defender • Playable 60fps HTML5 Arcade Game</text>
+    <text x="0" y="20" fill="#86868b" class="font-sans" font-size="11.5">
+      Cyberpunk browser arcade shooter built with custom canvas physics &amp; Web Audio SFX
     </text>
   </g>
 
-  <!-- Launch Button -->
-  <g transform="translate(80, 84)">
-    <rect x="0" y="0" width="280" height="38" rx="19" fill="url(#btnGrad)" class="pulse-launch"/>
-    <polygon points="22,13 33,19 22,25" fill="#04060a"/>
-    <text x="44" y="24" fill="#04060a" class="font-sans" font-size="12.5" font-weight="700" letter-spacing="0.4px">
-      ► LAUNCH GAME IN BROWSER
-    </text>
-  </g>
-
-  <!-- Arcade Telemetry Badges -->
-  <g transform="translate(380, 88)">
-    <rect x="0" y="0" width="455" height="32" rx="8" fill="#0f121a" stroke="#23252a" stroke-width="0.9"/>
-    <text x="18" y="20" fill="#27a644" class="font-mono" font-size="11" font-weight="700">● 60 FPS CANVAS</text>
-    <text x="160" y="20" fill="#f2cc60" class="font-mono" font-size="11" font-weight="700">🪙 FREE TO PLAY</text>
-    <text x="280" y="20" fill="#828fff" class="font-mono" font-size="11" font-weight="700">⚡ WEB AUDIO SYNTH SFX</text>
+  <!-- Play Button -->
+  <g transform="translate(710, 42)">
+    <rect x="-6" y="-16" width="138" height="32" rx="16" fill="#2997ff" fill-opacity="0.12" stroke="#2997ff" stroke-opacity="0.3" stroke-width="0.8"/>
+    <polygon points="8,-4 15,0 8,4" fill="#2997ff"/>
+    <text x="24" y="4" fill="#2997ff" class="font-sans" font-size="11.5" font-weight="600">Launch Game 🚀</text>
   </g>
 </svg>
 """
