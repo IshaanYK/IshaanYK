@@ -7,7 +7,7 @@ $TargetScript = Join-Path $ScriptDir "auto_streak.ps1"
 $TaskName = "IshaanYK_DailyGitHubStreak"
 
 Write-Output "=========================================================="
-Write-Output "[*] Setting up Windows Task Scheduler for Daily GitHub Streak"
+Write-Output "[*] Setting up Resilient Windows Task Scheduler for Daily Streak"
 Write-Output "=========================================================="
 
 try {
@@ -21,22 +21,22 @@ try {
     # Create Action (Execute PowerShell script hiddenly)
     $Action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File `"$TargetScript`""
 
-    # Create Trigger (Daily at 10:00 AM)
-    $Trigger = New-ScheduledTaskTrigger -Daily -At 10:00AM
+    # Create Trigger (Daily starting at 09:00 AM, repeating every 4 hours for 1 day)
+    $Trigger = New-ScheduledTaskTrigger -Daily -At 09:00AM
+    $Trigger.Repetition = (New-ScheduledTaskTrigger -Once -At 09:00AM -RepetitionInterval (New-TimeSpan -Hours 4) -RepetitionDuration (New-TimeSpan -Days 1)).Repetition
 
-    # Create Settings
-    $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable
+    # Create Settings (Start when available, run on battery or plugged in)
+    $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -MultipleInstances IgnoreNew
 
     # Register Task
-    Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Settings $Settings -Description "Automated daily GitHub contribution and streak maintainer for IshaanYK" | Out-Null
+    Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Settings $Settings -Description "Resilient automated multi-commit GitHub streak engine for IshaanYK" | Out-Null
 
     Write-Output "[OK] Scheduled task '$TaskName' registered successfully!"
-    Write-Output "[INFO] It will automatically run every day at 10:00 AM in the background."
+    Write-Output "[INFO] Repeating trigger active (every 4 hours, start when available)."
     Write-Output "=========================================================="
     exit 0
 }
 catch {
     Write-Warning "[ERROR] Failed to register task: $_"
-    Write-Output "[TIP] Please run PowerShell as Administrator to register scheduled tasks."
     exit 1
 }

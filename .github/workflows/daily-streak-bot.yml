@@ -2,11 +2,20 @@ name: Daily GitHub Streak & Contribution Bot
 
 on:
   schedule:
-    # Runs at 00:05 UTC every single day (5:35 AM IST)
-    - cron: '5 0 * * *'
-    # Runs at 12:05 UTC every single day (5:35 PM IST)
-    - cron: '5 12 * * *'
+    # Multiple distributed daily runs (UTC times: 03:00, 07:00, 11:00, 15:00, 19:00, 23:00)
+    # Ensures 24/7 reliability, resilience against cloud delays, and natural randomized activity
+    - cron: '0 3 * * *'
+    - cron: '0 7 * * *'
+    - cron: '0 11 * * *'
+    - cron: '0 15 * * *'
+    - cron: '0 19 * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch:
+    inputs:
+      commit_count:
+        description: 'Number of random commits to generate (leave blank for random 5-20)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -19,6 +28,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Setup Python 3.10
         uses: actions/setup-python@v5
@@ -31,63 +41,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
 
-      - name: Generate Daily Streak Log & Code Entry
-        run: |
-          python -c "
-          import json, datetime, os
-
-          log_file = 'data/daily-streak-log.json'
-          os.makedirs('data', exist_ok=True)
-
-          now = datetime.datetime.utcnow().isoformat() + 'Z'
-          today_str = datetime.date.today().isoformat()
-
-          try:
-              with open(log_file, 'r', encoding='utf-8') as f:
-                  data = json.load(f)
-          except Exception:
-              data = {'author': 'Ishaan Sen', 'streak_entries': []}
-
-          entry = {
-              'timestamp': now,
-              'date': today_str,
-              'status': 'verified_active',
-              'quest': 'Autonomous AI Multi-Agent Optimization & System Architecture',
-              'buff': 'Daily Streak Booster Active'
-          }
-
-          data['streak_entries'].append(entry)
-          data['last_updated'] = now
-          data['total_active_days'] = len(data['streak_entries'])
-
-          with open(log_file, 'w', encoding='utf-8') as f:
-              json.dump(data, f, indent=2)
-
-          print(f'[OK] Recorded daily contribution for {today_str}')
-          "
-
-      - name: Scrape Contributions & Update Heatmap
-        env:
-          GH_PROFILE_USER: IshaanYK
-        run: |
-          python scripts/fetch_contributions.py
-          python scripts/render_heatmap_svg.py
-          python scripts/make_header_banner.py
-          python scripts/make_music_player.py
-          python scripts/make_info_card.py
-          python scripts/make_gaming_hud.py
-          python scripts/make_retro_snake.py
-
-      - name: Commit and Push Daily Contribution
+      - name: Configure Git Identity
         run: |
           git config --global user.name "IshaanYK"
           git config --global user.email "ishaansenres@gmail.com"
-          git add data/daily-streak-log.json data/contributions.json contrib-heatmap.svg header-banner.svg info-card.svg music-player.svg gaming-hud.svg retro-snake.svg
-          
-          # Commit with verified IshaanYK identity so GitHub credits contribution graph
-          if ! git diff --cached --quiet; then
-            git commit -m "feat(streak): automated daily contribution & profile sync [$(date -u +'%Y-%m-%d')]"
-            git push
+
+      - name: Execute Randomized Multi-Commit Engine
+        env:
+          GH_PROFILE_USER: IshaanYK
+          INPUT_COMMIT_COUNT: ${{ github.event.inputs.commit_count }}
+        run: |
+          if [ -n "$INPUT_COMMIT_COUNT" ]; then
+            python scripts/random_streak_pusher.py "$INPUT_COMMIT_COUNT"
           else
-            echo "No changes to commit today."
+            # Randomly generate 2 to 4 commits per scheduled run (averaging 12-24 commits daily)
+            RANDOM_COUNT=$((2 + RANDOM % 4))
+            python scripts/random_streak_pusher.py "$RANDOM_COUNT"
           fi
