@@ -12,6 +12,10 @@ Write-Output "[*] IshaanYK GitHub Daily Streak & Code Automation"
 Write-Output "=========================================================="
 
 try {
+    Set-Location -Path $ScriptDir
+    Write-Output "[*] Pulling latest changes from origin main..."
+    & git pull --rebase origin main
+
     # Ensure data directory exists
     if (-not (Test-Path $DataDir)) {
         New-Item -ItemType Directory -Path $DataDir -Force | Out-Null
@@ -38,11 +42,6 @@ try {
             streak_entries = @()
         }
     }
-
-    # Git sync and pull latest remote changes first to prevent push rejections
-    Set-Location -Path $ScriptDir
-    Write-Output "[*] Pulling latest changes from origin main..."
-    & git pull --rebase origin main
 
     # Generate new timestamped entry
     $nowUtc = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
