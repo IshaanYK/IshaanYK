@@ -198,5 +198,13 @@
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260821175707-4",
+    "timestamp": "2026-08-21T17:57:07Z",
+    "date": "2026-08-22",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
   }
 ]
