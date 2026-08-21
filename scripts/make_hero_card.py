@@ -3,37 +3,37 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "hero-card.svg")
 
-W, H = 860, 180
+W, H = 860, 164
 
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
   <defs>
-    <!-- Deep Obsidian Glossy Gradient -->
-    <linearGradient id="heroGlossBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#18191d"/>
-      <stop offset="5%" stop-color="#101114"/>
-      <stop offset="100%" stop-color="#060608"/>
+    <!-- Executive Slate Dark Gradient -->
+    <linearGradient id="execBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16171b"/>
+      <stop offset="6%" stop-color="#101114"/>
+      <stop offset="100%" stop-color="#070709"/>
     </linearGradient>
 
-    <!-- Specular Glass Light Reflection -->
-    <linearGradient id="heroSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
-      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.02"/>
+    <!-- Top Specular Sheen -->
+    <linearGradient id="execSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.02"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Hairline Titanium Glass Border -->
-    <linearGradient id="heroBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    <!-- Precision Titanium Border -->
+    <linearGradient id="execBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
     </linearGradient>
 
     <style>
       .font-sans {{ font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif; }}
       .font-mono {{ font-family: "SF Mono", Menlo, Consolas, monospace; }}
 
-      @keyframes blinkCursor {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0; }} }}
-      @keyframes pulseOnline {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0.35; }} }}
+      @keyframes cursorBlink {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0; }} }}
+      @keyframes pulseAvail {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0.35; }} }}
 
       @keyframes loopTag1 {{
         0%, 22% {{ opacity: 1; transform: translateY(0); }}
@@ -56,8 +56,8 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
         98%, 100% {{ opacity: 0; transform: translateY(4px); }}
       }}
 
-      .c-cursor {{ animation: blinkCursor 0.9s infinite; fill: #2997ff; }}
-      .dot-pulse {{ animation: pulseOnline 2.2s infinite ease-in-out; }}
+      .c-cur {{ animation: cursorBlink 0.9s infinite; fill: #2997ff; }}
+      .dot-avail {{ animation: pulseAvail 2s infinite ease-in-out; }}
       .t1 {{ animation: loopTag1 16s infinite; }}
       .t2 {{ animation: loopTag2 16s infinite; }}
       .t3 {{ animation: loopTag3 16s infinite; }}
@@ -65,74 +65,71 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
     </style>
   </defs>
 
-  <!-- Glass Card Body -->
-  <rect width="{W}" height="{H}" rx="14" fill="url(#heroGlossBg)"/>
-  <rect width="{W}" height="{H/2}" rx="14" fill="url(#heroSpecular)"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="url(#heroBorder)" stroke-width="1"/>
+  <!-- Container -->
+  <rect width="{W}" height="{H}" rx="14" fill="url(#execBg)"/>
+  <rect width="{W}" height="{H/2}" rx="14" fill="url(#execSheen)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="url(#execBorder)" stroke-width="1"/>
 
-  <!-- Window Dots -->
+  <!-- Top Bar: Window Controls & Recruiter Status -->
   <g transform="translate(24, 20)">
     <circle cx="0" cy="0" r="4.5" fill="#ffffff" fill-opacity="0.2"/>
     <circle cx="14" cy="0" r="4.5" fill="#ffffff" fill-opacity="0.2"/>
     <circle cx="28" cy="0" r="4.5" fill="#ffffff" fill-opacity="0.2"/>
   </g>
 
-  <!-- Status Pill -->
-  <g transform="translate(635, 14)">
-    <rect width="200" height="24" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1" stroke-width="0.8"/>
-    <circle cx="14" cy="12" r="3.5" fill="#30d158" class="dot-pulse"/>
-    <text x="26" y="15.5" fill="#a1a1a6" class="font-sans" font-size="11" font-weight="500">Available for Opportunities</text>
+  <!-- Hiring Pill -->
+  <g transform="translate(615, 12)">
+    <rect width="220" height="26" rx="13" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12" stroke-width="0.8"/>
+    <circle cx="14" cy="13" r="3.5" fill="#30d158" class="dot-avail"/>
+    <text x="26" y="16.5" fill="#f5f5f7" class="font-sans" font-size="11" font-weight="500">Open to Roles &amp; Internships</text>
   </g>
 
-  <!-- Main Name & Credentials -->
+  <!-- Name & Credentials -->
   <g transform="translate(26, 68)">
-    <text class="font-sans" font-size="30" font-weight="600" fill="#f5f5f7" letter-spacing="-0.5px">
+    <text class="font-sans" font-size="30" font-weight="700" fill="#f5f5f7" letter-spacing="-0.6px">
       Ishaan Sen
     </text>
     
-    <!-- IIT Madras Pill -->
-    <g transform="translate(175, -22)">
-      <rect width="130" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.12" stroke-width="0.8"/>
-      <text x="12" y="16" fill="#e5e5e7" class="font-sans" font-size="11.5" font-weight="500">🎓 IIT Madras</text>
+    <g transform="translate(170, -22)">
+      <rect width="135" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.12" stroke-width="0.8"/>
+      <text x="12" y="16.5" fill="#e5e5e7" class="font-sans" font-size="11.5" font-weight="500">🎓 IIT Madras</text>
     </g>
 
-    <!-- AI Systems Pill -->
     <g transform="translate(315, -22)">
-      <rect width="165" height="24" rx="12" fill="#2997ff" fill-opacity="0.12" stroke="#2997ff" stroke-opacity="0.3" stroke-width="0.8"/>
-      <text x="12" y="16" fill="#2997ff" class="font-sans" font-size="11.5" font-weight="500">⚡ AI Systems Architect</text>
+      <rect width="185" height="24" rx="12" fill="#2997ff" fill-opacity="0.12" stroke="#2997ff" stroke-opacity="0.25" stroke-width="0.8"/>
+      <text x="12" y="16.5" fill="#2997ff" class="font-sans" font-size="11.5" font-weight="500">⚡ AI Systems &amp; Full-Stack</text>
     </g>
   </g>
 
-  <!-- Tagline Loop -->
+  <!-- Engineering Focus Subtitle -->
   <g transform="translate(26, 110)" class="font-mono">
     <g class="t1">
-      <text font-size="13" fill="#a1a1a6">
-        <tspan fill="#f5f5f7">&gt;</tspan> Architecting autonomous multi-agent pipelines &amp; real-time voice intelligence <tspan class="c-cursor">█</tspan>
+      <text font-size="12.5" fill="#a1a1a6">
+        <tspan fill="#f5f5f7">&gt;</tspan> Specializing in <tspan fill="#2997ff" font-weight="600">Autonomous Multi-Agent AI</tspan>, RAG pipelines &amp; scalable systems <tspan class="c-cur">█</tspan>
       </text>
     </g>
     <g class="t2">
-      <text font-size="13" fill="#a1a1a6">
-        <tspan fill="#f5f5f7">&gt;</tspan> Crafting ultra-responsive 60fps web apps, Next.js systems &amp; modern interfaces <tspan class="c-cursor">█</tspan>
+      <text font-size="12.5" fill="#a1a1a6">
+        <tspan fill="#f5f5f7">&gt;</tspan> Building production web apps with <tspan fill="#30d158" font-weight="600">Next.js 15, TypeScript &amp; FastAPI</tspan> <tspan class="c-cur">█</tspan>
       </text>
     </g>
     <g class="t3">
-      <text font-size="13" fill="#a1a1a6">
-        <tspan fill="#f5f5f7">&gt;</tspan> Engineering production RAG architectures, embeddings &amp; low-latency tools <tspan class="c-cursor">█</tspan>
+      <text font-size="12.5" fill="#a1a1a6">
+        <tspan fill="#f5f5f7">&gt;</tspan> Engineering real-time <tspan fill="#2997ff" font-weight="600">Voice AI agents</tspan> with sub-second STT/TTS latency <tspan class="c-cur">█</tspan>
       </text>
     </g>
     <g class="t4">
-      <text font-size="13" fill="#a1a1a6">
-        <tspan fill="#f5f5f7">&gt;</tspan> Building next-gen open-source software, agentic workflows &amp; developer tools <tspan class="c-cursor">█</tspan>
+      <text font-size="12.5" fill="#a1a1a6">
+        <tspan fill="#f5f5f7">&gt;</tspan> Delivering robust <tspan fill="#f5f5f7" font-weight="600">open-source software &amp; verified architectures</tspan> <tspan class="c-cur">█</tspan>
       </text>
     </g>
   </g>
 
-  <!-- Bottom Quick Links Bar -->
-  <line x1="26" y1="135" x2="834" y2="135" stroke="#ffffff" stroke-opacity="0.07" stroke-width="1"/>
-  
-  <g transform="translate(26, 158)" class="font-sans">
-    <text x="0" y="0" fill="#86868b" font-size="11.5">
-      🎮 <tspan fill="#f5f5f7" font-weight="500">Neural Defender (60fps Arcade Game)</tspan> &nbsp;•&nbsp; 🎧 <tspan fill="#f5f5f7" font-weight="500">Expresso Ambient Stream</tspan> &nbsp;•&nbsp; 🌐 <tspan fill="#2997ff" font-weight="500">portfolio-me</tspan>
+  <!-- Bottom Fast Track Info -->
+  <line x1="26" y1="134" x2="834" y2="134" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+  <g transform="translate(26, 150)" class="font-sans">
+    <text x="0" y="0" fill="#86868b" font-size="11">
+      📍 Location: <tspan fill="#f5f5f7">India</tspan> &nbsp;•&nbsp; 💼 Status: <tspan fill="#30d158">Available for Full-Time / Contract / Remote</tspan> &nbsp;•&nbsp; ✉️ <tspan fill="#2997ff">ishaansenres@gmail.com</tspan>
     </text>
   </g>
 </svg>
