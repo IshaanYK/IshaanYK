@@ -1,29 +1,36 @@
 <div align="center">
 
-<!-- ⚡ Executive Header Card -->
+<!-- ⚡ Master Executive Holographic Header -->
 <a href="https://github.com/IshaanYK">
-  <img src="./hero-card.svg" width="100%" alt="Ishaan Sen - AI Systems & Full-Stack Engineer" />
+  <img src="./hero-card.svg" width="100%" alt="Ishaan Sen - AI Systems Architect" />
 </a>
 
-<!-- Quick Action Badges -->
+<!-- Quick Action Pills -->
 <p align="center">
   <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/🌐_Portfolio-Live_Showcase-2997ff?style=flat-square" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/ishaan784/"><img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:ishaansenres@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-Direct_Contact-1d1d1f?style=flat-square" alt="Email" /></a>
   <a href="https://www.iitm.ac.in/"><img src="https://img.shields.io/badge/🎓_IIT_Madras-Engineering-1d1d1f?style=flat-square" alt="IIT Madras" /></a>
+  <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=121316&style=flat-square&label=VIEWS" alt="Views" />
 </p>
 
-<!-- 🕹️ Interactive 60fps Browser Game Banner -->
-<a href="https://ishaanyk.github.io/IshaanYK/game/" target="_blank" title="Click to Play 60fps Neural Defender in Browser">
+<!-- 🧠 Autonomous AI Agent Supervisor & Quantum Telemetry Terminal -->
+<img src="./neural-terminal.svg" width="100%" alt="AI Agent Supervisor Kernel Telemetry" />
+
+<!-- ⚡ 4-Pillar Neural Ecosystem Architecture -->
+<img src="./interactive-bento.svg" width="100%" alt="Neural Architecture & Ecosystem Bento" />
+
+<!-- 🕹️ Interactive 60fps Arcade Shooter Game -->
+<a href="https://ishaanyk.github.io/IshaanYK/game/" target="_blank" title="Click to Launch and Play 60fps Neural Defender in Browser">
   <img src="./arcade-game-banner.svg" width="100%" alt="Play Neural Defender Game" />
 </a>
 
 <!-- 🎧 Interactive Ambient Audio Streamer -->
-<a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank" title="Click to Stream Ambient Audio">
+<a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank" title="Click to Stream Expresso Ambient Focus Audio">
   <img src="./music-player.svg" width="100%" alt="Expresso Ambient Player" />
 </a>
 
-<!-- 🍱 Interactive Portrait & Terminal Bento Grid -->
+<!-- 🍱 Portrait & Neofetch Terminal Bento -->
 <table border="0" cellspacing="0" cellpadding="6" width="100%">
 <tr>
 <td align="center" width="40%" style="border:none;">
@@ -39,13 +46,13 @@
 
 ---
 
-### 👨‍💻 Executive Summary
+### 👨‍💻 Executive Summary & Technical Vision
 
-> **AI Systems Architect & Full-Stack Engineer** studying at **Indian Institute of Technology Madras (IIT Madras)**. Specializing in **autonomous multi-agent orchestration**, **real-time voice AI architectures**, and **scalable sub-second latency web applications**. Experienced in taking complex machine learning prototypes into production-grade, containerized software systems.
+> **AI Systems Architect & Full-Stack Engineer** at **Indian Institute of Technology Madras (IIT Madras)**. Specializing in **autonomous multi-agent orchestration**, **real-time voice AI architectures**, and **scalable sub-second latency web applications**. Passionate about bridging theoretical machine learning breakthroughs into resilient, production-grade distributed systems.
 
 * 🎓 **Education**: Indian Institute of Technology Madras (IIT Madras)
-* 💼 **Current Status**: **Actively Open to Full-Time Roles, Internships & High-Impact Engineering Collabs**
-* 🧠 **Primary Expertise**: Autonomous Agent Loops • Real-Time Voice Pipelines • Production RAG • Next.js 15 & FastAPI Distributed Architecture
+* 💼 **Current Status**: **Actively Open to Full-Time Roles, Internships & High-Impact Research Collaborations**
+* 🧠 **Primary Focus**: Autonomous Agent Loops • Real-Time Voice Pipelines • Production RAG • Next.js 15 & FastAPI Distributed Systems
 * 📬 **Get in Touch**: [ishaansenres@gmail.com](mailto:ishaansenres@gmail.com) • [LinkedIn (@ishaan784)](https://www.linkedin.com/in/ishaan784/)
 
 ---
