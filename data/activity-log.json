@@ -6,5 +6,13 @@
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260821151749-2",
+    "timestamp": "2026-08-21T15:17:49Z",
+    "date": "2026-08-21",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
+    "author": "IshaanYK"
   }
 ]
