@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 """
-One-command builder script: Regenerates all profile SVG widgets at once!
-Run this whenever you edit any script in scripts/ or change your config.
-
-Usage:
-  python scripts/build_all.py
+One-command builder script: Regenerates all profile SVG widgets cleanly.
 """
 import subprocess
 import sys
@@ -13,12 +9,8 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 scripts = [
-    "make_header_banner.py",
-    "make_arcade_banner.py",
-    "make_music_player.py",
+    "make_hero_card.py",
     "make_info_card.py",
-    "make_gaming_hud.py",
-    "make_retro_snake.py",
     "fetch_contributions.py",
     "render_heatmap_svg.py",
 ]

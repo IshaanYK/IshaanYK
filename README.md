@@ -1,44 +1,30 @@
 <div align="center">
 
-<!-- Glossy Apple Header Banner -->
+<!-- ⚡ Master Obsidian Glossy Header Card -->
 <a href="https://github.com/IshaanYK">
-  <img src="./header-banner.svg" width="100%" alt="Ishaan Sen - AI Systems Engineer" />
+  <img src="./hero-card.svg" width="100%" alt="Ishaan Sen - AI Systems Architect" />
 </a>
 
-<!-- Status & Credentials Pills -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=121316&style=flat-square&label=VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=121316&style=flat-square&label=VIEWS" alt="Views" />
   <a href="https://www.iitm.ac.in/"><img src="https://img.shields.io/badge/IIT_Madras-Student-121316?style=flat-square&logo=education&logoColor=ffffff" alt="IIT Madras" /></a>
   <img src="https://img.shields.io/badge/Focus-AI_Agents-121316?style=flat-square&logo=python&logoColor=2997ff" alt="Focus" />
   <img src="https://img.shields.io/badge/Status-Online-121316?style=flat-square&logo=github&logoColor=30d158" alt="Status" />
 </p>
 
-<!-- Playable Arcade Game Banner -->
-<a href="https://ishaanyk.github.io/IshaanYK/game/" target="_blank" title="Play 60fps Neural Defender in Browser">
-  <img src="./arcade-game-banner.svg" width="100%" alt="Neural Defender Arcade Game" />
-</a>
-
-<!-- Audio Streamer -->
-<a href="https://ishaanyk.github.io/IshaanYK/Expresso.mp4" target="_blank" title="Stream Expresso Ambient Audio Track">
-  <img src="./music-player.svg" width="100%" alt="Expresso Ambient Player" />
-</a>
-
-<!-- System Performance HUD -->
-<img src="./gaming-hud.svg" width="100%" alt="System Metrics HUD" />
-
-<!-- Portrait & Terminal Bento Grid -->
-<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<!-- 🍱 Portrait & Terminal Bento -->
+<table border="0" cellspacing="0" cellpadding="6" width="100%">
 <tr>
-<td align="center" width="40%" style="border:none; padding:4px;">
-  <img src="./color-loop.gif" width="100%" style="border-radius:14px; max-width:340px;" alt="Ishaan Animated Portrait" />
+<td align="center" width="40%" style="border:none;">
+  <img src="./color-loop.gif" width="100%" style="border-radius:14px; max-width:320px;" alt="Ishaan Portrait" />
 </td>
-<td align="center" width="60%" style="border:none; padding:4px;">
+<td align="center" width="60%" style="border:none;">
   <img src="./info-card.svg" width="100%" style="border-radius:14px; max-width:490px;" alt="Terminal System Info" />
 </td>
 </tr>
 </table>
 
-<!-- Social Connect Badges -->
+<!-- 🌐 Quick Connect Badges -->
 <p align="center">
   <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/Portfolio-2997ff?style=flat-square&logo=vercel&logoColor=ffffff" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/ishaan784/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=ffffff" alt="LinkedIn" /></a>
@@ -46,7 +32,7 @@
   <a href="https://github.com/IshaanYK"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=ffffff" alt="GitHub" /></a>
 </p>
 
-<!-- Philosophy Lore -->
+<!-- 💡 Vision Lore -->
 <details>
 <summary><b>✨ Architecture Philosophy &amp; Vision</b></summary>
 
@@ -54,7 +40,7 @@
 
 - 🎓 **Academy**: Student at **Indian Institute of Technology Madras (IIT Madras)**.
 - 🤖 **Primary Focus**: Engineering autonomous multi-agent pipelines, real-time voice agents, and self-improving neural workflows.
-- ⚡ **Stack**: Python, Next.js 15, React 19, PyTorch, TypeScript, FastAPI, Redis, and scalable cloud infrastructure.
+- ⚡ **Stack**: Python, Next.js 15, React 19, PyTorch, TypeScript, FastAPI, Redis, and high-performance cloud architecture.
 </details>
 
 ### 🛠️ Tech Arsenal
@@ -70,24 +56,24 @@
 
 <table border="0" cellspacing="0" cellpadding="8" width="100%">
 <tr>
-<td valign="top" width="50%" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: #0c0e14; padding: 12px;">
+<td valign="top" width="50%" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: #0c0e14; padding: 14px;">
   <a href="https://github.com/IshaanYK/call-agent"><strong>📞 call-agent</strong></a><br>
   <sub>Autonomous AI voice agent with sub-second speech-to-text and real-time execution.</sub><br>
   <code>JavaScript</code> <code>Voice AI</code> <code>Autonomous Agent</code>
 </td>
-<td valign="top" width="50%" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: #0c0e14; padding: 12px;">
+<td valign="top" width="50%" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: #0c0e14; padding: 14px;">
   <a href="https://github.com/IshaanYK/STORAGE-WIDGET"><strong>💾 STORAGE-WIDGET</strong></a><br>
   <sub>Lightweight system telemetry &amp; disk quota monitor with real-time performance tracking.</sub><br>
   <code>Python</code> <code>System Widget</code> <code>Telemetry</code>
 </td>
 </tr>
 <tr>
-<td valign="top" width="50%" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: #0c0e14; padding: 12px;">
+<td valign="top" width="50%" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: #0c0e14; padding: 14px;">
   <a href="https://github.com/IshaanYK/IshaanYK/tree/main/game"><strong>🎮 NEURAL DEFENDER</strong></a><br>
   <sub>60fps fast-paced HTML5 Canvas cyberpunk arcade shooter with custom particle physics.</sub><br>
   <code>HTML5 Canvas</code> <code>JavaScript</code> <a href="https://ishaanyk.github.io/IshaanYK/game/"><strong>Play Live 🚀</strong></a>
 </td>
-<td valign="top" width="50%" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: #0c0e14; padding: 12px;">
+<td valign="top" width="50%" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: #0c0e14; padding: 14px;">
   <a href="https://github.com/IshaanYK/portfolio-me"><strong>🌐 portfolio-me</strong></a><br>
   <sub>High-performance personal showcase with sleek glassmorphism and responsive interactions.</sub><br>
   <code>HTML5</code> <code>CSS3</code> <code>JavaScript</code> <a href="https://ishaanyk.github.io/portfolio-me/"><strong>Live ✨</strong></a>
@@ -95,10 +81,7 @@
 </tr>
 </table>
 
-<!-- Activity Matrix Tracker -->
-<img src="./retro-snake.svg" width="100%" alt="Activity Matrix Tracker" />
-
-### 📅 Contribution Matrix
+### 📅 Live Synchronized Contribution Matrix
 <img src="./contrib-heatmap.svg" width="100%" alt="GitHub contribution matrix" />
 
 </div>
