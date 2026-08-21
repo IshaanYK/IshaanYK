@@ -62,13 +62,32 @@ try {
     $streakData | ConvertTo-Json -Depth 10 | Out-File -FilePath $LogFile -Encoding UTF8
     Write-Output "[OK] Logged daily streak entry for $todayStr"
 
-    # Git sync and push
+    # Git sync and pull latest remote changes first to prevent push rejections
     Set-Location -Path $ScriptDir
+    Write-Output "[*] Pulling latest changes from origin main..."
+    & git pull --rebase origin main
+
+    # Run build scripts if python is available
+    if (Get-Command python -ErrorAction SilentlyContinue) {
+        Write-Output "[*] Refreshing profile SVGs and contribution stats..."
+        try {
+            & python scripts/fetch_contributions.py
+            & python scripts/render_heatmap_svg.py
+            & python scripts/make_header_banner.py
+            & python scripts/make_music_player.py
+            & python scripts/make_info_card.py
+            & python scripts/make_gaming_hud.py
+            & python scripts/make_retro_snake.py
+        }
+        catch {
+            Write-Output "[INFO] Asset regeneration skipped: $_"
+        }
+    }
 
     Write-Output "[*] Staging files..."
     & git config user.name "IshaanYK"
     & git config user.email "ishaansenres@gmail.com"
-    & git add $LogFile
+    & git add -A
 
     $status = & git status --porcelain
     if ($status -and ($status.Length -gt 0)) {
