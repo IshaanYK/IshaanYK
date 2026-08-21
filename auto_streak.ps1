@@ -39,6 +39,11 @@ try {
         }
     }
 
+    # Git sync and pull latest remote changes first to prevent push rejections
+    Set-Location -Path $ScriptDir
+    Write-Output "[*] Pulling latest changes from origin main..."
+    & git pull --rebase origin main
+
     # Generate new timestamped entry
     $nowUtc = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
     $todayStr = (Get-Date).ToString("yyyy-MM-dd")
@@ -61,11 +66,6 @@ try {
     # Save to JSON
     $streakData | ConvertTo-Json -Depth 10 | Out-File -FilePath $LogFile -Encoding UTF8
     Write-Output "[OK] Logged daily streak entry for $todayStr"
-
-    # Git sync and pull latest remote changes first to prevent push rejections
-    Set-Location -Path $ScriptDir
-    Write-Output "[*] Pulling latest changes from origin main..."
-    & git pull --rebase origin main
 
     # Run build scripts if python is available
     if (Get-Command python -ErrorAction SilentlyContinue) {
