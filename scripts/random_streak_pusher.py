@@ -45,10 +45,20 @@ def run_cmd(cmd, check=True):
     return res
 
 def sync_git():
+    run_cmd("git config user.name \"IshaanYK\"")
+    run_cmd("git config user.email \"ishaansenres@gmail.com\"")
     for attempt in range(5):
-        run_cmd("git config user.name \"IshaanYK\"")
-        run_cmd("git config user.email \"ishaansenres@gmail.com\"")
+        # Check if there are unstaged changes
+        status = run_cmd("git status --porcelain", check=False).stdout.strip()
+        had_stash = False
+        if status:
+            run_cmd("git stash", check=False)
+            had_stash = True
+            
         res = run_cmd("git pull --rebase origin main", check=False)
+        if had_stash:
+            run_cmd("git stash pop", check=False)
+
         if res.returncode == 0:
             return True
         print(f"[*] Rebase attempt {attempt + 1} retry in 2s...")
