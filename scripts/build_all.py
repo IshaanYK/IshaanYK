@@ -10,6 +10,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 scripts = [
     "make_hero_card.py",
+    "make_arcade_banner.py",
+    "make_music_player.py",
     "make_info_card.py",
     "fetch_contributions.py",
     "render_heatmap_svg.py",
