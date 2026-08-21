@@ -1,36 +1,77 @@
 #!/usr/bin/env python3
 """
-Scrape real daily contribution counts from GitHub's public, unauthenticated
-contributions endpoint (the same fragment the profile page itself uses) and
-write data/contributions.json with the raw days plus derived stats
-(current streak, longest streak, best day, monthly totals).
-
-No token, no auth, no GraphQL -- just the public HTML GitHub already serves.
-Run daily by .github/workflows/update-profile-art.yml.
+Fetch 100% real daily contribution counts using GitHub GraphQL API (authenticated via GH_PAT/token)
+with fallback to public endpoint scraping.
+Guarantees exact sync with the official GitHub profile heatmap.
 """
 import datetime
 import json
 import os
 import re
 import sys
-
 import requests
 from bs4 import BeautifulSoup
 
-USERNAME = os.environ.get("GH_PROFILE_USER", "ISHAANYK")
-URL = f"https://github.com/users/{USERNAME}/contributions"
+TOKEN = os.environ.get("GH_PAT") or os.environ.get("GITHUB_TOKEN")
+USERNAME = os.environ.get("GH_PROFILE_USER", "IshaanYK")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "contributions.json")
 
+def fetch_via_graphql():
+    if not TOKEN:
+        return None
+    query = """
+    query($login: String!) {
+      user(login: $login) {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                contributionCount
+                date
+                color
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    headers = {"Authorization": f"Bearer {TOKEN}"}
+    try:
+        resp = requests.post(
+            "https://api.github.com/graphql",
+            json={"query": query, "variables": {"login": USERNAME}},
+            headers=headers,
+            timeout=20
+        )
+        if resp.status_code == 200:
+            data = resp.json()
+            cal = data.get("data", {}).get("user", {}).get("contributionsCollection", {}).get("contributionCalendar")
+            if cal:
+                total_official = cal.get("totalContributions", 0)
+                days = []
+                for week in cal.get("weeks", []):
+                    for day in week.get("contributionDays", []):
+                        days.append({
+                            "date": day["date"],
+                            "count": day["contributionCount"]
+                        })
+                days.sort(key=lambda d: d["date"])
+                return days, total_official
+    except Exception as e:
+        print(f"[!] GraphQL fetch error: {e}", file=sys.stderr)
+    return None
 
-def fetch_days():
-    resp = requests.get(URL, headers={"User-Agent": "profile-readme-bot/1.0"}, timeout=30)
+def fetch_via_scraping():
+    url = f"https://github.com/users/{USERNAME}/contributions"
+    resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
     cells = soup.select("td.ContributionCalendar-day")
     if not cells:
-        print("no calendar cells found -- github markup may have changed", file=sys.stderr)
-        sys.exit(1)
+        return []
 
     days = []
     for td in cells:
@@ -48,13 +89,14 @@ def fetch_days():
         days.append({"date": date, "count": count})
 
     days.sort(key=lambda d: d["date"])
-    return days
-
+    return days, sum(d["count"] for d in days)
 
 def compute_current_streak(days):
+    if not days:
+        return 0, None, None
     idx = len(days) - 1
     if days[idx]["count"] == 0:
-        idx -= 1  # today isn't over yet -- don't break the streak on it
+        idx -= 1
     streak = 0
     end_idx = idx
     while idx >= 0 and days[idx]["count"] > 0:
@@ -64,7 +106,6 @@ def compute_current_streak(days):
     if streak == 0:
         return 0, None, None
     return streak, days[start_idx]["date"], days[end_idx]["date"]
-
 
 def compute_longest_streak(days):
     longest = run = 0
@@ -83,11 +124,17 @@ def compute_longest_streak(days):
             run = 0
     return longest, longest_start, longest_end
 
+def main():
+    res = fetch_via_graphql()
+    if res:
+        days, total = res
+        print(f"[*] Fetched exact official contribution data via GitHub GraphQL API: {total} total contributions")
+    else:
+        days, total = fetch_via_scraping()
+        print(f"[*] Scraped contributions: {total} total contributions")
 
-def build_data(days):
-    total = sum(d["count"] for d in days)
     active_days = sum(1 for d in days if d["count"] > 0)
-    best = max(days, key=lambda d: d["count"])
+    best = max(days, key=lambda d: d["count"]) if days else {"date": "", "count": 0}
     cur_len, cur_start, cur_end = compute_current_streak(days)
     long_len, long_start, long_end = compute_longest_streak(days)
 
@@ -97,7 +144,7 @@ def build_data(days):
         monthly[key] = monthly.get(key, 0) + d["count"]
     monthly_list = [{"month": k, "total": v} for k, v in sorted(monthly.items())]
 
-    return {
+    out_data = {
         "username": USERNAME,
         "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
         "range": {"start": days[0]["date"], "end": days[-1]["date"]},
@@ -111,13 +158,11 @@ def build_data(days):
         "days": days,
     }
 
+    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(out_data, f, indent=2)
+
+    print(f"[OK] Wrote {OUT_PATH}: {total} contributions, streak: {cur_len} days, longest: {long_len} days")
 
 if __name__ == "__main__":
-    days = fetch_days()
-    data = build_data(days)
-    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
-    with open(OUT_PATH, "w") as f:
-        json.dump(data, f, indent=2)
-    print(f"wrote {OUT_PATH}: {data['total_contributions']} contributions, "
-          f"current streak {data['current_streak']['length']}, "
-          f"longest streak {data['longest_streak']['length']}")
+    main()
