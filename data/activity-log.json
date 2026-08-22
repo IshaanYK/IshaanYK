@@ -566,5 +566,13 @@
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260822110708-3",
+    "timestamp": "2026-08-22T11:07:08Z",
+    "date": "2026-08-22",
+    "scope": "refactor(pipeline)",
+    "action": "streamline asynchronous tool invocation pipeline",
+    "author": "IshaanYK"
   }
 ]
