@@ -798,5 +798,13 @@
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260822230349-2",
+    "timestamp": "2026-08-22T23:03:49Z",
+    "date": "2026-08-22",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
   }
 ]
