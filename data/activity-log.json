@@ -454,5 +454,13 @@
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260822064404-1",
+    "timestamp": "2026-08-22T06:44:04Z",
+    "date": "2026-08-22",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
+    "author": "IshaanYK"
   }
 ]
