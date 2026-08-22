@@ -644,8 +644,15 @@
       "quest": "optimize 60fps WebGL canvas draw calls and shader buffers",
       "scope": "perf(ui)",
       "source": "IshaanYK Autonomous Engine"
+    },
+    {
+      "timestamp": "2026-08-22T19:04:23Z",
+      "date": "2026-08-22",
+      "quest": "add adaptive context window compaction for long-running workflows",
+      "scope": "feat(engine)",
+      "source": "IshaanYK Autonomous Engine"
     }
   ],
-  "last_updated": "2026-08-22T18:54:23Z",
+  "last_updated": "2026-08-22T19:04:23Z",
   "total_active_days": 2
 }
