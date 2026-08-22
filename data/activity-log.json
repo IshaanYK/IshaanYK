@@ -822,5 +822,13 @@
     "scope": "perf(ui)",
     "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260822232450-5",
+    "timestamp": "2026-08-22T23:24:50Z",
+    "date": "2026-08-22",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
