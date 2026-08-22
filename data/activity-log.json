@@ -558,5 +558,13 @@
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260822105907-2",
+    "timestamp": "2026-08-22T10:59:07Z",
+    "date": "2026-08-22",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
