@@ -1118,5 +1118,13 @@
     "scope": "docs(readme)",
     "action": "update autonomous agent benchmark metrics and system architecture",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823141410-12",
+    "timestamp": "2026-08-23T14:14:10Z",
+    "date": "2026-08-23",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
   }
 ]
