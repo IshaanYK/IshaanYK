@@ -926,5 +926,13 @@
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823100310-5",
+    "timestamp": "2026-08-23T10:03:10Z",
+    "date": "2026-08-23",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
   }
 ]
