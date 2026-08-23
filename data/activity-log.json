@@ -830,5 +830,13 @@
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823034025-1",
+    "timestamp": "2026-08-23T03:40:25Z",
+    "date": "2026-08-23",
+    "scope": "chore(deps)",
+    "action": "sync neural embedding dependencies and cache layers",
+    "author": "IshaanYK"
   }
 ]
