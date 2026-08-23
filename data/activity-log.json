@@ -966,5 +966,13 @@
     "scope": "docs(readme)",
     "action": "update autonomous agent benchmark metrics and system architecture",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823112324-3",
+    "timestamp": "2026-08-23T11:23:24Z",
+    "date": "2026-08-23",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
