@@ -1030,5 +1030,13 @@
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823125902-1",
+    "timestamp": "2026-08-23T12:59:02Z",
+    "date": "2026-08-23",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
+    "author": "IshaanYK"
   }
 ]
