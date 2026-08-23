@@ -1182,5 +1182,13 @@
     "scope": "feat(agent)",
     "action": "optimize multi-agent memory indexing and retrieval latency",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823145307-5",
+    "timestamp": "2026-08-23T14:53:07Z",
+    "date": "2026-08-23",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
