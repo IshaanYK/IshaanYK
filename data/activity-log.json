@@ -1142,5 +1142,13 @@
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823150520-3",
+    "timestamp": "2026-08-23T15:05:20Z",
+    "date": "2026-08-23",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
