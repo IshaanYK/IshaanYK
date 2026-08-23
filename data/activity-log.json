@@ -1222,5 +1222,13 @@
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823152611-10",
+    "timestamp": "2026-08-23T15:26:11Z",
+    "date": "2026-08-23",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
   }
 ]
