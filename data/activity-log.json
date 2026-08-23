@@ -1302,5 +1302,13 @@
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823181408-10",
+    "timestamp": "2026-08-23T18:14:08Z",
+    "date": "2026-08-23",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
   }
 ]
