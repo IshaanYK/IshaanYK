@@ -1254,5 +1254,13 @@
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823173204-4",
+    "timestamp": "2026-08-23T17:32:04Z",
+    "date": "2026-08-23",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
   }
 ]
