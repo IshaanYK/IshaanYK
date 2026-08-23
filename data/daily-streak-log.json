@@ -931,8 +931,15 @@
       "quest": "sync neural embedding dependencies and cache layers",
       "scope": "chore(deps)",
       "source": "IshaanYK Autonomous Engine"
+    },
+    {
+      "timestamp": "2026-08-23T13:19:04Z",
+      "date": "2026-08-23",
+      "quest": "add adaptive context window compaction for long-running workflows",
+      "scope": "feat(engine)",
+      "source": "IshaanYK Autonomous Engine"
     }
   ],
-  "last_updated": "2026-08-23T13:14:03Z",
+  "last_updated": "2026-08-23T13:19:04Z",
   "total_active_days": 3
 }
