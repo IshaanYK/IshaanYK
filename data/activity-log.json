@@ -1014,5 +1014,13 @@
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260823111807-6",
+    "timestamp": "2026-08-23T11:18:07Z",
+    "date": "2026-08-23",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
   }
 ]
