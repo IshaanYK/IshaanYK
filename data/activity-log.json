@@ -1822,5 +1822,13 @@
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260824152813-11",
+    "timestamp": "2026-08-24T15:28:13Z",
+    "date": "2026-08-24",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
   }
 ]
