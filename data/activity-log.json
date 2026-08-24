@@ -1598,5 +1598,13 @@
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260824062910-9",
+    "timestamp": "2026-08-24T06:29:10Z",
+    "date": "2026-08-24",
+    "scope": "docs(readme)",
+    "action": "update autonomous agent benchmark metrics and system architecture",
+    "author": "IshaanYK"
   }
 ]
