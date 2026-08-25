@@ -2486,5 +2486,13 @@
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825185215-14",
+    "timestamp": "2026-08-25T18:52:15Z",
+    "date": "2026-08-26",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
   }
 ]
