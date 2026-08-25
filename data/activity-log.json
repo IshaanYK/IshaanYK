@@ -2246,5 +2246,13 @@
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825141906-4",
+    "timestamp": "2026-08-25T14:19:06Z",
+    "date": "2026-08-25",
+    "scope": "perf(db)",
+    "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
   }
 ]
