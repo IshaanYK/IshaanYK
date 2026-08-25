@@ -2142,5 +2142,13 @@
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825105709-8",
+    "timestamp": "2026-08-25T10:57:09Z",
+    "date": "2026-08-25",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
   }
 ]
