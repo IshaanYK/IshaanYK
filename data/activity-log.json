@@ -2134,5 +2134,13 @@
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825105209-7",
+    "timestamp": "2026-08-25T10:52:09Z",
+    "date": "2026-08-25",
+    "scope": "perf(db)",
+    "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
   }
 ]
