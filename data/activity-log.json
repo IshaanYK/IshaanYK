@@ -2094,5 +2094,13 @@
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825101805-2",
+    "timestamp": "2026-08-25T10:18:05Z",
+    "date": "2026-08-25",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
