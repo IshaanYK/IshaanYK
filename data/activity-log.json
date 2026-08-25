@@ -2462,5 +2462,13 @@
     "scope": "perf(analytics)",
     "action": "vectorize heatmap contribution matrix parsing",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825182913-11",
+    "timestamp": "2026-08-25T18:29:13Z",
+    "date": "2026-08-26",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
   }
 ]
