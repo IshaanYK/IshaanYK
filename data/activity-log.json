@@ -2334,5 +2334,13 @@
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825150618-1",
+    "timestamp": "2026-08-25T15:06:18Z",
+    "date": "2026-08-25",
+    "scope": "refactor(storage)",
+    "action": "refine atomic daily streak state persistence",
+    "author": "IshaanYK"
   }
 ]
