@@ -2238,5 +2238,13 @@
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825141106-3",
+    "timestamp": "2026-08-25T14:11:06Z",
+    "date": "2026-08-25",
+    "scope": "fix(telemetry)",
+    "action": "stabilize heartbeat monitoring and background task scheduling",
+    "author": "IshaanYK"
   }
 ]
