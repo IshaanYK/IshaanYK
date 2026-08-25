@@ -2006,5 +2006,13 @@
     "scope": "refactor(memory)",
     "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825053316-4",
+    "timestamp": "2026-08-25T05:33:16Z",
+    "date": "2026-08-25",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
