@@ -1982,5 +1982,13 @@
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825051414-1",
+    "timestamp": "2026-08-25T05:14:14Z",
+    "date": "2026-08-25",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
   }
 ]
