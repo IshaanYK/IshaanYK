@@ -2398,5 +2398,13 @@
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825173706-3",
+    "timestamp": "2026-08-25T17:37:06Z",
+    "date": "2026-08-26",
+    "scope": "perf(db)",
+    "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
   }
 ]
