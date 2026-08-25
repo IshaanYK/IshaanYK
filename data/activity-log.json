@@ -2414,5 +2414,13 @@
     "scope": "perf(analytics)",
     "action": "vectorize heatmap contribution matrix parsing",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825174808-5",
+    "timestamp": "2026-08-25T17:48:08Z",
+    "date": "2026-08-26",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
