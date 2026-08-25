@@ -2190,5 +2190,13 @@
     "scope": "perf(ui)",
     "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825110727-2",
+    "timestamp": "2026-08-25T11:07:27Z",
+    "date": "2026-08-25",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
   }
 ]
