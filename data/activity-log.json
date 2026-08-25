@@ -2478,5 +2478,13 @@
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260825184614-13",
+    "timestamp": "2026-08-25T18:46:14Z",
+    "date": "2026-08-26",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
   }
 ]
