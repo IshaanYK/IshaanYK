@@ -1,26 +1,26 @@
 {
   "username": "IshaanYK",
-  "generated_at": "2026-08-26T07:50:12Z",
+  "generated_at": "2026-08-26T11:34:00Z",
   "range": {
     "start": "2025-08-24",
     "end": "2026-08-26"
   },
-  "total_contributions": 104,
-  "active_days": 25,
-  "avg_per_active_day": 4.2,
+  "total_contributions": 530,
+  "active_days": 33,
+  "avg_per_active_day": 16.1,
   "current_streak": {
-    "length": 0,
-    "start": null,
-    "end": null
+    "length": 9,
+    "start": "2026-08-18",
+    "end": "2026-08-26"
   },
   "longest_streak": {
-    "length": 2,
-    "start": "2026-03-22",
-    "end": "2026-03-23"
+    "length": 9,
+    "start": "2026-08-18",
+    "end": "2026-08-26"
   },
   "best_day": {
-    "date": "2026-08-12",
-    "count": 19
+    "date": "2026-08-26",
+    "count": 80
   },
   "monthly": [
     {
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-08",
-      "total": 27
+      "total": 453
     }
   ],
   "days": [
@@ -1515,39 +1515,39 @@
     },
     {
       "date": "2026-08-18",
-      "count": 2
+      "count": 8
     },
     {
       "date": "2026-08-19",
-      "count": 0
+      "count": 2
     },
     {
       "date": "2026-08-20",
-      "count": 0
+      "count": 2
     },
     {
       "date": "2026-08-21",
-      "count": 0
+      "count": 58
     },
     {
       "date": "2026-08-22",
-      "count": 0
+      "count": 62
     },
     {
       "date": "2026-08-23",
-      "count": 0
+      "count": 73
     },
     {
       "date": "2026-08-24",
-      "count": 0
+      "count": 69
     },
     {
       "date": "2026-08-25",
-      "count": 0
+      "count": 74
     },
     {
       "date": "2026-08-26",
-      "count": 0
+      "count": 80
     }
   ]
 }
