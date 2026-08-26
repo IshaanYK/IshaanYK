@@ -18,8 +18,10 @@ try {
         Write-Output "[INFO] Removed previous scheduled task registration."
     }
 
-    # Create Action (Execute PowerShell script hiddenly)
-    $Action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File `"$TargetScript`""
+    $SilentLauncher = Join-Path $ScriptDir "silent_streak.vbs"
+
+    # Create Action (Execute silent runner via wscript.exe - 100% invisible, no terminal popup)
+    $Action = New-ScheduledTaskAction -Execute "wscript.exe" -Argument "`"$SilentLauncher`""
 
     # Create Trigger (Daily starting at 09:00 AM, repeating every 4 hours for 1 day)
     $Trigger = New-ScheduledTaskTrigger -Daily -At 09:00AM

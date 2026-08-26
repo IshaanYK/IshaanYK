@@ -44,9 +44,20 @@ def run_cmd(cmd, check=True):
         print(f"[CMD FAILED] {cmd}\nSTDOUT: {res.stdout}\nSTDERR: {res.stderr}")
     return res
 
+def get_commit_email():
+    env_email = os.environ.get("GIT_COMMIT_EMAIL")
+    if env_email:
+        return env_email
+    res = run_cmd("git config --global user.email", check=False)
+    global_email = res.stdout.strip()
+    if global_email and "noreply" not in global_email and "@" in global_email:
+        return global_email
+    return "isen97509@gmail.com"
+
 def sync_git():
-    run_cmd("git config user.name \"IshaanYK\"")
-    run_cmd("git config user.email \"ishaansenres@gmail.com\"")
+    email = get_commit_email()
+    run_cmd('git config user.name "IshaanYK"')
+    run_cmd(f'git config user.email "{email}"')
     for attempt in range(5):
         # Check if there are unstaged changes
         status = run_cmd("git status --porcelain", check=False).stdout.strip()
@@ -187,8 +198,13 @@ def main():
         run_cmd("git add -A")
         commit_msg = f"{scope}: {desc} [{today_str} #{idx}/{commit_count}]"
         
-        # Git commit with explicit author date matching entry
+        # Git commit with explicit author & committer matching verified GitHub account
         env = os.environ.copy()
+        commit_email = get_commit_email()
+        env["GIT_AUTHOR_NAME"] = "IshaanYK"
+        env["GIT_COMMITTER_NAME"] = "IshaanYK"
+        env["GIT_AUTHOR_EMAIL"] = commit_email
+        env["GIT_COMMITTER_EMAIL"] = commit_email
         env["GIT_AUTHOR_DATE"] = now_utc
         env["GIT_COMMITTER_DATE"] = now_utc
         res = subprocess.run(

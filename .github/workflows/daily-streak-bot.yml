@@ -44,11 +44,12 @@ jobs:
       - name: Configure Git Identity
         run: |
           git config --global user.name "IshaanYK"
-          git config --global user.email "ishaansenres@gmail.com"
+          git config --global user.email "isen97509@gmail.com"
 
       - name: Execute Randomized Multi-Commit Engine
         env:
           GH_PROFILE_USER: IshaanYK
+          GIT_COMMIT_EMAIL: isen97509@gmail.com
           INPUT_COMMIT_COUNT: ${{ github.event.inputs.commit_count }}
         run: |
           if [ -n "$INPUT_COMMIT_COUNT" ]; then
