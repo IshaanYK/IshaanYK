@@ -2662,5 +2662,13 @@
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260826063155-7",
+    "timestamp": "2026-08-26T06:31:55Z",
+    "date": "2026-08-26",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
   }
 ]
