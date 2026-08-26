@@ -2950,5 +2950,13 @@
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260826212528-2",
+    "timestamp": "2026-08-26T21:25:28Z",
+    "date": "2026-08-26",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
