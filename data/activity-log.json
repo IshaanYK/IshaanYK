@@ -2606,5 +2606,13 @@
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260826070002-5",
+    "timestamp": "2026-08-26T07:00:02Z",
+    "date": "2026-08-26",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
   }
 ]
