@@ -14,7 +14,7 @@ My details:
 - GitHub username: ISHAANYK
 - Name + tagline: ISHAAN - AI Engineer and Developer
 - A photo of me to turn into ASCII art: F:\Downloads\Github-20260711T180940Z-2-001\Github\20250101_204248_456.jpg
-- Links (portfolio / linkedin / instagram): ishaansenres@gmail.com , https://ishaanyk.github.io/portfolio-me/ , https://www.linkedin.com/in/ishaan784/ , https://github.com/IshaanYK
+- Links (portfolio / linkedin / instagram): isen97509@gmail.com , https://ishaanyk.github.io/portfolio-me/ , https://www.linkedin.com/in/ishaan784/ , https://github.com/IshaanYK
 
 Here is exactly what I want you to do, in order:
 

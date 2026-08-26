@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/🌐_Portfolio-Live_Showcase-2997ff?style=flat-square" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/ishaan784/"><img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:ishaansenres@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-Direct_Contact-1d1d1f?style=flat-square" alt="Email" /></a>
+  <a href="mailto:isen97509@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-Direct_Contact-1d1d1f?style=flat-square" alt="Email" /></a>
   <a href="https://www.iitm.ac.in/"><img src="https://img.shields.io/badge/🎓_IIT_Madras-Engineering-1d1d1f?style=flat-square" alt="IIT Madras" /></a>
   <img src="https://komarev.com/ghpvc/?username=IshaanYK&color=121316&style=flat-square&label=VIEWS" alt="Views" />
 </p>
@@ -53,7 +53,7 @@
 * 🎓 **Education**: Indian Institute of Technology Madras (IIT Madras)
 * 💼 **Current Status**: **Actively Open to Full-Time Roles, Internships & High-Impact Research Collaborations**
 * 🧠 **Primary Focus**: Autonomous Agent Loops • Real-Time Voice Pipelines • Production RAG • Next.js 15 & FastAPI Distributed Systems
-* 📬 **Get in Touch**: [ishaansenres@gmail.com](mailto:ishaansenres@gmail.com) • [LinkedIn (@ishaan784)](https://www.linkedin.com/in/ishaan784/)
+* 📬 **Get in Touch**: [isen97509@gmail.com](mailto:isen97509@gmail.com) • [LinkedIn (@ishaan784)](https://www.linkedin.com/in/ishaan784/)
 
 ---
 
@@ -132,7 +132,7 @@
 I am actively open to discussing **Software Engineering, AI/ML Engineering, and Full-Stack opportunities**.
 
 <p>
-  <a href="mailto:ishaansenres@gmail.com"><img src="https://img.shields.io/badge/Email-ishaansenres%40gmail.com-2997ff?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="mailto:isen97509@gmail.com"><img src="https://img.shields.io/badge/Email-isen97509%40gmail.com-2997ff?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/ishaan784/"><img src="https://img.shields.io/badge/LinkedIn-ishaan784-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/Portfolio-ishaanyk.github.io-121316?style=for-the-badge&logo=vercel&logoColor=2997ff" alt="Portfolio" /></a>
 </p>
