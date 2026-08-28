@@ -3238,5 +3238,13 @@
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260828231759-1",
+    "timestamp": "2026-08-28T23:17:59Z",
+    "date": "2026-08-28",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
+    "author": "IshaanYK"
   }
 ]
