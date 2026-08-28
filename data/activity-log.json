@@ -3134,5 +3134,13 @@
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260828063227-2",
+    "timestamp": "2026-08-28T06:32:27Z",
+    "date": "2026-08-28",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
   }
 ]
