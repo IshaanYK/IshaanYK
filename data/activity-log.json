@@ -3390,5 +3390,13 @@
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260829173108-1",
+    "timestamp": "2026-08-29T17:31:08Z",
+    "date": "2026-08-29",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
   }
 ]
