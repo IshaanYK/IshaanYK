@@ -3310,5 +3310,13 @@
     "scope": "refactor(memory)",
     "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260829093059-1",
+    "timestamp": "2026-08-29T09:30:59Z",
+    "date": "2026-08-29",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
   }
 ]
