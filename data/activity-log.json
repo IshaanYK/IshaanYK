@@ -3526,5 +3526,13 @@
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260830150657-4",
+    "timestamp": "2026-08-30T15:06:57Z",
+    "date": "2026-08-30",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
   }
 ]
