@@ -3718,5 +3718,13 @@
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260831145504-5",
+    "timestamp": "2026-08-31T14:55:04Z",
+    "date": "2026-08-31",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
   }
 ]
