@@ -3894,5 +3894,13 @@
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260901151030-1",
+    "timestamp": "2026-09-01T15:10:30Z",
+    "date": "2026-09-01",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
+    "author": "IshaanYK"
   }
 ]
