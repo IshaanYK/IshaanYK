@@ -3910,5 +3910,13 @@
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260901152331-3",
+    "timestamp": "2026-09-01T15:23:31Z",
+    "date": "2026-09-01",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
   }
 ]
