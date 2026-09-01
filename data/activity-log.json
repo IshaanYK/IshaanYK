@@ -3862,5 +3862,13 @@
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
     "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260901082634-5",
+    "timestamp": "2026-09-01T08:26:34Z",
+    "date": "2026-09-01",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
   }
 ]
