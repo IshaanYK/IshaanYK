@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260821151749-2",
-    "timestamp": "2026-08-21T15:17:49Z",
-    "date": "2026-08-21",
-    "scope": "perf(ui)",
-    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260821152350-3",
     "timestamp": "2026-08-21T15:23:50Z",
     "date": "2026-08-21",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-02",
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260902073750-3",
+    "timestamp": "2026-09-02T07:37:50Z",
+    "date": "2026-09-02",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
   }
 ]
