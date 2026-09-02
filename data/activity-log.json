@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260821163858-14",
-    "timestamp": "2026-08-21T16:38:58Z",
-    "date": "2026-08-21",
-    "scope": "fix(telemetry)",
-    "action": "stabilize heartbeat monitoring and background task scheduling",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260821162849-1",
     "timestamp": "2026-08-21T16:28:49Z",
     "date": "2026-08-21",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-02",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260902210831-1",
+    "timestamp": "2026-09-02T21:08:31Z",
+    "date": "2026-09-02",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
     "author": "IshaanYK"
   }
 ]
