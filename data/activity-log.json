@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260821162849-1",
-    "timestamp": "2026-08-21T16:28:49Z",
-    "date": "2026-08-21",
-    "scope": "test(eval)",
-    "action": "expand integration test suite for cross-agent communication",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260821163349-2",
     "timestamp": "2026-08-21T16:33:49Z",
     "date": "2026-08-21",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-02",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260902211432-2",
+    "timestamp": "2026-09-02T21:14:32Z",
+    "date": "2026-09-02",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
