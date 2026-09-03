@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260821183310-9",
-    "timestamp": "2026-08-21T18:33:10Z",
-    "date": "2026-08-22",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260821183611-10",
     "timestamp": "2026-08-21T18:36:11Z",
     "date": "2026-08-22",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-03",
     "scope": "refactor(pipeline)",
     "action": "streamline asynchronous tool invocation pipeline",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260903144435-4",
+    "timestamp": "2026-09-03T14:44:35Z",
+    "date": "2026-09-03",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
