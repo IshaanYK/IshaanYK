@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260822065805-3",
-    "timestamp": "2026-08-22T06:58:05Z",
-    "date": "2026-08-22",
-    "scope": "perf(db)",
-    "action": "index contribution records for sub-millisecond query execution",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260822070706-4",
     "timestamp": "2026-08-22T07:07:06Z",
     "date": "2026-08-22",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-05",
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260905004629-5",
+    "timestamp": "2026-09-05T00:46:29Z",
+    "date": "2026-09-05",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
