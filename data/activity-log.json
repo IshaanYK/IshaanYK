@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260822143207-5",
-    "timestamp": "2026-08-22T14:32:07Z",
-    "date": "2026-08-22",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260822143608-6",
     "timestamp": "2026-08-22T14:36:08Z",
     "date": "2026-08-22",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-06",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260906074029-1",
+    "timestamp": "2026-09-06T07:40:29Z",
+    "date": "2026-09-06",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
