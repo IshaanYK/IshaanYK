@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260822190423-3",
-    "timestamp": "2026-08-22T19:04:23Z",
-    "date": "2026-08-22",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260822191124-4",
     "timestamp": "2026-08-22T19:11:24Z",
     "date": "2026-08-22",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-06",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260906170105-2",
+    "timestamp": "2026-09-06T17:01:05Z",
+    "date": "2026-09-06",
+    "scope": "docs(readme)",
+    "action": "update autonomous agent benchmark metrics and system architecture",
     "author": "IshaanYK"
   }
 ]
