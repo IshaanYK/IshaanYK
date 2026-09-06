@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260822141806-3",
-    "timestamp": "2026-08-22T14:18:06Z",
-    "date": "2026-08-22",
-    "scope": "fix(runtime)",
-    "action": "patch edge-case exception in parallel subagent dispatcher",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260822142406-4",
     "timestamp": "2026-08-22T14:24:06Z",
     "date": "2026-08-22",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-06",
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260906003519-3",
+    "timestamp": "2026-09-06T00:35:19Z",
+    "date": "2026-09-06",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
