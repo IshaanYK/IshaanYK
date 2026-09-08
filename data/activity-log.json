@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260823112324-3",
-    "timestamp": "2026-08-23T11:23:24Z",
-    "date": "2026-08-23",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260823104604-1",
     "timestamp": "2026-08-23T10:46:04Z",
     "date": "2026-08-23",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-07",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260908004729-1",
+    "timestamp": "2026-09-08T00:47:29Z",
+    "date": "2026-09-08",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
