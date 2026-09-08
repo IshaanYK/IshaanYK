@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260823133505-6",
-    "timestamp": "2026-08-23T13:35:05Z",
-    "date": "2026-08-23",
-    "scope": "test(eval)",
-    "action": "expand integration test suite for cross-agent communication",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260823134106-7",
     "timestamp": "2026-08-23T13:41:06Z",
     "date": "2026-08-23",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-08",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260908180118-2",
+    "timestamp": "2026-09-08T18:01:18Z",
+    "date": "2026-09-08",
+    "scope": "docs(readme)",
+    "action": "update autonomous agent benchmark metrics and system architecture",
     "author": "IshaanYK"
   }
 ]
