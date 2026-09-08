@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260823105005-2",
-    "timestamp": "2026-08-23T10:50:05Z",
-    "date": "2026-08-23",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260823110005-3",
     "timestamp": "2026-08-23T11:00:05Z",
     "date": "2026-08-23",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-08",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260908010230-3",
+    "timestamp": "2026-09-08T01:02:30Z",
+    "date": "2026-09-08",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
     "author": "IshaanYK"
   }
 ]
