@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260823180908-9",
-    "timestamp": "2026-08-23T18:09:08Z",
-    "date": "2026-08-23",
-    "scope": "fix(runtime)",
-    "action": "patch edge-case exception in parallel subagent dispatcher",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260823181408-10",
     "timestamp": "2026-08-23T18:14:08Z",
     "date": "2026-08-23",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-10",
     "scope": "refactor(pipeline)",
     "action": "streamline asynchronous tool invocation pipeline",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260910115601-4",
+    "timestamp": "2026-09-10T11:56:01Z",
+    "date": "2026-09-10",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
