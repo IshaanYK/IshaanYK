@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260823175706-7",
-    "timestamp": "2026-08-23T17:57:06Z",
-    "date": "2026-08-23",
-    "scope": "test(eval)",
-    "action": "expand integration test suite for cross-agent communication",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260823180107-8",
     "timestamp": "2026-08-23T18:01:07Z",
     "date": "2026-08-23",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-10",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260910114300-2",
+    "timestamp": "2026-09-10T11:43:00Z",
+    "date": "2026-09-10",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
