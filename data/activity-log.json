@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260823232627-4",
-    "timestamp": "2026-08-23T23:26:27Z",
-    "date": "2026-08-23",
-    "scope": "perf(ui)",
-    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260824033354-1",
     "timestamp": "2026-08-24T03:33:54Z",
     "date": "2026-08-24",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-11",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260911004446-2",
+    "timestamp": "2026-09-11T00:44:46Z",
+    "date": "2026-09-11",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
