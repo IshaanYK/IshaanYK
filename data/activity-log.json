@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260824151536-2",
-    "timestamp": "2026-08-24T15:15:36Z",
-    "date": "2026-08-24",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260824152136-3",
     "timestamp": "2026-08-24T15:21:36Z",
     "date": "2026-08-24",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-12",
     "scope": "perf(analytics)",
     "action": "vectorize heatmap contribution matrix parsing",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260912171257-2",
+    "timestamp": "2026-09-12T17:12:57Z",
+    "date": "2026-09-12",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
