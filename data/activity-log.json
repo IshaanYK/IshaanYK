@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260825053316-4",
-    "timestamp": "2026-08-25T05:33:16Z",
-    "date": "2026-08-25",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260825054217-5",
     "timestamp": "2026-08-25T05:42:17Z",
     "date": "2026-08-25",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-14",
     "scope": "refactor(memory)",
     "action": "enhance episodic memory pruning and retrieval weights",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260914133043-3",
+    "timestamp": "2026-09-14T13:30:43Z",
+    "date": "2026-09-14",
+    "scope": "docs(readme)",
+    "action": "update autonomous agent benchmark metrics and system architecture",
     "author": "IshaanYK"
   }
 ]
