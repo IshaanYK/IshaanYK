@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260825060619-9",
-    "timestamp": "2026-08-25T06:06:19Z",
-    "date": "2026-08-25",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260825061620-10",
     "timestamp": "2026-08-25T06:16:20Z",
     "date": "2026-08-25",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-14",
     "scope": "docs(readme)",
     "action": "update autonomous agent benchmark metrics and system architecture",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260914163500-3",
+    "timestamp": "2026-09-14T16:35:00Z",
+    "date": "2026-09-14",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
   }
 ]
