@@ -107,7 +107,7 @@
       <rect x="0" y="0" width="380" height="28" rx="6" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
       <circle cx="14" cy="14" r="3" fill="#ffffff" class="node-glow"/>
       <text x="26" y="18" fill="#f5f5f7" class="font-mono" font-size="11" font-weight="600">agent-daily-streak-sync</text>
-      <text x="265" y="18" fill="#30d158" class="font-mono" font-size="10.5">189 COMMITS SYNCED</text>
+      <text x="265" y="18" fill="#30d158" class="font-mono" font-size="10.5">1,190+ SYNCED</text>
     </g>
 
     <!-- Subagent 4 -->
@@ -123,32 +123,41 @@
   <line x1="430" y1="48" x2="430" y2="208" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
 
   <!-- Right: Quantum Telemetry & System Gauges -->
-  <g transform="translate(455, 58)">
+  <g transform="translate(450, 58)">
     <text x="0" y="0" fill="#86868b" class="font-mono" font-size="10.5" font-weight="600">&#8212; HARDWARE &amp; REASONING TELEMETRY</text>
 
-    <!-- Stat Grid -->
+    <!-- Top Row -->
     <g transform="translate(0, 16)">
-      <!-- Token Throughput -->
-      <rect x="0" y="0" width="180" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
-      <text x="14" y="20" fill="#86868b" class="font-mono" font-size="10">TOKEN THROUGHPUT</text>
-      <text x="14" y="44" fill="#2997ff" class="font-mono" font-size="18" font-weight="700">42.8k <tspan font-size="11" fill="#86868b">tok/sec</tspan></text>
+      <!-- Card 1: Token Throughput -->
+      <g transform="translate(0, 0)">
+        <rect width="186" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
+        <text x="14" y="20" fill="#86868b" class="font-mono" font-size="9.5" font-weight="600" letter-spacing="0.5px">TOKEN THROUGHPUT</text>
+        <text x="14" y="44" fill="#2997ff" class="font-mono" font-size="16.5" font-weight="700">42.8k <tspan font-size="10.5" fill="#86868b" font-weight="400">tok/sec</tspan></text>
+      </g>
 
-      <!-- Context Compression -->
-      <rect x="195" y="0" width="185" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
-      <text x="14" y="20" fill="#86868b" class="font-mono" font-size="10">CONTEXT WINDOW EFFICIENCY</text>
-      <text x="14" y="44" fill="#30d158" class="font-mono" font-size="18" font-weight="700">99.4% <tspan font-size="11" fill="#86868b">compacted</tspan></text>
+      <!-- Card 2: Context Compression -->
+      <g transform="translate(196, 0)">
+        <rect width="186" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
+        <text x="14" y="20" fill="#86868b" class="font-mono" font-size="9.5" font-weight="600" letter-spacing="0.5px">CONTEXT EFFICIENCY</text>
+        <text x="14" y="44" fill="#30d158" class="font-mono" font-size="16.5" font-weight="700">99.8% <tspan font-size="10.5" fill="#86868b" font-weight="400">compacted</tspan></text>
+      </g>
     </g>
 
+    <!-- Bottom Row -->
     <g transform="translate(0, 84)">
-      <!-- GPU Cluster Memory -->
-      <rect x="0" y="0" width="180" height="56" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
-      <text x="14" y="20" fill="#86868b" class="font-mono" font-size="10">EMBEDDING LATENCY</text>
-      <text x="14" y="42" fill="#f5f5f7" class="font-mono" font-size="17" font-weight="700">12.4ms <tspan font-size="11" fill="#30d158">OPTIMAL</tspan></text>
+      <!-- Card 3: Embedding Latency -->
+      <g transform="translate(0, 0)">
+        <rect width="186" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
+        <text x="14" y="20" fill="#86868b" class="font-mono" font-size="9.5" font-weight="600" letter-spacing="0.5px">EMBEDDING LATENCY</text>
+        <text x="14" y="44" fill="#f5f5f7" class="font-mono" font-size="16.5" font-weight="700">12.4ms <tspan font-size="10.5" fill="#30d158" font-weight="600">OPTIMAL</tspan></text>
+      </g>
 
-      <!-- Autonomous Convergence -->
-      <rect x="195" y="0" width="185" height="56" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
-      <text x="14" y="20" fill="#86868b" class="font-mono" font-size="10">AGENT TOOL CONSENSUS</text>
-      <text x="14" y="42" fill="#2997ff" class="font-mono" font-size="17" font-weight="700">100% <tspan font-size="11" fill="#86868b">verified</tspan></text>
+      <!-- Card 4: Tool Consensus -->
+      <g transform="translate(196, 0)">
+        <rect width="186" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.8"/>
+        <text x="14" y="20" fill="#86868b" class="font-mono" font-size="9.5" font-weight="600" letter-spacing="0.5px">AGENT CONSENSUS</text>
+        <text x="14" y="44" fill="#2997ff" class="font-mono" font-size="16.5" font-weight="700">100% <tspan font-size="10.5" fill="#86868b" font-weight="400">verified</tspan></text>
+      </g>
     </g>
   </g>
 </svg>
