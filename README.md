@@ -7,7 +7,7 @@
 
 <!-- Quick Action Pills -->
 <p align="center">
-  <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/🌐_Portfolio-Live_Showcase-2997ff?style=flat-square" alt="Portfolio" /></a>
+  <a href="https://ishaanyk.github.io/ishaan-developer-portfolio/"><img src="https://img.shields.io/badge/🌐_Portfolio-Live_Showcase-2997ff?style=flat-square" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/ishaan784/"><img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:isen97509@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-Direct_Contact-1d1d1f?style=flat-square" alt="Email" /></a>
   <a href="https://www.iitm.ac.in/"><img src="https://img.shields.io/badge/🎓_IIT_Madras-Engineering-1d1d1f?style=flat-square" alt="IIT Madras" /></a>
@@ -77,17 +77,23 @@
 
 ### 📂 Featured Production Projects
 
-#### 📞 [call-agent](https://github.com/IshaanYK/call-agent) — Real-Time Autonomous Voice AI
+#### 📞 [voice-call-agent](https://github.com/IshaanYK/voice-call-agent) — Real-Time Autonomous Voice AI Platform
 * **Overview:** An autonomous AI-powered agent configured to receive, parse, and converse via live voice calls with sub-second STT/TTS latency.
 * **Architecture:** Bi-directional audio streaming over WebSockets, autonomous tool-calling loop, and dynamic context parsing.
 * **Stack:** `JavaScript` `Node.js` `Voice AI` `Speech API` `WebSockets`
-* 🔗 **[Explore GitHub Repository →](https://github.com/IshaanYK/call-agent)**
+* 🔗 **[Explore GitHub Repository →](https://github.com/IshaanYK/voice-call-agent)**
 
-#### 💾 [STORAGE-WIDGET](https://github.com/IshaanYK/STORAGE-WIDGET) — High-Performance System Telemetry Daemon
-* **Overview:** A lightweight disk quota and system telemetry daemon for monitoring real-time I/O metrics, storage allocations, and background alerts.
+#### 🤖 [ai-work-os-openenv](https://github.com/IshaanYK/ai-work-os-openenv) — Multi-Agent Workplace Simulation Environment
+* **Overview:** Advanced production-grade simulation environment acting as a real-world workplace with reward-driven evaluation and reinforcement learning hooks.
+* **Architecture:** Dockerized multi-agent orchestration, live API endpoints, and automated benchmark scoring.
+* **Stack:** `Python` `OpenEnv` `PyTorch` `FastAPI` `Docker`
+* 🔗 **[Explore GitHub Repository →](https://github.com/IshaanYK/ai-work-os-openenv)**
+
+#### 💾 [desktop-storage-widget](https://github.com/IshaanYK/desktop-storage-widget) — High-Performance System Telemetry Daemon
+* **Overview:** A lightweight disk quota and system telemetry desktop daemon for monitoring real-time I/O metrics, storage allocations, and background alerts.
 * **Architecture:** Zero-overhead background thread, automated threshold notifications, and OS-level metric aggregation.
 * **Stack:** `Python` `System Daemon` `Telemetry` `Performance Profiling`
-* 🔗 **[Explore GitHub Repository →](https://github.com/IshaanYK/STORAGE-WIDGET)**
+* 🔗 **[Explore GitHub Repository →](https://github.com/IshaanYK/desktop-storage-widget)**
 
 #### 🎮 [NEURAL DEFENDER](https://github.com/IshaanYK/IshaanYK/tree/main/game) — 60fps HTML5 Canvas Arcade Game
 * **Overview:** A fast-paced cyberpunk browser arcade shooter built with custom 2D particle physics, spatial collision detection, and Web Audio synth SFX.
@@ -95,15 +101,15 @@
 * **Stack:** `HTML5 Canvas` `JavaScript` `Web Audio API`
 * 🚀 **[Play Live in Browser →](https://ishaanyk.github.io/IshaanYK/game/)** • 🔗 **[View Source Code →](https://github.com/IshaanYK/IshaanYK/tree/main/game)**
 
-#### 🌐 [portfolio-me](https://github.com/IshaanYK/portfolio-me) — Production Showcase & Interactive Portfolio
+#### 🌐 [ishaan-developer-portfolio](https://github.com/IshaanYK/ishaan-developer-portfolio) — Production Showcase & Interactive Portfolio
 * **Overview:** A responsive personal engineering website engineered for speed, clean UX accessibility, and interactive design token aesthetics.
 * **Architecture:** 95+ Lighthouse score, responsive glassmorphic design system, and fast global CDN deployment.
-* **Stack:** `HTML5` `CSS3` `JavaScript` `Vercel`
-* ✨ **[Visit Live Website →](https://ishaanyk.github.io/portfolio-me/)** • 🔗 **[Explore GitHub Repository →](https://github.com/IshaanYK/portfolio-me)**
+* **Stack:** `React` `Vite` `Tailwind CSS` `Firebase`
+* ✨ **[Visit Live Website →](https://ishaanyk.github.io/ishaan-developer-portfolio/)** • 🔗 **[Explore GitHub Repository →](https://github.com/IshaanYK/ishaan-developer-portfolio)**
 
 ---
 
-### 📊 Live Synchronized Contribution Matrix (189+ Verified Contributions)
+### 📊 Live Synchronized Contribution Matrix (1,190+ Verified Contributions)
 
 <div align="center">
   <img src="./contrib-heatmap.svg" width="100%" alt="GitHub contribution matrix" />
@@ -134,7 +140,7 @@ I am actively open to discussing **Software Engineering, AI/ML Engineering, and 
 <p>
   <a href="mailto:isen97509@gmail.com"><img src="https://img.shields.io/badge/Email-isen97509%40gmail.com-2997ff?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/ishaan784/"><img src="https://img.shields.io/badge/LinkedIn-ishaan784-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://ishaanyk.github.io/portfolio-me/"><img src="https://img.shields.io/badge/Portfolio-ishaanyk.github.io-121316?style=for-the-badge&logo=vercel&logoColor=2997ff" alt="Portfolio" /></a>
+  <a href="https://ishaanyk.github.io/ishaan-developer-portfolio/"><img src="https://img.shields.io/badge/Portfolio-ishaanyk.github.io-121316?style=for-the-badge&logo=vercel&logoColor=2997ff" alt="Portfolio" /></a>
 </p>
 
 </div>

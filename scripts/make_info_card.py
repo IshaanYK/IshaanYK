@@ -18,7 +18,7 @@ ROWS = [
     ("kv", "Academy", "Indian Institute of Technology Madras"),
     ("kv", "Focus", "Autonomous Multi-Agent AI & Real-Time Voice"),
     ("kv", "Status", "Available for High-Impact Roles"),
-    ("kv", "Portfolio", "ishaanyk.github.io/portfolio-me/"),
+    ("kv", "Portfolio", "ishaanyk.github.io/ishaan-developer-portfolio/"),
     ("gap",),
     ("sec", "Core Ecosystem"),
     ("kv", "Languages", "Python, TypeScript, JavaScript, SQL, C++"),

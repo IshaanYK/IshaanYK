@@ -84,7 +84,7 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
     <circle cx="12" cy="0" r="4" fill="#ffffff" fill-opacity="0.2"/>
     <circle cx="24" cy="0" r="4" fill="#ffffff" fill-opacity="0.2"/>
     <text x="42" y="4" fill="#2997ff" class="font-mono" font-size="11.5" font-weight="700" letter-spacing="1px">AI AGENT SUPERVISOR KERNEL v4.2</text>
-    <text x="640" y="4" fill="#30d158" class="font-mono" font-size="11" font-weight="600" class="pulse-agent">● 4 PERSISTENT THREADS ONLINE</text>
+    <text x="640" y="4" fill="#30d158" class="font-mono pulse-agent" font-size="11" font-weight="600">● 4 PERSISTENT THREADS ONLINE</text>
   </g>
 
   <line x1="0" y1="38" x2="{W}" y2="38" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
