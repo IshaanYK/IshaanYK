@@ -2,7 +2,7 @@
 
 <!-- ⚡ Master Executive Holographic Header -->
 <a href="https://github.com/IshaanYK">
-  <img src="./hero-card.svg" width="100%" alt="Ishaan Sen - AI Systems Architect" />
+  <img src="./hero-card.svg?v=2" width="100%" alt="Ishaan Sen - AI Systems Architect" />
 </a>
 
 <!-- Quick Action Pills -->
@@ -15,7 +15,7 @@
 </p>
 
 <!-- 🧠 Autonomous AI Agent Supervisor & Quantum Telemetry Terminal -->
-<img src="./neural-terminal.svg" width="100%" alt="AI Agent Supervisor Kernel Telemetry" />
+<img src="./neural-terminal.svg?v=2" width="100%" alt="AI Agent Supervisor Kernel Telemetry" />
 
 <!-- ⚡ 4-Pillar Neural Ecosystem Architecture -->
 <img src="./interactive-bento.svg" width="100%" alt="Neural Architecture & Ecosystem Bento" />
