@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260825184614-13",
-    "timestamp": "2026-08-25T18:46:14Z",
-    "date": "2026-08-26",
-    "scope": "feat(voice)",
-    "action": "tune low-latency audio stream buffer for conversational agent",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260825185215-14",
     "timestamp": "2026-08-25T18:52:15Z",
     "date": "2026-08-26",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-16",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260916121823-3",
+    "timestamp": "2026-09-16T12:18:23Z",
+    "date": "2026-09-16",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
