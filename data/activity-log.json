@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260825174808-5",
-    "timestamp": "2026-08-25T17:48:08Z",
-    "date": "2026-08-26",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260825175409-6",
     "timestamp": "2026-08-25T17:54:09Z",
     "date": "2026-08-26",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-16",
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260916065202-11",
+    "timestamp": "2026-09-16T06:52:02Z",
+    "date": "2026-09-16",
+    "scope": "docs(readme)",
+    "action": "update autonomous agent benchmark metrics and system architecture",
     "author": "IshaanYK"
   }
 ]
