@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260826064100-2",
-    "timestamp": "2026-08-26T06:41:00Z",
-    "date": "2026-08-26",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260826064801-3",
     "timestamp": "2026-08-26T06:48:01Z",
     "date": "2026-08-26",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-17",
     "scope": "chore(build)",
     "action": "refresh automated asset pipelines and SVG build artifacts",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260917011224-3",
+    "timestamp": "2026-09-17T01:12:24Z",
+    "date": "2026-09-17",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
