@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260829035542-1",
-    "timestamp": "2026-08-29T03:55:42Z",
-    "date": "2026-08-29",
-    "scope": "fix(telemetry)",
-    "action": "stabilize heartbeat monitoring and background task scheduling",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260829040142-2",
     "timestamp": "2026-08-29T04:01:42Z",
     "date": "2026-08-29",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-17",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260917090823-1",
+    "timestamp": "2026-09-17T09:08:23Z",
+    "date": "2026-09-17",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
