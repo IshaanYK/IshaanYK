@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260828150328-2",
-    "timestamp": "2026-08-28T15:03:28Z",
-    "date": "2026-08-28",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260828150829-3",
     "timestamp": "2026-08-28T15:08:29Z",
     "date": "2026-08-28",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-17",
     "scope": "chore(build)",
     "action": "refresh automated asset pipelines and SVG build artifacts",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260917060525-3",
+    "timestamp": "2026-09-17T06:05:25Z",
+    "date": "2026-09-17",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
   }
 ]
