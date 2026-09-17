@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260828232559-2",
-    "timestamp": "2026-08-28T23:25:59Z",
-    "date": "2026-08-28",
-    "scope": "perf(ui)",
-    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260828233400-3",
     "timestamp": "2026-08-28T23:34:00Z",
     "date": "2026-08-28",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-17",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260917065014-1",
+    "timestamp": "2026-09-17T06:50:14Z",
+    "date": "2026-09-17",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
