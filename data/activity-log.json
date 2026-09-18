@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260826212528-2",
-    "timestamp": "2026-08-26T21:25:28Z",
-    "date": "2026-08-26",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260826213229-3",
     "timestamp": "2026-08-26T21:32:29Z",
     "date": "2026-08-26",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-18",
     "scope": "feat(agent)",
     "action": "optimize multi-agent memory indexing and retrieval latency",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260918212256-4",
+    "timestamp": "2026-09-18T21:22:56Z",
+    "date": "2026-09-18",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
