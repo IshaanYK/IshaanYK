@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260902144505-1",
-    "timestamp": "2026-09-02T14:45:05Z",
-    "date": "2026-09-02",
-    "scope": "perf(db)",
-    "action": "index contribution records for sub-millisecond query execution",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260902145105-2",
     "timestamp": "2026-09-02T14:51:05Z",
     "date": "2026-09-02",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-19",
     "scope": "chore(build)",
     "action": "refresh automated asset pipelines and SVG build artifacts",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260919064404-10",
+    "timestamp": "2026-09-19T06:44:04Z",
+    "date": "2026-09-19",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
