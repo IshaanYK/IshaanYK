@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260905002828-3",
-    "timestamp": "2026-09-05T00:28:28Z",
-    "date": "2026-09-05",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260905003729-4",
     "timestamp": "2026-09-05T00:37:29Z",
     "date": "2026-09-05",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-20",
     "scope": "feat(agent)",
     "action": "optimize multi-agent memory indexing and retrieval latency",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260920130039-8",
+    "timestamp": "2026-09-20T13:00:39Z",
+    "date": "2026-09-20",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
