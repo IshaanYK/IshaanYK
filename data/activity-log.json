@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260829095201-4",
-    "timestamp": "2026-08-29T09:52:01Z",
-    "date": "2026-08-29",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260829123711-1",
     "timestamp": "2026-08-29T12:37:11Z",
     "date": "2026-08-29",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-21",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260921134029-3",
+    "timestamp": "2026-09-21T13:40:29Z",
+    "date": "2026-09-21",
+    "scope": "chore(deps)",
+    "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
   }
 ]
