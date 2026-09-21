@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260906134704-3",
-    "timestamp": "2026-09-06T13:47:04Z",
-    "date": "2026-09-06",
-    "scope": "perf(ui)",
-    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260906135304-4",
     "timestamp": "2026-09-06T13:53:04Z",
     "date": "2026-09-06",
@@ -3994,6 +3986,14 @@
   {
     "id": "act-20260921152119-6",
     "timestamp": "2026-09-21T15:21:19Z",
+    "date": "2026-09-21",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260921152619-7",
+    "timestamp": "2026-09-21T15:26:19Z",
     "date": "2026-09-21",
     "scope": "perf(ui)",
     "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
