@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260907213701-3",
-    "timestamp": "2026-09-07T21:37:01Z",
-    "date": "2026-09-07",
-    "scope": "chore(build)",
-    "action": "refresh automated asset pipelines and SVG build artifacts",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260907214202-4",
     "timestamp": "2026-09-07T21:42:02Z",
     "date": "2026-09-07",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-22",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260922110423-11",
+    "timestamp": "2026-09-22T11:04:23Z",
+    "date": "2026-09-22",
+    "scope": "test(eval)",
+    "action": "expand integration test suite for cross-agent communication",
     "author": "IshaanYK"
   }
 ]
