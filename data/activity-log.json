@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260906205312-1",
-    "timestamp": "2026-09-06T20:53:12Z",
-    "date": "2026-09-06",
-    "scope": "test(eval)",
-    "action": "expand integration test suite for cross-agent communication",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260906205713-2",
     "timestamp": "2026-09-06T20:57:13Z",
     "date": "2026-09-06",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-22",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260922050905-8",
+    "timestamp": "2026-09-22T05:09:05Z",
+    "date": "2026-09-22",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
   }
 ]
