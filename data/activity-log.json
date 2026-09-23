@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260831142402-1",
-    "timestamp": "2026-08-31T14:24:02Z",
-    "date": "2026-08-31",
-    "scope": "chore(deps)",
-    "action": "sync neural embedding dependencies and cache layers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260831143303-2",
     "timestamp": "2026-08-31T14:33:03Z",
     "date": "2026-08-31",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-23",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260923080937-3",
+    "timestamp": "2026-09-23T08:09:37Z",
+    "date": "2026-09-23",
+    "scope": "chore(deps)",
+    "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
   }
 ]
