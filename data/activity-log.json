@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260913120401-1",
-    "timestamp": "2026-09-13T12:04:01Z",
-    "date": "2026-09-13",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260913121402-2",
     "timestamp": "2026-09-13T12:14:02Z",
     "date": "2026-09-13",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-24",
     "scope": "perf(analytics)",
     "action": "vectorize heatmap contribution matrix parsing",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260924112124-6",
+    "timestamp": "2026-09-24T11:21:24Z",
+    "date": "2026-09-24",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
