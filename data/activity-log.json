@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260913144248-3",
-    "timestamp": "2026-09-13T14:42:48Z",
-    "date": "2026-09-13",
-    "scope": "feat(voice)",
-    "action": "tune low-latency audio stream buffer for conversational agent",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260913145048-4",
     "timestamp": "2026-09-13T14:50:48Z",
     "date": "2026-09-13",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-24",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260924142315-1",
+    "timestamp": "2026-09-24T14:23:15Z",
+    "date": "2026-09-24",
+    "scope": "test(eval)",
+    "action": "expand integration test suite for cross-agent communication",
     "author": "IshaanYK"
   }
 ]
