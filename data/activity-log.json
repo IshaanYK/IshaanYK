@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260915111924-14",
-    "timestamp": "2026-09-15T11:19:24Z",
-    "date": "2026-09-15",
-    "scope": "perf(analytics)",
-    "action": "vectorize heatmap contribution matrix parsing",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260915112725-15",
     "timestamp": "2026-09-15T11:27:25Z",
     "date": "2026-09-15",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-25",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260925080822-3",
+    "timestamp": "2026-09-25T08:08:22Z",
+    "date": "2026-09-25",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
