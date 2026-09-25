@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260915101918-5",
-    "timestamp": "2026-09-15T10:19:18Z",
-    "date": "2026-09-15",
-    "scope": "feat(agent)",
-    "action": "optimize multi-agent memory indexing and retrieval latency",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260915102418-6",
     "timestamp": "2026-09-15T10:24:18Z",
     "date": "2026-09-15",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-25",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260925060020-5",
+    "timestamp": "2026-09-25T06:00:20Z",
+    "date": "2026-09-25",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
