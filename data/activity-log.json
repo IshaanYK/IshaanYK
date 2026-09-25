@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260916104720-9",
-    "timestamp": "2026-09-16T10:47:20Z",
-    "date": "2026-09-16",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260916105421-10",
     "timestamp": "2026-09-16T10:54:21Z",
     "date": "2026-09-16",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-25",
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260925144623-12",
+    "timestamp": "2026-09-25T14:46:23Z",
+    "date": "2026-09-25",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
