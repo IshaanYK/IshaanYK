@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260916145756-4",
-    "timestamp": "2026-09-16T14:57:56Z",
-    "date": "2026-09-16",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260916150657-5",
     "timestamp": "2026-09-16T15:06:57Z",
     "date": "2026-09-16",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-25",
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260925173919-4",
+    "timestamp": "2026-09-25T17:39:19Z",
+    "date": "2026-09-25",
+    "scope": "test(eval)",
+    "action": "expand integration test suite for cross-agent communication",
     "author": "IshaanYK"
   }
 ]
