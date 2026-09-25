@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260916061658-6",
-    "timestamp": "2026-09-16T06:16:58Z",
-    "date": "2026-09-16",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260916062059-7",
     "timestamp": "2026-09-16T06:20:59Z",
     "date": "2026-09-16",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-25",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260925093233-15",
+    "timestamp": "2026-09-25T09:32:33Z",
+    "date": "2026-09-25",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
   }
 ]
