@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260916065803-12",
-    "timestamp": "2026-09-16T06:58:03Z",
-    "date": "2026-09-16",
-    "scope": "fix(telemetry)",
-    "action": "stabilize heartbeat monitoring and background task scheduling",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260916070404-13",
     "timestamp": "2026-09-16T07:04:04Z",
     "date": "2026-09-16",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-25",
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260925102916-1",
+    "timestamp": "2026-09-25T10:29:16Z",
+    "date": "2026-09-25",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
