@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260917071131-12",
-    "timestamp": "2026-09-17T07:11:31Z",
-    "date": "2026-09-17",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260917065014-1",
     "timestamp": "2026-09-17T06:50:14Z",
     "date": "2026-09-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-26",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260926150416-3",
+    "timestamp": "2026-09-26T15:04:16Z",
+    "date": "2026-09-26",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
