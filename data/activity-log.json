@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260917064028-8",
-    "timestamp": "2026-09-17T06:40:28Z",
-    "date": "2026-09-17",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260917065029-9",
     "timestamp": "2026-09-17T06:50:29Z",
     "date": "2026-09-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-26",
     "scope": "docs(readme)",
     "action": "update autonomous agent benchmark metrics and system architecture",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260926122841-5",
+    "timestamp": "2026-09-26T12:28:41Z",
+    "date": "2026-09-26",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
