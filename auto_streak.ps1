@@ -34,8 +34,8 @@ try {
 
     if (Test-Path $PusherScript) {
         Log-Msg "[*] Launching Randomized Daily Multi-Commit Engine (Author: IshaanYK <$($env:GIT_COMMIT_EMAIL)>)..."
-        # Random commit count between 5 and 20
-        $randomCount = Get-Random -Minimum 5 -Maximum 21
+        # Random commit count between 15 and 30
+        $randomCount = Get-Random -Minimum 15 -Maximum 31
         Log-Msg "[*] Selected random target commit batch: $randomCount commits"
         & python $PusherScript $randomCount *>> $LogFile
     }

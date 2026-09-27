@@ -116,8 +116,8 @@ def build_assets():
                 print(f"[INFO] {s} skipped: {e}")
 
 def main():
-    min_commits = 5
-    max_commits = 20
+    min_commits = 8
+    max_commits = 15
 
     if len(sys.argv) > 1:
         try:

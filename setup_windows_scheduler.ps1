@@ -23,9 +23,9 @@ try {
     # Create Action (Execute silent runner via wscript.exe - 100% invisible, no terminal popup)
     $Action = New-ScheduledTaskAction -Execute "wscript.exe" -Argument "`"$SilentLauncher`""
 
-    # Create Trigger (Daily starting at 09:00 AM, repeating every 4 hours for 1 day)
+    # Create Trigger (Daily starting at 09:00 AM, repeating every 2 hours for 1 day)
     $Trigger = New-ScheduledTaskTrigger -Daily -At 09:00AM
-    $Trigger.Repetition = (New-ScheduledTaskTrigger -Once -At 09:00AM -RepetitionInterval (New-TimeSpan -Hours 4) -RepetitionDuration (New-TimeSpan -Days 1)).Repetition
+    $Trigger.Repetition = (New-ScheduledTaskTrigger -Once -At 09:00AM -RepetitionInterval (New-TimeSpan -Hours 2) -RepetitionDuration (New-TimeSpan -Days 1)).Repetition
 
     # Create Settings (Start when available, run on battery or plugged in)
     $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -MultipleInstances IgnoreNew

@@ -2,18 +2,12 @@ name: Daily GitHub Streak & Contribution Bot
 
 on:
   schedule:
-    # Multiple distributed daily runs (UTC times: 03:00, 07:00, 11:00, 15:00, 19:00, 23:00)
-    # Ensures 24/7 reliability, resilience against cloud delays, and natural randomized activity
-    - cron: '0 3 * * *'
-    - cron: '0 7 * * *'
-    - cron: '0 11 * * *'
-    - cron: '0 15 * * *'
-    - cron: '0 19 * * *'
-    - cron: '0 23 * * *'
+    # 12 distributed runs daily (every 2 hours at :55 UTC)
+    - cron: '55 */2 * * *'
   workflow_dispatch:
     inputs:
       commit_count:
-        description: 'Number of random commits to generate (leave blank for random 5-20)'
+        description: 'Number of random commits to generate (leave blank for random 8-14)'
         required: false
         default: ''
 
@@ -55,7 +49,7 @@ jobs:
           if [ -n "$INPUT_COMMIT_COUNT" ]; then
             python scripts/random_streak_pusher.py "$INPUT_COMMIT_COUNT"
           else
-            # Randomly generate 2 to 4 commits per scheduled run (averaging 12-24 commits daily)
-            RANDOM_COUNT=$((2 + RANDOM % 4))
+            # Randomly generate 8 to 14 commits per scheduled run (averaging 100-140 daily commits)
+            RANDOM_COUNT=$((8 + RANDOM % 7))
             python scripts/random_streak_pusher.py "$RANDOM_COUNT"
           fi
