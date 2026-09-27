@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260918150720-9",
-    "timestamp": "2026-09-18T15:07:20Z",
-    "date": "2026-09-18",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260918151421-10",
     "timestamp": "2026-09-18T15:14:21Z",
     "date": "2026-09-18",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-27",
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260927143927-11",
+    "timestamp": "2026-09-27T14:39:27Z",
+    "date": "2026-09-27",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
