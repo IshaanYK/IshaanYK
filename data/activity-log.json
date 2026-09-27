@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260919045302-3",
-    "timestamp": "2026-09-19T04:53:02Z",
-    "date": "2026-09-19",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260919050103-4",
     "timestamp": "2026-09-19T05:01:03Z",
     "date": "2026-09-19",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-27",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260927152334-17",
+    "timestamp": "2026-09-27T15:23:34Z",
+    "date": "2026-09-27",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
   }
 ]
