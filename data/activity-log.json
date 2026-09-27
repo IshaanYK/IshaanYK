@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260917104633-15",
-    "timestamp": "2026-09-17T10:46:33Z",
-    "date": "2026-09-17",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260917105334-16",
     "timestamp": "2026-09-17T10:53:34Z",
     "date": "2026-09-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-27",
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260927040827-3",
+    "timestamp": "2026-09-27T04:08:27Z",
+    "date": "2026-09-27",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
   }
 ]
