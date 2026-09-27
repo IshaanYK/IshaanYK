@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260917192523-10",
-    "timestamp": "2026-09-17T19:25:23Z",
-    "date": "2026-09-18",
-    "scope": "perf(db)",
-    "action": "index contribution records for sub-millisecond query execution",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260918045346-1",
     "timestamp": "2026-09-18T04:53:46Z",
     "date": "2026-09-18",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-27",
     "scope": "chore(build)",
     "action": "refresh automated asset pipelines and SVG build artifacts",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260927092633-13",
+    "timestamp": "2026-09-27T09:26:33Z",
+    "date": "2026-09-27",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
