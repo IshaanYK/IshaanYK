@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260917110835-18",
-    "timestamp": "2026-09-17T11:08:35Z",
-    "date": "2026-09-17",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260917093314-1",
     "timestamp": "2026-09-17T09:33:14Z",
     "date": "2026-09-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-27",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260927043230-6",
+    "timestamp": "2026-09-27T04:32:30Z",
+    "date": "2026-09-27",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
   }
 ]
