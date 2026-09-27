@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260918045947-2",
-    "timestamp": "2026-09-18T04:59:47Z",
-    "date": "2026-09-18",
-    "scope": "refactor(memory)",
-    "action": "enhance episodic memory pruning and retrieval weights",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260918050648-3",
     "timestamp": "2026-09-18T05:06:48Z",
     "date": "2026-09-18",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-27",
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260927120928-1",
+    "timestamp": "2026-09-27T12:09:28Z",
+    "date": "2026-09-27",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
