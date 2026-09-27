@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260917105323-12",
-    "timestamp": "2026-09-17T10:53:23Z",
-    "date": "2026-09-17",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260917110123-13",
     "timestamp": "2026-09-17T11:01:23Z",
     "date": "2026-09-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-27",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260927071119-3",
+    "timestamp": "2026-09-27T07:11:19Z",
+    "date": "2026-09-27",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
