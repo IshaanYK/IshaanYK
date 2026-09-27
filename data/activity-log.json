@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260904145025-4",
-    "timestamp": "2026-09-04T14:50:25Z",
-    "date": "2026-09-04",
-    "scope": "fix(runtime)",
-    "action": "patch edge-case exception in parallel subagent dispatcher",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260904174045-1",
     "timestamp": "2026-09-04T17:40:45Z",
     "date": "2026-09-04",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-27",
     "scope": "docs(readme)",
     "action": "update autonomous agent benchmark metrics and system architecture",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260927084607-2",
+    "timestamp": "2026-09-27T08:46:07Z",
+    "date": "2026-09-27",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
     "author": "IshaanYK"
   }
 ]
