@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260909114901-2",
-    "timestamp": "2026-09-09T11:49:01Z",
-    "date": "2026-09-09",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260909115501-3",
     "timestamp": "2026-09-09T11:55:01Z",
     "date": "2026-09-09",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-29",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260929120329-2",
+    "timestamp": "2026-09-29T12:03:29Z",
+    "date": "2026-09-29",
+    "scope": "perf(db)",
+    "action": "index contribution records for sub-millisecond query execution",
     "author": "IshaanYK"
   }
 ]
