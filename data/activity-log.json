@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260910210619-3",
-    "timestamp": "2026-09-10T21:06:19Z",
-    "date": "2026-09-10",
-    "scope": "feat(agent)",
-    "action": "optimize multi-agent memory indexing and retrieval latency",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260910211319-4",
     "timestamp": "2026-09-10T21:13:19Z",
     "date": "2026-09-10",
@@ -3997,6 +3989,14 @@
     "date": "2026-09-29",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260929231420-8",
+    "timestamp": "2026-09-29T23:14:20Z",
+    "date": "2026-09-29",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
