@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260912133644-3",
-    "timestamp": "2026-09-12T13:36:44Z",
-    "date": "2026-09-12",
-    "scope": "fix(runtime)",
-    "action": "patch edge-case exception in parallel subagent dispatcher",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260912134744-4",
     "timestamp": "2026-09-12T13:47:44Z",
     "date": "2026-09-12",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-01",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20260930231704-3",
+    "timestamp": "2026-09-30T23:17:04Z",
+    "date": "2026-10-01",
+    "scope": "refactor(storage)",
+    "action": "refine atomic daily streak state persistence",
     "author": "IshaanYK"
   }
 ]
