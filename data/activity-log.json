@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260915082409-2",
-    "timestamp": "2026-09-15T08:24:09Z",
-    "date": "2026-09-15",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260915082909-3",
     "timestamp": "2026-09-15T08:29:09Z",
     "date": "2026-09-15",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-02",
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261002062137-13",
+    "timestamp": "2026-10-02T06:21:37Z",
+    "date": "2026-10-02",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
