@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260915122952-2",
-    "timestamp": "2026-09-15T12:29:52Z",
-    "date": "2026-09-15",
-    "scope": "test(eval)",
-    "action": "expand integration test suite for cross-agent communication",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260915145610-1",
     "timestamp": "2026-09-15T14:56:10Z",
     "date": "2026-09-15",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-02",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261002192103-10",
+    "timestamp": "2026-10-02T19:21:03Z",
+    "date": "2026-10-02",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
