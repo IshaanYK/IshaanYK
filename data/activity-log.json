@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260916005631-1",
-    "timestamp": "2026-09-16T00:56:31Z",
-    "date": "2026-09-16",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260916010231-2",
     "timestamp": "2026-09-16T01:02:31Z",
     "date": "2026-09-16",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-03",
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261003000209-11",
+    "timestamp": "2026-10-03T00:02:09Z",
+    "date": "2026-10-03",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
