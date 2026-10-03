@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260916011332-3",
-    "timestamp": "2026-09-16T01:13:32Z",
-    "date": "2026-09-16",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260916080608-1",
     "timestamp": "2026-09-16T08:06:08Z",
     "date": "2026-09-16",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-03",
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261003043447-2",
+    "timestamp": "2026-10-03T04:34:47Z",
+    "date": "2026-10-03",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
   }
 ]
