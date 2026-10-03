@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260917081524-3",
-    "timestamp": "2026-09-17T08:15:24Z",
-    "date": "2026-09-17",
-    "scope": "perf(db)",
-    "action": "index contribution records for sub-millisecond query execution",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260917082324-4",
     "timestamp": "2026-09-17T08:23:24Z",
     "date": "2026-09-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-03",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261003115049-12",
+    "timestamp": "2026-10-03T11:50:49Z",
+    "date": "2026-10-03",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
