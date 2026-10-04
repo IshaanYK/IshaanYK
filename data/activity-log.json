@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260919172707-5",
-    "timestamp": "2026-09-19T17:27:07Z",
-    "date": "2026-09-19",
-    "scope": "feat(voice)",
-    "action": "tune low-latency audio stream buffer for conversational agent",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260919204123-1",
     "timestamp": "2026-09-19T20:41:23Z",
     "date": "2026-09-19",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-04",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261004181417-11",
+    "timestamp": "2026-10-04T18:14:17Z",
+    "date": "2026-10-04",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
