@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260918142719-1",
-    "timestamp": "2026-09-18T14:27:19Z",
-    "date": "2026-09-18",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260918143619-2",
     "timestamp": "2026-09-18T14:36:19Z",
     "date": "2026-09-18",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-04",
     "scope": "refactor(pipeline)",
     "action": "streamline asynchronous tool invocation pipeline",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261004055755-4",
+    "timestamp": "2026-10-04T05:57:55Z",
+    "date": "2026-10-04",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
