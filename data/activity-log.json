@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260920174311-3",
-    "timestamp": "2026-09-20T17:43:11Z",
-    "date": "2026-09-20",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260920205155-1",
     "timestamp": "2026-09-20T20:51:55Z",
     "date": "2026-09-20",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-05",
     "scope": "perf(ui)",
     "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261005010705-11",
+    "timestamp": "2026-10-05T01:07:05Z",
+    "date": "2026-10-05",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
