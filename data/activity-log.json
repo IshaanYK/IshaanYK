@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260921133429-2",
-    "timestamp": "2026-09-21T13:34:29Z",
-    "date": "2026-09-21",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260921134029-3",
     "timestamp": "2026-09-21T13:40:29Z",
     "date": "2026-09-21",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-05",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261005090512-8",
+    "timestamp": "2026-10-05T09:05:12Z",
+    "date": "2026-10-05",
+    "scope": "fix(telemetry)",
+    "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
   }
 ]
