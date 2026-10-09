@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260927181117-8",
-    "timestamp": "2026-09-27T18:11:17Z",
-    "date": "2026-09-28",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260927181718-9",
     "timestamp": "2026-09-27T18:17:18Z",
     "date": "2026-09-28",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-09",
     "scope": "refactor(memory)",
     "action": "enhance episodic memory pruning and retrieval weights",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261009134650-11",
+    "timestamp": "2026-10-09T13:46:50Z",
+    "date": "2026-10-09",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
