@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260927203636-1",
-    "timestamp": "2026-09-27T20:36:36Z",
-    "date": "2026-09-27",
-    "scope": "chore(deps)",
-    "action": "sync neural embedding dependencies and cache layers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260927204436-2",
     "timestamp": "2026-09-27T20:44:36Z",
     "date": "2026-09-27",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-09",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261009191239-9",
+    "timestamp": "2026-10-09T19:12:39Z",
+    "date": "2026-10-09",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
