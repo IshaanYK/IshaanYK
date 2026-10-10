@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20260928231944-6",
-    "timestamp": "2026-09-28T23:19:44Z",
-    "date": "2026-09-28",
-    "scope": "perf(ui)",
-    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20260928232644-7",
     "timestamp": "2026-09-28T23:26:44Z",
     "date": "2026-09-28",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-10",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261010224925-1",
+    "timestamp": "2026-10-10T22:49:25Z",
+    "date": "2026-10-10",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
