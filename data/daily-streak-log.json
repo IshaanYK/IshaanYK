@@ -11459,8 +11459,15 @@
       "quest": "patch edge-case exception in parallel subagent dispatcher",
       "scope": "fix(runtime)",
       "source": "IshaanYK Autonomous Engine"
+    },
+    {
+      "timestamp": "2026-10-11T05:38:00Z",
+      "date": "2026-10-11",
+      "quest": "add adaptive context window compaction for long-running workflows",
+      "scope": "feat(engine)",
+      "source": "IshaanYK Autonomous Engine"
     }
   ],
-  "last_updated": "2026-10-10T23:51:31Z",
-  "total_active_days": 51
+  "last_updated": "2026-10-11T05:38:00Z",
+  "total_active_days": 52
 }
