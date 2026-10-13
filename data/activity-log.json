@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261001063649-9",
-    "timestamp": "2026-10-01T06:36:49Z",
-    "date": "2026-10-01",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261001130243-1",
     "timestamp": "2026-10-01T13:02:43Z",
     "date": "2026-10-01",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-13",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261013150732-2",
+    "timestamp": "2026-10-13T15:07:32Z",
+    "date": "2026-10-13",
+    "scope": "chore(build)",
+    "action": "refresh automated asset pipelines and SVG build artifacts",
     "author": "IshaanYK"
   }
 ]
