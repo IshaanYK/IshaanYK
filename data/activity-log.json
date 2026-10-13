@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261001185647-1",
-    "timestamp": "2026-10-01T18:56:47Z",
-    "date": "2026-10-01",
-    "scope": "chore(deps)",
-    "action": "sync neural embedding dependencies and cache layers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261001190448-2",
     "timestamp": "2026-10-01T19:04:48Z",
     "date": "2026-10-01",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-13",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261013161537-12",
+    "timestamp": "2026-10-13T16:15:37Z",
+    "date": "2026-10-13",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
   }
 ]
