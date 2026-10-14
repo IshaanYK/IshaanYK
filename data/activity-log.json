@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261003042346-1",
-    "timestamp": "2026-10-03T04:23:46Z",
-    "date": "2026-10-03",
-    "scope": "chore(deps)",
-    "action": "sync neural embedding dependencies and cache layers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261003043447-2",
     "timestamp": "2026-10-03T04:34:47Z",
     "date": "2026-10-03",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-14",
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261014223250-1",
+    "timestamp": "2026-10-14T22:32:50Z",
+    "date": "2026-10-14",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
