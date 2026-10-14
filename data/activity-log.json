@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261003045850-6",
-    "timestamp": "2026-10-03T04:58:50Z",
-    "date": "2026-10-03",
-    "scope": "refactor(memory)",
-    "action": "enhance episodic memory pruning and retrieval weights",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261003050950-7",
     "timestamp": "2026-10-03T05:09:50Z",
     "date": "2026-10-03",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-14",
     "scope": "chore(build)",
     "action": "refresh automated asset pipelines and SVG build artifacts",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261014230552-6",
+    "timestamp": "2026-10-14T23:05:52Z",
+    "date": "2026-10-14",
+    "scope": "chore(deps)",
+    "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
   }
 ]
