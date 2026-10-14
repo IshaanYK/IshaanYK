@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261002225504-2",
-    "timestamp": "2026-10-02T22:55:04Z",
-    "date": "2026-10-03",
-    "scope": "feat(agent)",
-    "action": "optimize multi-agent memory indexing and retrieval latency",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261002230404-3",
     "timestamp": "2026-10-02T23:04:04Z",
     "date": "2026-10-03",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-14",
     "scope": "feat(agent)",
     "action": "optimize multi-agent memory indexing and retrieval latency",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261014175253-5",
+    "timestamp": "2026-10-14T17:52:53Z",
+    "date": "2026-10-14",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
