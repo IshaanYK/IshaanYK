@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261002124227-3",
-    "timestamp": "2026-10-02T12:42:27Z",
-    "date": "2026-10-02",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261002124828-4",
     "timestamp": "2026-10-02T12:48:28Z",
     "date": "2026-10-02",
@@ -3994,6 +3986,14 @@
   {
     "id": "act-20261014073710-8",
     "timestamp": "2026-10-14T07:37:10Z",
+    "date": "2026-10-14",
+    "scope": "feat(agent)",
+    "action": "optimize multi-agent memory indexing and retrieval latency",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261014074311-9",
+    "timestamp": "2026-10-14T07:43:11Z",
     "date": "2026-10-14",
     "scope": "feat(agent)",
     "action": "optimize multi-agent memory indexing and retrieval latency",
