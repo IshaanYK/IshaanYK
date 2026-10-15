@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261003115750-13",
-    "timestamp": "2026-10-03T11:57:50Z",
-    "date": "2026-10-03",
-    "scope": "refactor(memory)",
-    "action": "enhance episodic memory pruning and retrieval weights",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261003120550-14",
     "timestamp": "2026-10-03T12:05:50Z",
     "date": "2026-10-03",
@@ -3994,6 +3986,14 @@
   {
     "id": "act-20261015105924-4",
     "timestamp": "2026-10-15T10:59:24Z",
+    "date": "2026-10-15",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261015110625-5",
+    "timestamp": "2026-10-15T11:06:25Z",
     "date": "2026-10-15",
     "scope": "perf(ui)",
     "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
