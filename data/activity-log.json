@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261003115049-12",
-    "timestamp": "2026-10-03T11:50:49Z",
-    "date": "2026-10-03",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261003115750-13",
     "timestamp": "2026-10-03T11:57:50Z",
     "date": "2026-10-03",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-15",
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261015105924-4",
+    "timestamp": "2026-10-15T10:59:24Z",
+    "date": "2026-10-15",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
   }
 ]
