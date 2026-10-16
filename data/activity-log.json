@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261004180716-10",
-    "timestamp": "2026-10-04T18:07:16Z",
-    "date": "2026-10-04",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261004181417-11",
     "timestamp": "2026-10-04T18:14:17Z",
     "date": "2026-10-04",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-16",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261016051839-11",
+    "timestamp": "2026-10-16T05:18:39Z",
+    "date": "2026-10-16",
+    "scope": "chore(deps)",
+    "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
   }
 ]
