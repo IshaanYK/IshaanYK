@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261007013105-11",
-    "timestamp": "2026-10-07T01:31:05Z",
-    "date": "2026-10-07",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261007013806-12",
     "timestamp": "2026-10-07T01:38:06Z",
     "date": "2026-10-07",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-17",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261017215221-1",
+    "timestamp": "2026-10-17T21:52:21Z",
+    "date": "2026-10-17",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
