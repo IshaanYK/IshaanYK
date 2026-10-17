@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261006004517-2",
-    "timestamp": "2026-10-06T00:45:17Z",
-    "date": "2026-10-06",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261006005217-3",
     "timestamp": "2026-10-06T00:52:17Z",
     "date": "2026-10-06",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-17",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261017040046-1",
+    "timestamp": "2026-10-17T04:00:46Z",
+    "date": "2026-10-17",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
