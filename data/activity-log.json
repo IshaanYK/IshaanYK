@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261006223903-7",
-    "timestamp": "2026-10-06T22:39:03Z",
-    "date": "2026-10-06",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261006224804-8",
     "timestamp": "2026-10-06T22:48:04Z",
     "date": "2026-10-06",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-17",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261017153534-10",
+    "timestamp": "2026-10-17T15:35:34Z",
+    "date": "2026-10-17",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
