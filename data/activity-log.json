@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261009130547-5",
-    "timestamp": "2026-10-09T13:05:47Z",
-    "date": "2026-10-09",
-    "scope": "perf(analytics)",
-    "action": "vectorize heatmap contribution matrix parsing",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261009130847-6",
     "timestamp": "2026-10-09T13:08:47Z",
     "date": "2026-10-09",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-19",
     "scope": "perf(analytics)",
     "action": "vectorize heatmap contribution matrix parsing",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261019125339-4",
+    "timestamp": "2026-10-19T12:53:39Z",
+    "date": "2026-10-19",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
