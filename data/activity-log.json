@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261010000642-12",
-    "timestamp": "2026-10-10T00:06:42Z",
-    "date": "2026-10-10",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261010001142-13",
     "timestamp": "2026-10-10T00:11:42Z",
     "date": "2026-10-10",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-20",
     "scope": "refactor(pipeline)",
     "action": "streamline asynchronous tool invocation pipeline",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261019234343-11",
+    "timestamp": "2026-10-19T23:43:43Z",
+    "date": "2026-10-20",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
