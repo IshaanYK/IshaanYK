@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261010184517-6",
-    "timestamp": "2026-10-10T18:45:17Z",
-    "date": "2026-10-10",
-    "scope": "refactor(memory)",
-    "action": "enhance episodic memory pruning and retrieval weights",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261010185218-7",
     "timestamp": "2026-10-10T18:52:18Z",
     "date": "2026-10-10",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-20",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261020161658-1",
+    "timestamp": "2026-10-20T16:16:58Z",
+    "date": "2026-10-20",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
