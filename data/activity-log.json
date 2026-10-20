@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261010181715-2",
-    "timestamp": "2026-10-10T18:17:15Z",
-    "date": "2026-10-10",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261010182316-3",
     "timestamp": "2026-10-10T18:23:16Z",
     "date": "2026-10-10",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-20",
     "scope": "chore(build)",
     "action": "refresh automated asset pipelines and SVG build artifacts",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261020115641-10",
+    "timestamp": "2026-10-20T11:56:41Z",
+    "date": "2026-10-20",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
