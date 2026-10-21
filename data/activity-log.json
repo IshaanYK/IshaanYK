@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261011181641-6",
-    "timestamp": "2026-10-11T18:16:41Z",
-    "date": "2026-10-11",
-    "scope": "chore(build)",
-    "action": "refresh automated asset pipelines and SVG build artifacts",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261011182442-7",
     "timestamp": "2026-10-11T18:24:42Z",
     "date": "2026-10-11",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-21",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261021070449-6",
+    "timestamp": "2026-10-21T07:04:49Z",
+    "date": "2026-10-21",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
