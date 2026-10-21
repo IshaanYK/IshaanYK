@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261011183643-9",
-    "timestamp": "2026-10-11T18:36:43Z",
-    "date": "2026-10-11",
-    "scope": "perf(ui)",
-    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261011184544-10",
     "timestamp": "2026-10-11T18:45:44Z",
     "date": "2026-10-11",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-21",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261021072451-9",
+    "timestamp": "2026-10-21T07:24:51Z",
+    "date": "2026-10-21",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
