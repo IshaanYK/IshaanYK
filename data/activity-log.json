@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261011133523-14",
-    "timestamp": "2026-10-11T13:35:23Z",
-    "date": "2026-10-11",
-    "scope": "feat(agent)",
-    "action": "optimize multi-agent memory indexing and retrieval latency",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261011174038-1",
     "timestamp": "2026-10-11T17:40:38Z",
     "date": "2026-10-11",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-21",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261021010119-11",
+    "timestamp": "2026-10-21T01:01:19Z",
+    "date": "2026-10-21",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
