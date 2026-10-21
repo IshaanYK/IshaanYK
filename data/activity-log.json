@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261011174939-2",
-    "timestamp": "2026-10-11T17:49:39Z",
-    "date": "2026-10-11",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261011175539-3",
     "timestamp": "2026-10-11T17:55:39Z",
     "date": "2026-10-11",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-21",
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261021063547-2",
+    "timestamp": "2026-10-21T06:35:47Z",
+    "date": "2026-10-21",
+    "scope": "feat(agent)",
+    "action": "optimize multi-agent memory indexing and retrieval latency",
     "author": "IshaanYK"
   }
 ]
