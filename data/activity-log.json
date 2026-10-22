@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261013153935-7",
-    "timestamp": "2026-10-13T15:39:35Z",
-    "date": "2026-10-13",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261013154835-8",
     "timestamp": "2026-10-13T15:48:35Z",
     "date": "2026-10-13",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-22",
     "scope": "feat(agent)",
     "action": "optimize multi-agent memory indexing and retrieval latency",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261022164625-3",
+    "timestamp": "2026-10-22T16:46:25Z",
+    "date": "2026-10-22",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
