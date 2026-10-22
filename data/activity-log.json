@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261013203803-6",
-    "timestamp": "2026-10-13T20:38:03Z",
-    "date": "2026-10-13",
-    "scope": "fix(runtime)",
-    "action": "patch edge-case exception in parallel subagent dispatcher",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261013204604-7",
     "timestamp": "2026-10-13T20:46:04Z",
     "date": "2026-10-13",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-22",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261022212203-5",
+    "timestamp": "2026-10-22T21:22:03Z",
+    "date": "2026-10-22",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
   }
 ]
