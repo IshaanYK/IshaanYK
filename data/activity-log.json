@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261014180654-7",
-    "timestamp": "2026-10-14T18:06:54Z",
-    "date": "2026-10-14",
-    "scope": "fix(runtime)",
-    "action": "patch edge-case exception in parallel subagent dispatcher",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261014181754-8",
     "timestamp": "2026-10-14T18:17:54Z",
     "date": "2026-10-14",
@@ -3994,6 +3986,14 @@
   {
     "id": "act-20261023173408-4",
     "timestamp": "2026-10-23T17:34:08Z",
+    "date": "2026-10-23",
+    "scope": "perf(db)",
+    "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261023174009-5",
+    "timestamp": "2026-10-23T17:40:09Z",
     "date": "2026-10-23",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
