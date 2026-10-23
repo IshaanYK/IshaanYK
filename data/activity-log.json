@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261014231353-7",
-    "timestamp": "2026-10-14T23:13:53Z",
-    "date": "2026-10-14",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261014232353-8",
     "timestamp": "2026-10-14T23:23:53Z",
     "date": "2026-10-14",
@@ -3994,6 +3986,14 @@
   {
     "id": "act-20261023205940-4",
     "timestamp": "2026-10-23T20:59:40Z",
+    "date": "2026-10-23",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261023210740-5",
+    "timestamp": "2026-10-23T21:07:40Z",
     "date": "2026-10-23",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
