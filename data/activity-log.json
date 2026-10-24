@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261015211859-7",
-    "timestamp": "2026-10-15T21:18:59Z",
-    "date": "2026-10-15",
-    "scope": "fix(telemetry)",
-    "action": "stabilize heartbeat monitoring and background task scheduling",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261015212600-8",
     "timestamp": "2026-10-15T21:26:00Z",
     "date": "2026-10-15",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-24",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261024204153-3",
+    "timestamp": "2026-10-24T20:41:53Z",
+    "date": "2026-10-24",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
