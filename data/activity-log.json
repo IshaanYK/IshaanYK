@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261017001332-4",
-    "timestamp": "2026-10-17T00:13:32Z",
-    "date": "2026-10-17",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261017002333-5",
     "timestamp": "2026-10-17T00:23:33Z",
     "date": "2026-10-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-25",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261025190324-10",
+    "timestamp": "2026-10-25T19:03:24Z",
+    "date": "2026-10-25",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
