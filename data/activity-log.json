@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261017040046-1",
-    "timestamp": "2026-10-17T04:00:46Z",
-    "date": "2026-10-17",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261017040746-2",
     "timestamp": "2026-10-17T04:07:46Z",
     "date": "2026-10-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-25",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261025215502-3",
+    "timestamp": "2026-10-25T21:55:02Z",
+    "date": "2026-10-25",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
