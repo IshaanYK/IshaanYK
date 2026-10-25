@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261016112132-3",
-    "timestamp": "2026-10-16T11:21:32Z",
-    "date": "2026-10-16",
-    "scope": "perf(db)",
-    "action": "index contribution records for sub-millisecond query execution",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261016112633-4",
     "timestamp": "2026-10-16T11:26:33Z",
     "date": "2026-10-16",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-25",
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261025111103-1",
+    "timestamp": "2026-10-25T11:11:03Z",
+    "date": "2026-10-25",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
