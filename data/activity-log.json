@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261017003834-7",
-    "timestamp": "2026-10-17T00:38:34Z",
-    "date": "2026-10-17",
-    "scope": "perf(ui)",
-    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261017004534-8",
     "timestamp": "2026-10-17T00:45:34Z",
     "date": "2026-10-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-25",
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261025192425-13",
+    "timestamp": "2026-10-25T19:24:25Z",
+    "date": "2026-10-25",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
