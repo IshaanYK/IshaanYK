@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261017102954-8",
-    "timestamp": "2026-10-17T10:29:54Z",
-    "date": "2026-10-17",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261017103854-9",
     "timestamp": "2026-10-17T10:38:54Z",
     "date": "2026-10-17",
@@ -3994,6 +3986,14 @@
   {
     "id": "act-20261026005557-10",
     "timestamp": "2026-10-26T00:55:57Z",
+    "date": "2026-10-26",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261026065238-1",
+    "timestamp": "2026-10-26T06:52:38Z",
     "date": "2026-10-26",
     "scope": "refactor(memory)",
     "action": "enhance episodic memory pruning and retrieval weights",
