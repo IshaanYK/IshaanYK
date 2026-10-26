@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261017182709-4",
-    "timestamp": "2026-10-17T18:27:09Z",
-    "date": "2026-10-17",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261017183210-5",
     "timestamp": "2026-10-17T18:32:10Z",
     "date": "2026-10-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-26",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261026201013-4",
+    "timestamp": "2026-10-26T20:10:13Z",
+    "date": "2026-10-26",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
