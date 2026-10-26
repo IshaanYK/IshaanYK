@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261017152233-8",
-    "timestamp": "2026-10-17T15:22:33Z",
-    "date": "2026-10-17",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261017152833-9",
     "timestamp": "2026-10-17T15:28:33Z",
     "date": "2026-10-17",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-26",
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261026145900-3",
+    "timestamp": "2026-10-26T14:59:00Z",
+    "date": "2026-10-26",
+    "scope": "fix(telemetry)",
+    "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
   }
 ]
