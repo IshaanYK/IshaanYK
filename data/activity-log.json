@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261018154702-7",
-    "timestamp": "2026-10-18T15:47:02Z",
-    "date": "2026-10-18",
-    "scope": "chore(build)",
-    "action": "refresh automated asset pipelines and SVG build artifacts",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261018155303-8",
     "timestamp": "2026-10-18T15:53:03Z",
     "date": "2026-10-18",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-27",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261027195738-3",
+    "timestamp": "2026-10-27T19:57:38Z",
+    "date": "2026-10-27",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
