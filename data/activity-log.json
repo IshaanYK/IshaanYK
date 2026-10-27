@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261018041408-3",
-    "timestamp": "2026-10-18T04:14:08Z",
-    "date": "2026-10-18",
-    "scope": "docs(readme)",
-    "action": "update autonomous agent benchmark metrics and system architecture",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261018042108-4",
     "timestamp": "2026-10-18T04:21:08Z",
     "date": "2026-10-18",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-27",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261027072732-3",
+    "timestamp": "2026-10-27T07:27:32Z",
+    "date": "2026-10-27",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
