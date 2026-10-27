@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261018105015-1",
-    "timestamp": "2026-10-18T10:50:15Z",
-    "date": "2026-10-18",
-    "scope": "fix(telemetry)",
-    "action": "stabilize heartbeat monitoring and background task scheduling",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261018105816-2",
     "timestamp": "2026-10-18T10:58:16Z",
     "date": "2026-10-18",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-27",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261027133443-1",
+    "timestamp": "2026-10-27T13:34:43Z",
+    "date": "2026-10-27",
+    "scope": "feat(voice)",
+    "action": "tune low-latency audio stream buffer for conversational agent",
     "author": "IshaanYK"
   }
 ]
