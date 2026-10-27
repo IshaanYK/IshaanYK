@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261018043509-6",
-    "timestamp": "2026-10-18T04:35:09Z",
-    "date": "2026-10-18",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261018044610-7",
     "timestamp": "2026-10-18T04:46:10Z",
     "date": "2026-10-18",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-27",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261027075034-6",
+    "timestamp": "2026-10-27T07:50:34Z",
+    "date": "2026-10-27",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
