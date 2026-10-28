@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261019125339-4",
-    "timestamp": "2026-10-19T12:53:39Z",
-    "date": "2026-10-19",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261019130039-5",
     "timestamp": "2026-10-19T13:00:39Z",
     "date": "2026-10-19",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-28",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261028210404-10",
+    "timestamp": "2026-10-28T21:04:04Z",
+    "date": "2026-10-28",
+    "scope": "test(eval)",
+    "action": "expand integration test suite for cross-agent communication",
     "author": "IshaanYK"
   }
 ]
