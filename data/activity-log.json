@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261018231943-2",
-    "timestamp": "2026-10-18T23:19:43Z",
-    "date": "2026-10-19",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261018232944-3",
     "timestamp": "2026-10-18T23:29:44Z",
     "date": "2026-10-19",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-28",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261028082031-2",
+    "timestamp": "2026-10-28T08:20:31Z",
+    "date": "2026-10-28",
+    "scope": "refactor(pipeline)",
+    "action": "streamline asynchronous tool invocation pipeline",
     "author": "IshaanYK"
   }
 ]
