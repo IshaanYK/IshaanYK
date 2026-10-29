@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261019235043-12",
-    "timestamp": "2026-10-19T23:50:43Z",
-    "date": "2026-10-20",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261019235744-13",
     "timestamp": "2026-10-19T23:57:44Z",
     "date": "2026-10-20",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-29",
     "scope": "perf(core)",
     "action": "accelerate token budget compression algorithm",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261029220920-5",
+    "timestamp": "2026-10-29T22:09:20Z",
+    "date": "2026-10-29",
+    "scope": "refactor(storage)",
+    "action": "refine atomic daily streak state persistence",
     "author": "IshaanYK"
   }
 ]
