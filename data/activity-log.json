@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261020043933-4",
-    "timestamp": "2026-10-20T04:39:33Z",
-    "date": "2026-10-20",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261020044334-5",
     "timestamp": "2026-10-20T04:43:34Z",
     "date": "2026-10-20",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-29",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261029224622-10",
+    "timestamp": "2026-10-29T22:46:22Z",
+    "date": "2026-10-29",
+    "scope": "chore(deps)",
+    "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
   }
 ]
