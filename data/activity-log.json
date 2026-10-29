@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261019224639-3",
-    "timestamp": "2026-10-19T22:46:39Z",
-    "date": "2026-10-20",
-    "scope": "refactor(memory)",
-    "action": "enhance episodic memory pruning and retrieval weights",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261019225339-4",
     "timestamp": "2026-10-19T22:53:39Z",
     "date": "2026-10-20",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-29",
     "scope": "feat(skills)",
     "action": "register dynamic agent capabilities and custom tooling hooks",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261029163809-5",
+    "timestamp": "2026-10-29T16:38:09Z",
+    "date": "2026-10-29",
+    "scope": "feat(hud)",
+    "action": "tune real-time RPG status HUD stats and aura indicators",
     "author": "IshaanYK"
   }
 ]
