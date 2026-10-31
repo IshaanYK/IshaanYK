@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261021000613-3",
-    "timestamp": "2026-10-21T00:06:13Z",
-    "date": "2026-10-21",
-    "scope": "refactor(memory)",
-    "action": "enhance episodic memory pruning and retrieval weights",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261021001114-4",
     "timestamp": "2026-10-21T00:11:14Z",
     "date": "2026-10-21",
@@ -3997,6 +3989,14 @@
     "date": "2026-10-31",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261031000132-11",
+    "timestamp": "2026-10-31T00:01:32Z",
+    "date": "2026-10-31",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
