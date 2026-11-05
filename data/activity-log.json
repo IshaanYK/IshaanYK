@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261024173257-9",
-    "timestamp": "2026-10-24T17:32:57Z",
-    "date": "2026-10-24",
-    "scope": "perf(db)",
-    "action": "index contribution records for sub-millisecond query execution",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261024173900-10",
     "timestamp": "2026-10-24T17:39:00Z",
     "date": "2026-10-24",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-05",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261105120614-2",
+    "timestamp": "2026-11-05T12:06:14Z",
+    "date": "2026-11-05",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
