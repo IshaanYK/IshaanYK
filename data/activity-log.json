@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261025120007-8",
-    "timestamp": "2026-10-25T12:00:07Z",
-    "date": "2026-10-25",
-    "scope": "chore(build)",
-    "action": "refresh automated asset pipelines and SVG build artifacts",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261025121007-9",
     "timestamp": "2026-10-25T12:10:07Z",
     "date": "2026-10-25",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-06",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261106170447-4",
+    "timestamp": "2026-11-06T17:04:47Z",
+    "date": "2026-11-06",
+    "scope": "fix(telemetry)",
+    "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
   }
 ]
