@@ -20468,8 +20468,15 @@
       "quest": "stabilize heartbeat monitoring and background task scheduling",
       "scope": "fix(telemetry)",
       "source": "IshaanYK Autonomous Engine"
+    },
+    {
+      "timestamp": "2026-11-07T13:19:26Z",
+      "date": "2026-11-07",
+      "quest": "add adaptive context window compaction for long-running workflows",
+      "scope": "feat(engine)",
+      "source": "IshaanYK Autonomous Engine"
     }
   ],
-  "last_updated": "2026-11-07T13:13:25Z",
+  "last_updated": "2026-11-07T13:19:26Z",
   "total_active_days": 79
 }

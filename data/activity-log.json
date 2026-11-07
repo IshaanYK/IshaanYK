@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261025215502-3",
-    "timestamp": "2026-10-25T21:55:02Z",
-    "date": "2026-10-25",
-    "scope": "fix(runtime)",
-    "action": "patch edge-case exception in parallel subagent dispatcher",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261025220202-4",
     "timestamp": "2026-10-25T22:02:02Z",
     "date": "2026-10-25",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-07",
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261107131926-6",
+    "timestamp": "2026-11-07T13:19:26Z",
+    "date": "2026-11-07",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
