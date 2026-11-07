@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261026000453-3",
-    "timestamp": "2026-10-26T00:04:53Z",
-    "date": "2026-10-26",
-    "scope": "chore(build)",
-    "action": "refresh automated asset pipelines and SVG build artifacts",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261026001154-4",
     "timestamp": "2026-10-26T00:11:54Z",
     "date": "2026-10-26",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-07",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261107184624-9",
+    "timestamp": "2026-11-07T18:46:24Z",
+    "date": "2026-11-07",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
     "author": "IshaanYK"
   }
 ]
