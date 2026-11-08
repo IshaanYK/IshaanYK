@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261026071940-5",
-    "timestamp": "2026-10-26T07:19:40Z",
-    "date": "2026-10-26",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261026073041-6",
     "timestamp": "2026-10-26T07:30:41Z",
     "date": "2026-10-26",
@@ -3994,6 +3986,14 @@
   {
     "id": "act-20261107235402-8",
     "timestamp": "2026-11-07T23:54:02Z",
+    "date": "2026-11-08",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261108000002-9",
+    "timestamp": "2026-11-08T00:00:02Z",
     "date": "2026-11-08",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
