@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261027010746-10",
-    "timestamp": "2026-10-27T01:07:46Z",
-    "date": "2026-10-27",
-    "scope": "chore(deps)",
-    "action": "sync neural embedding dependencies and cache layers",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261027011547-11",
     "timestamp": "2026-10-27T01:15:47Z",
     "date": "2026-10-27",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-09",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261109000252-8",
+    "timestamp": "2026-11-09T00:02:52Z",
+    "date": "2026-11-09",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
