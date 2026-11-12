@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261029225423-11",
-    "timestamp": "2026-10-29T22:54:23Z",
-    "date": "2026-10-29",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261029225823-12",
     "timestamp": "2026-10-29T22:58:23Z",
     "date": "2026-10-29",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-12",
     "scope": "fix(runtime)",
     "action": "patch edge-case exception in parallel subagent dispatcher",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261112230823-2",
+    "timestamp": "2026-11-12T23:08:23Z",
+    "date": "2026-11-12",
+    "scope": "perf(core)",
+    "action": "accelerate token budget compression algorithm",
     "author": "IshaanYK"
   }
 ]
