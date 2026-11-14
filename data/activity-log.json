@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261031121641-2",
-    "timestamp": "2026-10-31T12:16:41Z",
-    "date": "2026-10-31",
-    "scope": "perf(db)",
-    "action": "index contribution records for sub-millisecond query execution",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261031122541-3",
     "timestamp": "2026-10-31T12:25:41Z",
     "date": "2026-10-31",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-14",
     "scope": "feat(hud)",
     "action": "tune real-time RPG status HUD stats and aura indicators",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261114160040-4",
+    "timestamp": "2026-11-14T16:00:40Z",
+    "date": "2026-11-14",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
   }
 ]
