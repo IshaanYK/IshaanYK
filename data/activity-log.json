@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261031123742-5",
-    "timestamp": "2026-10-31T12:37:42Z",
-    "date": "2026-10-31",
-    "scope": "feat(voice)",
-    "action": "tune low-latency audio stream buffer for conversational agent",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261031124443-6",
     "timestamp": "2026-10-31T12:44:43Z",
     "date": "2026-10-31",
@@ -3994,6 +3986,14 @@
   {
     "id": "act-20261114161541-6",
     "timestamp": "2026-11-14T16:15:41Z",
+    "date": "2026-11-14",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261114162241-7",
+    "timestamp": "2026-11-14T16:22:41Z",
     "date": "2026-11-14",
     "scope": "perf(ui)",
     "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
