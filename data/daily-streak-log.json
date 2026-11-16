@@ -22750,8 +22750,15 @@
       "quest": "tune real-time RPG status HUD stats and aura indicators",
       "scope": "feat(hud)",
       "source": "IshaanYK Autonomous Engine"
+    },
+    {
+      "timestamp": "2026-11-16T18:43:13Z",
+      "date": "2026-11-16",
+      "quest": "add adaptive context window compaction for long-running workflows",
+      "scope": "feat(engine)",
+      "source": "IshaanYK Autonomous Engine"
     }
   ],
-  "last_updated": "2026-11-16T18:35:13Z",
+  "last_updated": "2026-11-16T18:43:13Z",
   "total_active_days": 88
 }
