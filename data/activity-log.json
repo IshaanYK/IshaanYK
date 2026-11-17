@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261103015535-3",
-    "timestamp": "2026-11-03T01:55:35Z",
-    "date": "2026-11-03",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261103020336-4",
     "timestamp": "2026-11-03T02:03:36Z",
     "date": "2026-11-03",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-17",
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261117030915-12",
+    "timestamp": "2026-11-17T03:09:15Z",
+    "date": "2026-11-17",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
