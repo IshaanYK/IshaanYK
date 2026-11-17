@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261103095514-12",
-    "timestamp": "2026-11-03T09:55:14Z",
-    "date": "2026-11-03",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261103100414-13",
     "timestamp": "2026-11-03T10:04:14Z",
     "date": "2026-11-03",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-17",
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261117215017-7",
+    "timestamp": "2026-11-17T21:50:17Z",
+    "date": "2026-11-17",
+    "scope": "fix(telemetry)",
+    "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
   }
 ]
