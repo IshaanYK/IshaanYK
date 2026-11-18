@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261103225126-1",
-    "timestamp": "2026-11-03T22:51:26Z",
-    "date": "2026-11-03",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261103225827-2",
     "timestamp": "2026-11-03T22:58:27Z",
     "date": "2026-11-03",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-18",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261118033219-9",
+    "timestamp": "2026-11-18T03:32:19Z",
+    "date": "2026-11-18",
+    "scope": "fix(telemetry)",
+    "action": "stabilize heartbeat monitoring and background task scheduling",
     "author": "IshaanYK"
   }
 ]
