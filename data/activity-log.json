@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261103225827-2",
-    "timestamp": "2026-11-03T22:58:27Z",
-    "date": "2026-11-03",
-    "scope": "chore(build)",
-    "action": "refresh automated asset pipelines and SVG build artifacts",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261103230527-3",
     "timestamp": "2026-11-03T23:05:27Z",
     "date": "2026-11-03",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-18",
     "scope": "fix(telemetry)",
     "action": "stabilize heartbeat monitoring and background task scheduling",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261118034019-10",
+    "timestamp": "2026-11-18T03:40:19Z",
+    "date": "2026-11-18",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
