@@ -23170,8 +23170,15 @@
       "quest": "accelerate token budget compression algorithm",
       "scope": "perf(core)",
       "source": "IshaanYK Autonomous Engine"
+    },
+    {
+      "timestamp": "2026-11-18T13:08:54Z",
+      "date": "2026-11-18",
+      "quest": "add adaptive context window compaction for long-running workflows",
+      "scope": "feat(engine)",
+      "source": "IshaanYK Autonomous Engine"
     }
   ],
-  "last_updated": "2026-11-18T13:03:54Z",
+  "last_updated": "2026-11-18T13:08:54Z",
   "total_active_days": 90
 }
