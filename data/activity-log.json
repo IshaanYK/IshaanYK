@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261105122115-4",
-    "timestamp": "2026-11-05T12:21:15Z",
-    "date": "2026-11-05",
-    "scope": "perf(core)",
-    "action": "accelerate token budget compression algorithm",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261105122616-5",
     "timestamp": "2026-11-05T12:26:16Z",
     "date": "2026-11-05",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-19",
     "scope": "feat(engine)",
     "action": "add adaptive context window compaction for long-running workflows",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261119222717-11",
+    "timestamp": "2026-11-19T22:27:17Z",
+    "date": "2026-11-19",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
