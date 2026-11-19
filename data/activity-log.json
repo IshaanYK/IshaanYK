@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261104211037-4",
-    "timestamp": "2026-11-04T21:10:37Z",
-    "date": "2026-11-04",
-    "scope": "chore(build)",
-    "action": "refresh automated asset pipelines and SVG build artifacts",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261104211638-5",
     "timestamp": "2026-11-04T21:16:38Z",
     "date": "2026-11-04",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-19",
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261119032504-8",
+    "timestamp": "2026-11-19T03:25:04Z",
+    "date": "2026-11-19",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
