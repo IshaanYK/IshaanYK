@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261105194531-4",
-    "timestamp": "2026-11-05T19:45:31Z",
-    "date": "2026-11-05",
-    "scope": "chore(build)",
-    "action": "refresh automated asset pipelines and SVG build artifacts",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261105194931-5",
     "timestamp": "2026-11-05T19:49:31Z",
     "date": "2026-11-05",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-20",
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261120034248-8",
+    "timestamp": "2026-11-20T03:42:48Z",
+    "date": "2026-11-20",
+    "scope": "refactor(pipeline)",
+    "action": "streamline asynchronous tool invocation pipeline",
     "author": "IshaanYK"
   }
 ]
