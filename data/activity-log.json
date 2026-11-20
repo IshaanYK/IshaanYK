@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261106000822-4",
-    "timestamp": "2026-11-06T00:08:22Z",
-    "date": "2026-11-06",
-    "scope": "fix(telemetry)",
-    "action": "stabilize heartbeat monitoring and background task scheduling",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261106001622-5",
     "timestamp": "2026-11-06T00:16:22Z",
     "date": "2026-11-06",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-20",
     "scope": "perf(ui)",
     "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261120130907-9",
+    "timestamp": "2026-11-20T13:09:07Z",
+    "date": "2026-11-20",
+    "scope": "refactor(storage)",
+    "action": "refine atomic daily streak state persistence",
     "author": "IshaanYK"
   }
 ]
