@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261105192229-1",
-    "timestamp": "2026-11-05T19:22:29Z",
-    "date": "2026-11-05",
-    "scope": "feat(hud)",
-    "action": "tune real-time RPG status HUD stats and aura indicators",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261105192930-2",
     "timestamp": "2026-11-05T19:29:30Z",
     "date": "2026-11-05",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-20",
     "scope": "refactor(memory)",
     "action": "enhance episodic memory pruning and retrieval weights",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261120032247-5",
+    "timestamp": "2026-11-20T03:22:47Z",
+    "date": "2026-11-20",
+    "scope": "chore(deps)",
+    "action": "sync neural embedding dependencies and cache layers",
     "author": "IshaanYK"
   }
 ]
