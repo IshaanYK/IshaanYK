@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261107175820-2",
-    "timestamp": "2026-11-07T17:58:20Z",
-    "date": "2026-11-07",
-    "scope": "feat(voice)",
-    "action": "tune low-latency audio stream buffer for conversational agent",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261107180521-3",
     "timestamp": "2026-11-07T18:05:21Z",
     "date": "2026-11-07",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-22",
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261121232628-2",
+    "timestamp": "2026-11-21T23:26:28Z",
+    "date": "2026-11-22",
+    "scope": "refactor(pipeline)",
+    "action": "streamline asynchronous tool invocation pipeline",
     "author": "IshaanYK"
   }
 ]
