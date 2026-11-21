@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261107181922-5",
-    "timestamp": "2026-11-07T18:19:22Z",
-    "date": "2026-11-07",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261107182223-6",
     "timestamp": "2026-11-07T18:22:23Z",
     "date": "2026-11-07",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-22",
     "scope": "refactor(pipeline)",
     "action": "streamline asynchronous tool invocation pipeline",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261121234730-5",
+    "timestamp": "2026-11-21T23:47:30Z",
+    "date": "2026-11-22",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
