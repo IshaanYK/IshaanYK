@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261108184136-5",
-    "timestamp": "2026-11-08T18:41:36Z",
-    "date": "2026-11-08",
-    "scope": "feat(voice)",
-    "action": "tune low-latency audio stream buffer for conversational agent",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261108184737-6",
     "timestamp": "2026-11-08T18:47:37Z",
     "date": "2026-11-08",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-22",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261122213248-9",
+    "timestamp": "2026-11-22T21:32:48Z",
+    "date": "2026-11-22",
+    "scope": "refactor(storage)",
+    "action": "refine atomic daily streak state persistence",
     "author": "IshaanYK"
   }
 ]
