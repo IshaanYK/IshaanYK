@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261108124509-3",
-    "timestamp": "2026-11-08T12:45:09Z",
-    "date": "2026-11-08",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261108125310-4",
     "timestamp": "2026-11-08T12:53:10Z",
     "date": "2026-11-08",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-22",
     "scope": "test(eval)",
     "action": "expand integration test suite for cross-agent communication",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261122155845-6",
+    "timestamp": "2026-11-22T15:58:45Z",
+    "date": "2026-11-22",
+    "scope": "refactor(pipeline)",
+    "action": "streamline asynchronous tool invocation pipeline",
     "author": "IshaanYK"
   }
 ]
