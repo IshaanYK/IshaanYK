@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261108063718-7",
-    "timestamp": "2026-11-08T06:37:18Z",
-    "date": "2026-11-08",
-    "scope": "refactor(storage)",
-    "action": "refine atomic daily streak state persistence",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261108064618-8",
     "timestamp": "2026-11-08T06:46:18Z",
     "date": "2026-11-08",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-22",
     "scope": "perf(db)",
     "action": "index contribution records for sub-millisecond query execution",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261122153442-2",
+    "timestamp": "2026-11-22T15:34:42Z",
+    "date": "2026-11-22",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
