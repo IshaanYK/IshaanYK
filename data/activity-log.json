@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261110023102-10",
-    "timestamp": "2026-11-10T02:31:02Z",
-    "date": "2026-11-10",
-    "scope": "fix(telemetry)",
-    "action": "stabilize heartbeat monitoring and background task scheduling",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261110024003-11",
     "timestamp": "2026-11-10T02:40:03Z",
     "date": "2026-11-10",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-24",
     "scope": "feat(agent)",
     "action": "optimize multi-agent memory indexing and retrieval latency",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261124151914-9",
+    "timestamp": "2026-11-24T15:19:14Z",
+    "date": "2026-11-24",
+    "scope": "feat(engine)",
+    "action": "add adaptive context window compaction for long-running workflows",
     "author": "IshaanYK"
   }
 ]
