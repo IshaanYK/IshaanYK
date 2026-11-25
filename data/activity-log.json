@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261111093352-6",
-    "timestamp": "2026-11-11T09:33:52Z",
-    "date": "2026-11-11",
-    "scope": "feat(skills)",
-    "action": "register dynamic agent capabilities and custom tooling hooks",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261111094252-7",
     "timestamp": "2026-11-11T09:42:52Z",
     "date": "2026-11-11",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-25",
     "scope": "chore(deps)",
     "action": "sync neural embedding dependencies and cache layers",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261125220022-13",
+    "timestamp": "2026-11-25T22:00:22Z",
+    "date": "2026-11-25",
+    "scope": "perf(ui)",
+    "action": "optimize 60fps WebGL canvas draw calls and shader buffers",
     "author": "IshaanYK"
   }
 ]
