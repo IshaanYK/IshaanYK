@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261111094653-8",
-    "timestamp": "2026-11-11T09:46:53Z",
-    "date": "2026-11-11",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261111095654-9",
     "timestamp": "2026-11-11T09:56:54Z",
     "date": "2026-11-11",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-26",
     "scope": "feat(voice)",
     "action": "tune low-latency audio stream buffer for conversational agent",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261126031633-2",
+    "timestamp": "2026-11-26T03:16:33Z",
+    "date": "2026-11-26",
+    "scope": "fix(runtime)",
+    "action": "patch edge-case exception in parallel subagent dispatcher",
     "author": "IshaanYK"
   }
 ]
