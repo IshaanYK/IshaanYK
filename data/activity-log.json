@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261112100925-8",
-    "timestamp": "2026-11-12T10:09:25Z",
-    "date": "2026-11-12",
-    "scope": "feat(engine)",
-    "action": "add adaptive context window compaction for long-running workflows",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261112101526-9",
     "timestamp": "2026-11-12T10:15:26Z",
     "date": "2026-11-12",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-26",
     "scope": "perf(analytics)",
     "action": "vectorize heatmap contribution matrix parsing",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261126225055-9",
+    "timestamp": "2026-11-26T22:50:55Z",
+    "date": "2026-11-26",
+    "scope": "feat(skills)",
+    "action": "register dynamic agent capabilities and custom tooling hooks",
     "author": "IshaanYK"
   }
 ]
