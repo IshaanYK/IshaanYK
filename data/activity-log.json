@@ -1,13 +1,5 @@
 [
   {
-    "id": "act-20261113213624-4",
-    "timestamp": "2026-11-13T21:36:24Z",
-    "date": "2026-11-13",
-    "scope": "refactor(pipeline)",
-    "action": "streamline asynchronous tool invocation pipeline",
-    "author": "IshaanYK"
-  },
-  {
     "id": "act-20261113214625-5",
     "timestamp": "2026-11-13T21:46:25Z",
     "date": "2026-11-13",
@@ -3997,6 +3989,14 @@
     "date": "2026-11-28",
     "scope": "refactor(storage)",
     "action": "refine atomic daily streak state persistence",
+    "author": "IshaanYK"
+  },
+  {
+    "id": "act-20261128133040-10",
+    "timestamp": "2026-11-28T13:30:40Z",
+    "date": "2026-11-28",
+    "scope": "refactor(memory)",
+    "action": "enhance episodic memory pruning and retrieval weights",
     "author": "IshaanYK"
   }
 ]
